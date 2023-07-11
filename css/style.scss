@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 *{
     margin: 0;
     padding: 0;
@@ -198,6 +199,258 @@ input,textarea:focus{
         }
     }
 }
+.statistics{
+    .nav_list{
+        display: flex;
+        align-items: center;
+        justify-content: left;
+        margin-bottom: 55px;
+        a{
+            margin: 0 5px;
+            color: #B6B3B3;
+            font-family: Montserrat;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 111.5%;
+        }
+    }
+    .statistic_wrapper{
+        background-image: url('../images/statistic_bg.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+        .statistic_in{
+            padding-top: 86px;
+            padding-bottom: 160px;
+            display: flex;
+            justify-content: space-between;
+            .statistic_left{
+                padding: 92px 90px 91px 73px;
+                background-image: url('../images/statistic_text_bg.svg');
+                background-repeat: no-repeat;
+                background-size: 100% 100%;
+                h4{
+                    color: #1C1D1E;
+                    font-family: 'Fira Sans',sans-serif;
+                    font-size: 30.276px;
+                    font-style: normal;
+                    font-weight: 600;
+                    line-height: 42.253px;
+                    span{
+                        margin-left: 15px;
+                        color: #B32B37;
+                        font-family: Montserrat,sans-serif;
+                        font-size: 55.895px;
+                        font-style: normal;
+                        font-weight: 600;
+                        line-height: 111.5%;
+                    }
+                }
+            }
+            .statistic_right{
+                display: flex;
+                align-items: center;
+                .statistic_text_right{
+                    .statistic_text_right_in{
+                        display: flex;
+                        align-items: center;
+                        img{
+                            width: 48px;
+                            height: 48px;
+                        }
+                        h5{
+                            margin-left: 23px;
+                            max-width: 253px;
+                            color: #FFF;
+                            text-shadow: 0px 4px 6px 0px rgba(0, 0, 0, 0.25);
+                            font-family: 'Fira Sans',sans-serif;
+                            font-size: 28px;
+                            font-style: normal;
+                            font-weight: 500;
+                            line-height: 36.285px;
+                        }
+                    }
+                    h6{
+                        transform: translateY(141px);
+                        color: #FFF;
+                        text-shadow: 0px 4px 6px 0px rgba(0, 0, 0, 0.25);
+                        font-family: 'Fira Sans',sans-serif;
+                        font-size: 28px;
+                        font-style: normal;
+                        font-weight: 500;
+                        line-height: 36.285px;
+                    }
+                }
+                .statistic_img_right{
+                    h3{
+                        margin-right: 30px;
+                        color: #FFF;
+                        font-family: Montserrat,sans-serif;
+                        font-size: 28px;
+                        font-style: normal;
+                        font-weight: 600;
+                        line-height: 36.285px;
+                        margin-bottom: 30px;
+                        margin-top: 20px;
+                        img{
+                            width: 59px;
+                            height: 59px;
+                        }
+                    }
+                    .statistic_icon1{
+                        transform: translateX(30px);
+                        white-space: nowrap;
+                    }
+                    .statistic_icon1{
+                        white-space: nowrap;
+                    }
+                    .statistic_icon3{
+                        transform: translateX(80px);
+                        white-space: nowrap;
+                    }
+                }
+            }
+        }
+    }
+    .statistic_cards{
+        background-color: #123044;
+        .statistic_cards_in{
+            margin: 0 auto;
+            max-width: 1288px;
+            padding: 32px 0 79px 0;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            gap: 74px;
+            .statistic_card{
+                flex: 1;
+                padding: 30px 44px 48px 44px;
+                border: 1px solid red;
+                width: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-direction: column;
+                border-radius: 4px;
+                border: 1.1px solid rgba(0, 0, 0, 0.60);
+                background: #102B3C;
+                box-shadow: 0px 1px 7px 0px rgba(0, 0, 0, 0.09);
+                .statistic_card_img{
+                    width: 230px;
+                    height: 227px;
+                    object-fit: contain;
+                }
+                .statistic_btn{
+                    width: 292px;
+                    height: 47px;
+                    display: block;
+                    color: #FFF;
+                    text-align: center;
+                    font-family: Montserrat,sans-serif;
+                    font-size: 18px;
+                    font-style: normal;
+                    font-weight: 600;
+                    line-height: 111.5%;
+                    text-transform: uppercase;
+                    border-radius: 41px;
+                    background: #123044;
+                    box-shadow: 0px 4px 6px 0px rgba(0, 0, 0, 0.25);
+                    border: none;
+                    margin-top: 28px;
+                    img{
+                        width: 18px;
+                        height: 16px;
+                        margin-left: 7px;
+                    }
+                }
+            }
+        }
+    }
+    .statistic_brands{
+        padding: 62px 0;
+        .statistic_brands_title{
+            display: none;
+            color: #123044;
+            font-family: 'Fira Sans',sans-serif;
+            font-size: 21px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: 65.906px;
+        }
+        .statistic_brands_dropdowns{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 62px;
+            margin-bottom: 62px;
+            .statistic_brands_dropdown{
+                border: none;
+                padding: 7px 7px 7px 30px;
+                display: flex;
+                align-items: center;
+                color: #4B4848;
+                font-family: 'Montserrat',sans-serif;
+                font-size: 26px;
+                font-style: normal;
+                font-weight: 600;
+                line-height: 111.5%;
+                border-radius: 22px;
+                background: #F9EEDF;
+                box-shadow: 0px 1px 7px 0px rgba(0, 0, 0, 0.09);
+                img{
+                    margin-right: 20px;
+                    margin-left: 7px;
+                }
+            }
+        }
+        .statistic_brands_slider{
+            margin: 0 auto;
+            max-width: 978px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            .statistic_brands_slider_title{
+                max-width: 287px;
+                color: #123044;
+                font-family: 'Fira Sans',sans-serif;
+                font-size: 42px;
+                font-style: normal;
+                font-weight: 600;
+                line-height: 65.906px;
+            }
+            .statistic_brands_in{
+                .statistic_brands_slider{
+                    gap: 36px;
+                    .brand_prev_btn, .brand_next_btn{
+                        border: none;
+                        cursor: pointer;
+                        background-color: transparent;
+                    }
+                    .statistic_slider{
+                        overflow-x: hidden;
+                        max-width: 350px;
+                        text-align: center;
+                        .swiper-wrapper{
+                            .swiper-slide{
+                                h3{
+                                    max-width: 415px;
+                                    // margin-top: 10px;
+                                    color: #1A1717;
+                                    text-align: center;
+                                    font-family: Montserrat,sans-serif;
+                                    font-size: 21px;
+                                    font-style: normal;
+                                    font-weight: 600;
+                                    line-height: 25.285px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
 .back{
     .nav_list{
         display: flex;
@@ -323,6 +576,305 @@ input,textarea:focus{
                 }
             }
 
+        }
+    }
+}
+.albums{
+    .albums_comment_title{
+        h5{
+            color: #123044;
+            font-family: 'Fira Sans',sans-serif;
+            font-size: 28px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 111.5%;
+            margin-top: 47px;
+            margin-bottom: 73px;
+        }
+        h3{
+            color: var(--main-text, #1A1A1A);
+            font-family: Montserrat,sans-serif;
+            font-size: 36px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: 36.285px;
+            margin-bottom: 45px;
+        }
+    }
+    .albums_comments{
+        .albums_comment_card{
+            margin: 0 auto 40px auto;
+            max-width: 1270px;
+            padding: 54px 45px 66px 66px;
+            border-radius: 14.893px;
+            background: #F8F8F8;
+            box-shadow: 0px 1px 7px 0px rgba(0, 0, 0, 0.09);
+            .albums_comment_card_top{
+                margin-bottom: 43px;
+                display: flex;
+                align-items: center;
+                img{
+                    width: 60px;
+                    height: 60px;
+                    margin-right: 24px;
+                }
+                h4{
+                    flex-direction: column;
+                    color: #123044;
+                    font-family: Rubik,sans-serif;
+                    font-size: 28px;
+                    font-style: normal;
+                    font-weight: 500;
+                    line-height: normal;
+                    margin-right: 20px;
+                    span{
+                        display: none;
+                    }
+                }
+                span{
+                    color: #67727E;
+                    font-family: 'Fira Sans',sans-serif;
+                    font-size: 21px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 44.679px;
+                }
+                .albums_btn{
+                    white-space: nowrap;
+                    border: none;
+                    margin-left: auto;
+                    background-color: transparent;
+                    color: #0A75B1;
+                    font-family: 'Rubik',sans-serif;
+                    font-size: 21px;
+                    font-style: normal;
+                    font-weight: 500;
+                    line-height: 44.679px;
+                    img{
+                        width: 24px;
+                        height: 24px;
+                        margin-right: 13px;
+                    }
+                }
+                .albums_btn1{
+                    border: none;
+                    margin-left: auto;
+                    background-color: transparent;
+                    margin-right: 25px;
+                    color: #B0333E;
+                    font-family: 'Fira Sans',sans-serif;
+                    font-size: 21px;
+                    font-style: normal;
+                    font-weight: 500;
+                    line-height: 44.679px;
+                    img{
+                        width: 24px;
+                        height: 24px;
+                        margin-right: 13px;
+                    }
+                }
+                .albums_btn2{
+                    border: none;
+                    background-color: transparent;
+                    color: #123044;
+                    font-family: 'Fira Sans',sans-serif;
+                    font-size: 21px;
+                    font-style: normal;
+                    font-weight: 500;
+                    line-height: 44.679px;
+                    img{
+                        width: 24px;
+                        height: 24px;
+                        margin-right: 13px;
+                    }
+                }
+            }
+            p{
+                color: #4B4848;
+                font-family: Montserrat,sans-serif;
+                font-size: 21px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: 42px;
+            }
+        }
+        .albums_comment_card_by{
+            padding-left: 25px;
+            max-width: 1390px;
+            margin-left: auto;
+            position: relative;
+            .albums_comment_card_my{
+                margin-left: auto;
+                margin-bottom: 46px;
+                max-width: 1270px;
+                padding: 54px 45px 66px 66px;
+                border-radius: 14.893px;
+                background: #F8F8F8;
+                box-shadow: 0px 1px 7px 0px rgba(0, 0, 0, 0.09);
+                .albums_comment_card_top{
+                    margin-bottom: 43px;
+                    display: flex;
+                    align-items: center;
+                    img{
+                        width: 60px;
+                        height: 60px;
+                        margin-right: 24px;
+                    }
+                    h4{
+                        color: #123044;
+                        font-family: Rubik,sans-serif;
+                        font-size: 28px;
+                        font-style: normal;
+                        font-weight: 500;
+                        line-height: normal;
+                        margin-right: 20px;
+                        span{
+                            display: none;
+                        }
+                    }
+                    span{
+                        color: #67727E;
+                        font-family: 'Fira Sans',sans-serif;
+                        font-size: 21px;
+                        font-style: normal;
+                        font-weight: 400;
+                        line-height: 44.679px;
+                    }
+                    .albums_btn{
+                        white-space: nowrap;
+                        border: none;
+                        margin-left: auto;
+                        background-color: transparent;
+                        color: #0A75B1;
+                        font-family: 'Rubik',sans-serif;
+                        font-size: 21px;
+                        font-style: normal;
+                        font-weight: 500;
+                        line-height: 44.679px;
+                        img{
+                            width: 24px;
+                            height: 24px;
+                            margin-right: 13px;
+                        }
+                    }
+                    .albums_btn1{
+                        border: none;
+                        margin-left: auto;
+                        background-color: transparent;
+                        margin-right: 25px;
+                        color: #B0333E;
+                        font-family: 'Fira Sans',sans-serif;
+                        font-size: 21px;
+                        font-style: normal;
+                        font-weight: 500;
+                        line-height: 44.679px;
+                        img{
+                            width: 24px;
+                            height: 24px;
+                            margin-right: 13px;
+                        }
+                    }
+                    .albums_btn2{
+                        border: none;
+                        background-color: transparent;
+                        color: #123044;
+                        font-family: 'Fira Sans',sans-serif;
+                        font-size: 21px;
+                        font-style: normal;
+                        font-weight: 500;
+                        line-height: 44.679px;
+                        img{
+                            width: 24px;
+                            height: 24px;
+                            margin-right: 13px;
+                        }
+                    }
+                }
+                p{
+                    color: #4B4848;
+                    font-family: Montserrat,sans-serif;
+                    font-size: 21px;
+                    font-style: normal;
+                    font-weight: 500;
+                    line-height: 42px;
+                    b{
+                        color: #123044;
+                    }
+                }
+            }
+        }
+        .albums_comment_card_by::after{
+            position: absolute;
+            top: 0;
+            left: 0;
+            content: '';
+            width: 4px;
+            height: 100%;
+            background-color: #E9EBF0;
+        }
+        .albums_form{
+            margin-bottom: 75px;
+            // margin: 0 auto 40px auto;
+            margin-left: auto;
+            max-width: 1390px;
+            .albums_full_btn{
+                margin-bottom: 25px;
+                display: flex;
+                justify-content: end;
+                color: #102B3C;
+                font-family: Montserrat,sans-serif;
+                font-size: 18px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: 28.813px;
+                text-decoration-line: underline;
+            }
+            .albums_form_btn{
+                display: flex;
+                align-items: center;
+                .albums_form_input{
+                    width: 100%;
+                    display: flex;
+                    align-items: center;
+                    img{
+                        width: 76px;
+                        height: 76px;
+                        transform: translateY(-40px);
+                    }
+                    textarea{
+                        color: #67727E;
+                        font-family: Montserrat,sans-serif;
+                        font-size: 26px;
+                        font-style: normal;
+                        font-weight: 400;
+                        line-height: 44.679px;
+                        padding: 23px;
+                        height: 179px;
+                        border-radius: 14.893px;
+                        border: 1.862px solid var(--light-gray, #E9EBF0);
+                        background: var(--white, #FFF);
+                        width: 100%;
+                        margin-left: 31px;
+                        margin-right: 77px;
+                    }
+                }
+                button{
+                    border: none;
+                    margin-right: 50px;
+                    width: 181px;
+                    height: 53px;
+                    color: #FFF;
+                    font-family: 'Fira Sans',sans-serif;
+                    font-size: 16px;
+                    font-style: normal;
+                    font-weight: 500;
+                    line-height: 111.5%;
+                    letter-spacing: 0.96px;
+                    border-radius: 11px;
+                    background: #102B3C;
+                    box-shadow: 0px 1px 7px 0px rgba(0, 0, 0, 0.09);
+                }
+            }
         }
     }
 }

@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stamps</title>
+    <!-- normalize css file -->
+    <link rel="stylesheet" href="./css/normalize.css">
+    <!-- bootstrap file -->
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <!-- swipper file -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+    <!-- css file -->
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <div class="statistics">
+        <div class="main_container">
+            <div class="nav_list">
+                <a href="index.html">Главная</a>
+                <img src="./images/next_icon.svg" alt="">
+                <a href="#">Статистика коллекции</a>
+            </div>
+        </div>
+        <div class="statistic_wrapper">
+            <div class="main_container">
+                <div class="statistic_in">
+                    <div class="statistic_left">
+                        <h4>Марок в коллекции:<span>158</span></h4>
+                        <h4>Оценочная стоимость:<span>8643$</span></h4>
+                        <h4>Альбомов:<span>5</span></h4>
+                    </div>
+                    <div class="statistic_right">
+                        <div class="statistic_text_right">
+                            <div class="statistic_text_right_in">
+                                <img src="./images/comment_award.svg" alt="">
+                                <h5>Самый активный пользователь:</h5>
+                            </div>
+                            <h6>Всего на сайте: 875 человек</h6>
+                        </div>
+                        <div class="statistic_img_right">
+                            <h3 class="statistic_icon1">За неделю <img src="./images/comment_person1.png" alt=""></h3>
+                            <h3 class="statistic_icon2">За Месяц <img src="./images/comment_person2.png" alt=""></h3>
+                            <h3 class="statistic_icon3">За Год <img src="./images/comment_person3.png" alt=""></h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="statistic_cards">
+            <div class="main_container">
+                <div class="statistic_cards_in">
+                    <div class="statistic_card">
+                        <img class="statistic_card_img" src="./images/statistic_card.png" alt="">
+                        <button class="statistic_btn">Самые дорогая <img src="./images/statistic_play.svg" alt=""></button>
+                    </div>
+                    <div class="statistic_card">
+                        <img class="statistic_card_img" src="./images/statistic_card2.png" alt="">
+                        <button class="statistic_btn">Самая старая <img src="./images/statistic_play.svg" alt=""></button>
+                    </div>
+                    <div class="statistic_card">
+                        <img class="statistic_card_img" src="./images/statistic_card3.png" alt="">
+                        <button class="statistic_btn">Самая новая <img src="./images/statistic_play.svg" alt=""></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="main_container">
+            <div class="statistic_brands">
+                <h2 class="statistic_brands_title">Самые обсуждаемые марки:</h2>
+                <div class="statistic_brands_dropdowns">
+                    <button class="statistic_brands_dropdown">По стране <img src="./images/dropdown_icon.svg" alt=""></button>
+                    <button class="statistic_brands_dropdown">Соединённые Штаты Америки <img src="./images/dropdown_icon.svg" alt=""></button>
+                </div>
+                <div class="statistic_brands_slider">
+                    <h2 class="statistic_brands_slider_title">Самые обсуждаемые марки:</h2>
+                    <div class="statistic_brands_in">
+                        <div class="statistic_brands_slider">
+                            <button class="brand_prev_btn">
+                                <img src="./images/brands_slider_arrow.svg" alt="">
+                            </button>
+                            <div class="statistic_slider slider">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <img src="./images/brand_slider_img.png" alt="">
+                                        <h3>Джордж Вашингтон 1 cent, 1883г</h3>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="./images/brand_slider_img.png" alt="">
+                                        <h3>Джордж Вашингтон 1 cent, 1883г</h3>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="./images/brand_slider_img.png" alt="">
+                                        <h3>Джордж Вашингтон 1 cent, 1883г</h3>
+                                    </div>
+                                </div>
+                            </div>
+                            <button class="brand_next_btn">
+                                <img src="./images/slider_brands_next.svg" alt="">
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+
+
+    <script src="./js/swipper.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+    <script>
+        let swiper_brand = new Swiper(".statistic_brands_slider .slider", {
+            slidesPerView: 1,
+            spaceBetween: 15,
+            loop: true,
+            navigation: {
+                nextEl: ".brand_next_btn",
+                prevEl: ".brand_prev_btn",
+            },
+        });
+    </script>
+    <script src="./js/app.js"></script>
+</body>
+</html>
