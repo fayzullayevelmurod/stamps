@@ -6,12 +6,225 @@
     <title>Stamps</title>
     <!-- normalize css file -->
     <link rel="stylesheet" href="./css/normalize.css">
-    <!-- bootstrap file -->
-    <!-- <link rel="stylesheet" href="/css/bootstrap.min.css"> -->
     <!-- css file -->
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
+    <!-- Header start -->
+    <header>
+        <!-- Header top start -->
+        <div class="top">
+            <div class="main_container">
+                <div class="header_top">
+                    <div class="left">
+                        <a href="/index.html">Главная</a>
+                        <a href="/index.html">Статьи</a>
+                        <a href="/index.html">Помощь по проекту</a>
+                        <div class="search">
+                            <input type="text" placeholder="Поиск. Например: Джордж Вашингтон">
+                            <button>
+                                <img src="./images/search.svg" alt="search">
+                            </button>
+                        </div>
+                        <button class="filter">
+                            <span>Фильтр</span>
+                            <img src="./images/filter.svg" alt="">
+                        </button>
+                    </div>
+                    <ul>
+                        <li>
+                            <a href="#">
+                                <img src="./images/message.svg" alt="">
+                                <span>Обратная связь</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="./images/star.svg" alt="">
+                                <span>Избранное</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="./images/user.svg" alt="">
+                                <span>Личный кабинет</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- Header top end -->
+
+        <!-- Header bottom start -->
+        <div class="bottom">
+            <div class="main_container">
+                <img class="logo" src="./images/Logo.svg" alt="Logotip">
+                <div class="search">
+                    <input type="text">
+                    <button>
+                        <img src="./images/search.svg" alt="search">
+                    </button>
+                </div>
+                <div class="head_dropdown">
+                    <button>
+                        <img src="./images/globus.svg" alt="globus">
+                        Страны и регионы
+                        <img src="./images/dropdown_icon.svg" alt="">
+                    </button>
+                    <ul>
+                        <li>
+                            <a href="#">List item 1</a>
+                        </li>
+                        <li>
+                            <a href="#">List item 2</a>
+                        </li>
+                        <li>
+                            <a href="#">List item 3</a>
+                        </li>
+                        <li>
+                            <a href="#">List item 4</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="head_dropdown">
+                    <button>
+                        <img src="./images/calendar.svg" alt="globus">
+                        годы
+                        <img src="./images/dropdown_icon.svg" alt="">
+                    </button>
+                    <ul>
+                        <li>
+                            <a href="#">List item 1</a>
+                        </li>
+                        <li>
+                            <a href="#">List item 2</a>
+                        </li>
+                        <li>
+                            <a href="#">List item 3</a>
+                        </li>
+                        <li>
+                            <a href="#">List item 4</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="head_dropdown">
+                    <button>
+                        <img src="./images/receta.svg" alt="globus">
+                        темы
+                        <img src="./images/dropdown_icon.svg" alt="">
+                    </button>
+                    <ul>
+                        <li>
+                            <a href="#">List item 1</a>
+                        </li>
+                        <li>
+                            <a href="#">List item 2</a>
+                        </li>
+                        <li>
+                            <a href="#">List item 3</a>
+                        </li>
+                        <li>
+                            <a href="#">List item 4</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="head_dropdown">
+                    <button>
+                        <img src="./images/book.svg" alt="globus">
+                        альбомы
+                        <img src="./images/dropdown_icon.svg" alt="">
+                    </button>
+                    <ul>
+                        <li>
+                            <a href="#">List item 1</a>
+                        </li>
+                        <li>
+                            <a href="#">List item 2</a>
+                        </li>
+                        <li>
+                            <a href="#">List item 3</a>
+                        </li>
+                        <li>
+                            <a href="#">List item 4</a>
+                        </li>
+                    </ul>
+                </div>
+                <a href="#">
+                    <img src="./images/crown.svg" alt="">
+                    Золотой пантеон
+                </a>
+                <a href="#">
+                    <img src="./images/statistic_up.svg" alt="">
+                    Статистика коллекции
+                </a>
+                <div class="head_dropdown last_head_dropdown">
+                    <button>
+                        <img src="./images/bars.svg" alt="globus">
+                        <img src="./images/dropdown_icon_red.svg" alt="">
+                    </button>
+                    <ul>
+                        <li>
+                            <a href="#">List item 1</a>
+                        </li>
+                        <li>
+                            <a href="#">List item 2</a>
+                        </li>
+                        <li>
+                            <a href="#">List item 3</a>
+                        </li>
+                        <li>
+                            <a href="#">List item 4</a>
+                        </li>
+                    </ul>
+                </div>
+                <img src="./images/menu_bars.svg" role="button" class="bars" alt="">
+            </div>
+        </div>
+        <!-- Header bottom end -->
+
+        <div class="header_mobile">
+            <div class="bg"></div>
+            <div class="menu">
+                <button class="close_menu">
+                    &times;
+                </button>
+                <ul>
+                    <li>
+                        <a href="./index.html">Главная</a>
+                    </li>
+                    <li>
+                        <a href="#">Статьи</a>
+                    </li>
+                    <li>
+                        <a href="#">Помощь по проекту</a>
+                    </li>
+                    <li>
+                        <a href="#">Фильтр</a>
+                    </li>
+                    <li>
+                        <a href="#">Страны и регионы</a>
+                    </li>
+                    <li>
+                        <a href="#">годы</a>
+                    </li>
+                    <li>
+                        <a href="#">темы</a>
+                    </li>
+                    <li>
+                        <a href="#">альбомы</a>
+                    </li>
+                    <li>
+                        <a href="#">Золотой пантеон</a>
+                    </li>
+                    <li>
+                        <a href="#">Статистика коллекции</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <!-- Header end -->
     <div class="golden">
        <div class="main_container">
             <div class="nav_list">
@@ -82,7 +295,7 @@
             </div>
        </div>
     </div>
-    
+    <!-- footer start -->
     <footer>
         <div class="main_container">
             <div class="footer_wrapper">
@@ -171,10 +384,10 @@
             </div>
         </div>
     </footer>
+    <!-- footer end -->
 
 
     <script src="./js/swipper.js"></script>
-    <script src="./js/bootstrap.min.js"></script>
     <script src="./js/app.js"></script>
 </body>
 </html>

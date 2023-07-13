@@ -1,0 +1,979 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stamps</title>
+    <!-- normalize css file -->
+    <link rel="stylesheet" href="./css/normalize.css">
+    <!-- swipper css link -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+    <!-- css file -->
+    <link rel="stylesheet" href="./css/style.css">
+
+</head>
+
+<body style="background: #F9F9F9;">
+
+    <!-- Header start -->
+    <header>
+        <!-- Header top start -->
+        <div class="top">
+            <div class="main_container">
+                <div class="header_top">
+                    <div class="left">
+                        <a href="/index.html">Главная</a>
+                        <a href="/index.html">Статьи</a>
+                        <a href="/index.html">Помощь по проекту</a>
+                        <div class="search">
+                            <input type="text" placeholder="Поиск. Например: Джордж Вашингтон">
+                            <button>
+                                <img src="./images/search.svg" alt="search">
+                            </button>
+                        </div>
+                        <button class="filter">
+                            <span>Фильтр</span>
+                            <img src="./images/filter.svg" alt="">
+                        </button>
+                    </div>
+                    <ul>
+                        <li>
+                            <a href="#">
+                                <img src="./images/message.svg" alt="">
+                                <span>Обратная связь</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="./images/star.svg" alt="">
+                                <span>Избранное</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="./images/user.svg" alt="">
+                                <span>Личный кабинет</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- Header top end -->
+
+        <!-- Header bottom start -->
+        <div class="bottom">
+            <div class="main_container">
+                <img class="logo" src="./images/Logo.svg" alt="Logotip">
+                <div class="search">
+                    <input type="text">
+                    <button>
+                        <img src="./images/search.svg" alt="search">
+                    </button>
+                </div>
+                <div class="head_dropdown">
+                    <button>
+                        <img src="./images/globus.svg" alt="globus">
+                        Страны и регионы
+                        <img src="./images/dropdown_icon.svg" alt="">
+                    </button>
+                    <ul>
+                        <li>
+                            <a href="#">List item 1</a>
+                        </li>
+                        <li>
+                            <a href="#">List item 2</a>
+                        </li>
+                        <li>
+                            <a href="#">List item 3</a>
+                        </li>
+                        <li>
+                            <a href="#">List item 4</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="head_dropdown">
+                    <button>
+                        <img src="./images/calendar.svg" alt="globus">
+                        годы
+                        <img src="./images/dropdown_icon.svg" alt="">
+                    </button>
+                    <ul>
+                        <li>
+                            <a href="#">List item 1</a>
+                        </li>
+                        <li>
+                            <a href="#">List item 2</a>
+                        </li>
+                        <li>
+                            <a href="#">List item 3</a>
+                        </li>
+                        <li>
+                            <a href="#">List item 4</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="head_dropdown">
+                    <button>
+                        <img src="./images/receta.svg" alt="globus">
+                        темы
+                        <img src="./images/dropdown_icon.svg" alt="">
+                    </button>
+                    <ul>
+                        <li>
+                            <a href="#">List item 1</a>
+                        </li>
+                        <li>
+                            <a href="#">List item 2</a>
+                        </li>
+                        <li>
+                            <a href="#">List item 3</a>
+                        </li>
+                        <li>
+                            <a href="#">List item 4</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="head_dropdown">
+                    <button>
+                        <img src="./images/book.svg" alt="globus">
+                        альбомы
+                        <img src="./images/dropdown_icon.svg" alt="">
+                    </button>
+                    <ul>
+                        <li>
+                            <a href="#">List item 1</a>
+                        </li>
+                        <li>
+                            <a href="#">List item 2</a>
+                        </li>
+                        <li>
+                            <a href="#">List item 3</a>
+                        </li>
+                        <li>
+                            <a href="#">List item 4</a>
+                        </li>
+                    </ul>
+                </div>
+                <a href="#">
+                    <img src="./images/crown.svg" alt="">
+                    Золотой пантеон
+                </a>
+                <a href="#">
+                    <img src="./images/statistic_up.svg" alt="">
+                    Статистика коллекции
+                </a>
+                <div class="head_dropdown last_head_dropdown">
+                    <button>
+                        <img src="./images/bars.svg" alt="globus">
+                        <img src="./images/dropdown_icon_red.svg" alt="">
+                    </button>
+                    <ul>
+                        <li>
+                            <a href="#">List item 1</a>
+                        </li>
+                        <li>
+                            <a href="#">List item 2</a>
+                        </li>
+                        <li>
+                            <a href="#">List item 3</a>
+                        </li>
+                        <li>
+                            <a href="#">List item 4</a>
+                        </li>
+                    </ul>
+                </div>
+                <img src="./images/menu_bars.svg" role="button" class="bars" alt="">
+            </div>
+        </div>
+        <!-- Header bottom end -->
+
+        <div class="header_mobile">
+            <div class="bg"></div>
+            <div class="menu">
+                <button class="close_menu">
+                    &times;
+                </button>
+                <ul>
+                    <li>
+                        <a href="./index.html">Главная</a>
+                    </li>
+                    <li>
+                        <a href="#">Статьи</a>
+                    </li>
+                    <li>
+                        <a href="#">Помощь по проекту</a>
+                    </li>
+                    <li>
+                        <a href="#">Фильтр</a>
+                    </li>
+                    <li>
+                        <a href="#">Страны и регионы</a>
+                    </li>
+                    <li>
+                        <a href="#">годы</a>
+                    </li>
+                    <li>
+                        <a href="#">темы</a>
+                    </li>
+                    <li>
+                        <a href="#">альбомы</a>
+                    </li>
+                    <li>
+                        <a href="#">Золотой пантеон</a>
+                    </li>
+                    <li>
+                        <a href="#">Статистика коллекции</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <!-- Header end -->
+
+    <div class="main_container">
+        <div class="nav_list">
+            <a href="#">Каталог </a>
+            <img src="./images/next_icon.svg" alt="">
+            <a href="#">По темам</a>
+        </div>
+    </div>
+
+    <div class="countries">
+        <!-- Continent map section start -->
+        <section id="continent">
+            <div class="main_container top">
+                <div class="continent_list">
+                    <div class="head">
+                        <button>Австралия и Океания</button>
+                        <button>Азия</button>
+                        <button class="continent_selected">Америка Северная</button>
+                        <button>Америка Южная</button>
+                        <button>Африка</button>
+                        <button>Европа</button>
+                        <button>Россия/СССР</button>
+                    </div>
+                    <div class="content">
+                        <ul>
+                            <li>
+                                <a href="#" role="button">
+                                    <img src="./images/flag_usa.svg" alt="">
+                                    Ангилья
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" role="button">
+                                    <img src="./images/flag_usa.svg" alt="">
+                                    Антигуа и Барбуда
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" role="button">
+                                    <img src="./images/flag_usa.svg" alt="">
+                                    Аруба
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" role="button">
+                                    <img src="./images/flag_usa.svg" alt="">
+                                    Багамские острова
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" role="button">
+                                    <img src="./images/flag_usa.svg" alt="">
+                                    Барбадос
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" role="button">
+                                    <img src="./images/flag_usa.svg" alt="">
+                                    Белиз
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" role="button">
+                                    <img src="./images/flag_usa.svg" alt="">
+                                    Бермудские острова
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" role="button">
+                                    <img src="./images/flag_usa.svg" alt="">
+                                    Британские Виргинские острова
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" role="button">
+                                    <img src="./images/flag_usa.svg" alt="">
+                                    Гаити
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" role="button">
+                                    <img src="./images/flag_usa.svg" alt="">
+                                    Гваделупе
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" role="button">
+                                    <img src="./images/flag_usa.svg" alt="">
+                                    Гватемала
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" role="button">
+                                    <img src="./images/flag_usa.svg" alt="">
+                                    Голландские Карибы
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" role="button">
+                                    <img src="./images/flag_usa.svg" alt="">
+                                    Гондурас
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" role="button">
+                                    <img src="./images/flag_usa.svg" alt="">
+                                    Гренада
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" role="button">
+                                    <img src="./images/flag_usa.svg" alt="">
+                                    Гренада Гренадины
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" role="button">
+                                    <img src="./images/flag_usa.svg" alt="">
+                                    Датская Вест-Индия
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" role="button">
+                                    <img src="./images/flag_usa.svg" alt="">
+                                    Доминика
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" role="button">
+                                    <img src="./images/flag_usa.svg" alt="">
+                                    Доминиканская Республика
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" role="button">
+                                    <img src="./images/flag_usa.svg" alt="">
+                                    Каймановы острова
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" role="button">
+                                    <img src="./images/flag_usa.svg" alt="">
+                                    Канада
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" role="button">
+                                    <img src="./images/flag_usa.svg" alt="">
+                                    Коста-Рика
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" role="button">
+                                    <img src="./images/flag_usa.svg" alt="">
+                                    Куба
+                                </a>
+                            </li>
+                        </ul>
+                        <ul>
+                            <li>
+                                <a href="#" role="button">
+                                    <img src="./images/flag_usa.svg" alt="">
+                                    Кюрасао
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" role="button">
+                                    <img src="./images/flag_usa.svg" alt="">
+                                    Мартиника
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" role="button">
+                                    <img src="./images/flag_usa.svg" alt="">
+                                    Мексика
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" role="button">
+                                    <img src="./images/flag_usa.svg" alt="">
+                                    Монсеррат
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" role="button">
+                                    <img src="./images/flag_usa.svg" alt="">
+                                    Невис
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" role="button">
+                                    <img src="./images/flag_usa.svg" alt="">
+                                    Нидерландские Антильские острова
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" role="button">
+                                    <img src="./images/flag_usa.svg" alt="">
+                                    Никарагуа
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" role="button">
+                                    <img src="./images/flag_usa.svg" alt="">
+                                    Острова Теркс и Кайкос
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" role="button">
+                                    <img src="./images/flag_usa.svg" alt="">
+                                    офис ООН Нью-Йорк
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" role="button">
+                                    <img src="./images/flag_usa.svg" alt="">
+                                    Панама
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" role="button">
+                                    <img src="./images/flag_usa.svg" alt="">
+                                    Подветренные острова
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" role="button">
+                                    <img src="./images/flag_usa.svg" alt="">
+                                    Пуэрто-Рико
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" role="button">
+                                    <img src="./images/flag_usa.svg" alt="">
+                                    Сальвадор
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" role="button">
+                                    <img src="./images/flag_usa.svg" alt="">
+                                    Сен-Пьер и Микелон
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" role="button">
+                                    <img src="./images/flag_usa.svg" alt="">
+                                    Сент Винсент и Гренадины
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" role="button">
+                                    <img src="./images/flag_usa.svg" alt="">
+                                    Сент-Китс
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" role="button">
+                                    <img src="./images/flag_usa.svg" alt="">
+                                    Сент-Люсия
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" role="button">
+                                    <img src="./images/flag_usa.svg" alt="">
+                                    Синт-Мартен
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="selected" role="button">
+                                    <img src="./images/flag_usa.svg" alt="">
+                                    Соединенные Штаты Америки
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" role="button">
+                                    <img src="./images/flag_usa.svg" alt="">
+                                    Тринидад и Тобаго
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" role="button">
+                                    <img src="./images/flag_usa.svg" alt="">
+                                    Ямайка
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <img src="./images/continent.png" class="map_image" alt="">
+            </div>
+            <div class="main_container bottom">
+                <div class="dropdown">
+                    <button>
+                        Свернуть
+                        <img src="./images/triangle_dark.svg" alt="">
+                    </button>
+                </div>
+                <div class="selected_country">
+                    <button>
+                        <img src="./images/flag_usa.svg" alt="">
+                        Соединенные Штаты Америки 
+                    </button>
+                </div>
+            </div>
+        </section>
+        <!-- Continent map section end -->
+
+        <!-- Postmarks Start -->
+        <section id="postmarks">
+            <div class="main_container head">
+                <div class="nav">
+                    <div class="nav_total" role="button">
+                        <img src="./images/nav_total.svg" alt="">
+                        Все марки
+                    </div>
+                    <div class="right">
+                        <ul class="right_list right_list_desktop">
+                            <li role="button">
+                                Год выпуска
+                                <img src="./images/triangle.svg" alt="">
+                            </li>
+                            <li role="button">
+                                Страна
+                                <img src="./images/triangle.svg" alt="">
+                            </li>
+                            <li role="button">
+                                Гашение
+                                <img src="./images/triangle.svg" alt="">
+                            </li>
+                            <li role="button">
+                                Тема
+                                <img src="./images/triangle.svg" alt="">
+                            </li>
+                            <li role="button">
+                                Альбом
+                                <img src="./images/triangle.svg" alt="">
+                            </li>
+                        </ul>
+
+                        <div class="search postmarks_searchbox">
+                            <div class="search_input">
+                                <input type="text" placeholder="Поиск">
+                            </div>
+                            <button>
+                                <img src="./images/search_red.svg" alt="">
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <ul class="right_list right_list_mobile">
+                    <li role="button">
+                        Год выпуска
+                        <img src="./images/triangle.svg" alt="">
+                    </li>
+                    <li role="button">
+                        Страна
+                        <img src="./images/triangle.svg" alt="">
+                    </li>
+                    <li role="button">
+                        Гашение
+                        <img src="./images/triangle.svg" alt="">
+                    </li>
+                    <li role="button">
+                        Тема
+                        <img src="./images/triangle.svg" alt="">
+                    </li>
+                    <li role="button">
+                        Альбом
+                        <img src="./images/triangle.svg" alt="">
+                    </li>
+                </ul>
+            </div>
+            <div class="content_wrapper">
+                <div class="main_container">
+                    <ul class="content">
+                        <li>
+                            <img src="./images/postmark_content_1.png" alt="">
+                            <div class="text">Джордж Вашингтон 2 cents, 1883г</div>
+                        </li>
+                        <li>
+                            <img src="./images/postmark_content_2.png" alt="">
+                            <div class="text">Джордж Вашингтон 2 cents, 1883г</div>
+                        </li>
+                        <li>
+                            <img src="./images/postmark_content_3.png" alt="">
+                            <div class="text">Джордж Вашингтон 2 cents, 1883г</div>
+                        </li>
+                        <li>
+                            <img src="./images/postmark_content_4.png" alt="">
+                            <div class="text">Джордж Вашингтон 2 cents, 1883г</div>
+                        </li>
+                        <li>
+                            <img src="./images/postmark_content_5.png" alt="">
+                            <div class="text">Джордж Вашингтон 2 cents, 1883г</div>
+                        </li>
+                        <li>
+                            <img src="./images/postmark_content_1.png" alt="">
+                            <div class="text">Джордж Вашингтон 2 cents, 1883г</div>
+                        </li>
+                        <li>
+                            <img src="./images/postmark_content_2.png" alt="">
+                            <div class="text">Джордж Вашингтон 2 cents, 1883г</div>
+                        </li>
+                        <li>
+                            <img src="./images/postmark_content_3.png" alt="">
+                            <div class="text">Джордж Вашингтон 2 cents, 1883г</div>
+                        </li>
+                        <li>
+                            <img src="./images/postmark_content_4.png" alt="">
+                            <div class="text">Джордж Вашингтон 2 cents, 1883г</div>
+                        </li>
+                        <li>
+                            <img src="./images/postmark_content_5.png" alt="">
+                            <div class="text">Джордж Вашингтон 2 cents, 1883г</div>
+                        </li>
+                        <li>
+                            <img src="./images/postmark_content_1.png" alt="">
+                            <div class="text">Джордж Вашингтон 2 cents, 1883г</div>
+                        </li>
+                        <li>
+                            <img src="./images/postmark_content_2.png" alt="">
+                            <div class="text">Джордж Вашингтон 2 cents, 1883г</div>
+                        </li>
+                        <li>
+                            <img src="./images/postmark_content_3.png" alt="">
+                            <div class="text">Джордж Вашингтон 2 cents, 1883г</div>
+                        </li>
+                        <li>
+                            <img src="./images/postmark_content_4.png" alt="">
+                            <div class="text">Джордж Вашингтон 2 cents, 1883г</div>
+                        </li>
+                        <li>
+                            <img src="./images/postmark_content_5.png" alt="">
+                            <div class="text">Джордж Вашингтон 2 cents, 1883г</div>
+                        </li>
+                        <li>
+                            <img src="./images/postmark_content_1.png" alt="">
+                            <div class="text">Джордж Вашингтон 2 cents, 1883г</div>
+                        </li>
+                        <li>
+                            <img src="./images/postmark_content_2.png" alt="">
+                            <div class="text">Джордж Вашингтон 2 cents, 1883г</div>
+                        </li>
+                        <li>
+                            <img src="./images/postmark_content_3.png" alt="">
+                            <div class="text">Джордж Вашингтон 2 cents, 1883г</div>
+                        </li>
+                        <li>
+                            <img src="./images/postmark_content_4.png" alt="">
+                            <div class="text">Джордж Вашингтон 2 cents, 1883г</div>
+                        </li>
+                        <li>
+                            <img src="./images/postmark_content_5.png" alt="">
+                            <div class="text">Джордж Вашингтон 2 cents, 1883г</div>
+                        </li>
+                        <li>
+                            <img src="./images/postmark_content_1.png" alt="">
+                            <div class="text">Джордж Вашингтон 2 cents, 1883г</div>
+                        </li>
+                        <li>
+                            <img src="./images/postmark_content_2.png" alt="">
+                            <div class="text">Джордж Вашингтон 2 cents, 1883г</div>
+                        </li>
+                        <li>
+                            <img src="./images/postmark_content_3.png" alt="">
+                            <div class="text">Джордж Вашингтон 2 cents, 1883г</div>
+                        </li>
+                        <li>
+                            <img src="./images/postmark_content_4.png" alt="">
+                            <div class="text">Джордж Вашингтон 2 cents, 1883г</div>
+                        </li>
+                        <li>
+                            <img src="./images/postmark_content_5.png" alt="">
+                            <div class="text">Джордж Вашингтон 2 cents, 1883г</div>
+                        </li>
+                        <li>
+                            <img src="./images/postmark_content_1.png" alt="">
+                            <div class="text">Джордж Вашингтон 2 cents, 1883г</div>
+                        </li>
+                        <li>
+                            <img src="./images/postmark_content_2.png" alt="">
+                            <div class="text">Джордж Вашингтон 2 cents, 1883г</div>
+                        </li>
+                        <li>
+                            <img src="./images/postmark_content_3.png" alt="">
+                            <div class="text">Джордж Вашингтон 2 cents, 1883г</div>
+                        </li>
+                        <li>
+                            <img src="./images/postmark_content_4.png" alt="">
+                            <div class="text">Джордж Вашингтон 2 cents, 1883г</div>
+                        </li>
+                        <li>
+                            <img src="./images/postmark_content_5.png" alt="">
+                            <div class="text">Джордж Вашингтон 2 cents, 1883г</div>
+                        </li>
+                        <li>
+                            <img src="./images/postmark_content_1.png" alt="">
+                            <div class="text">Джордж Вашингтон 2 cents, 1883г</div>
+                        </li>
+                        <li>
+                            <img src="./images/postmark_content_2.png" alt="">
+                            <div class="text">Джордж Вашингтон 2 cents, 1883г</div>
+                        </li>
+                        <li>
+                            <img src="./images/postmark_content_3.png" alt="">
+                            <div class="text">Джордж Вашингтон 2 cents, 1883г</div>
+                        </li>
+                        <li>
+                            <img src="./images/postmark_content_4.png" alt="">
+                            <div class="text">Джордж Вашингтон 2 cents, 1883г</div>
+                        </li>
+                        <li>
+                            <img src="./images/postmark_content_5.png" alt="">
+                            <div class="text">Джордж Вашингтон 2 cents, 1883г</div>
+                        </li>
+                        <li>
+                            <img src="./images/postmark_content_1.png" alt="">
+                            <div class="text">Джордж Вашингтон 2 cents, 1883г</div>
+                        </li>
+                        <li>
+                            <img src="./images/postmark_content_2.png" alt="">
+                            <div class="text">Джордж Вашингтон 2 cents, 1883г</div>
+                        </li>
+                        <li>
+                            <img src="./images/postmark_content_3.png" alt="">
+                            <div class="text">Джордж Вашингтон 2 cents, 1883г</div>
+                        </li>
+                        <li>
+                            <img src="./images/postmark_content_4.png" alt="">
+                            <div class="text">Джордж Вашингтон 2 cents, 1883г</div>
+                        </li>
+                        <li>
+                            <img src="./images/postmark_content_5.png" alt="">
+                            <div class="text">Джордж Вашингтон 2 cents, 1883г</div>
+                        </li>
+                        <li>
+                            <img src="./images/postmark_content_1.png" alt="">
+                            <div class="text">Джордж Вашингтон 2 cents, 1883г</div>
+                        </li>
+                        <li>
+                            <img src="./images/postmark_content_2.png" alt="">
+                            <div class="text">Джордж Вашингтон 2 cents, 1883г</div>
+                        </li>
+                        <li>
+                            <img src="./images/postmark_content_3.png" alt="">
+                            <div class="text">Джордж Вашингтон 2 cents, 1883г</div>
+                        </li>
+                        <li>
+                            <img src="./images/postmark_content_4.png" alt="">
+                            <div class="text">Джордж Вашингтон 2 cents, 1883г</div>
+                        </li>
+                        <li>
+                            <img src="./images/postmark_content_5.png" alt="">
+                            <div class="text">Джордж Вашингтон 2 cents, 1883г</div>
+                        </li>
+                        <li>
+                            <img src="./images/postmark_content_1.png" alt="">
+                            <div class="text">Джордж Вашингтон 2 cents, 1883г</div>
+                        </li>
+                        <li>
+                            <img src="./images/postmark_content_2.png" alt="">
+                            <div class="text">Джордж Вашингтон 2 cents, 1883г</div>
+                        </li>
+                        <li>
+                            <img src="./images/postmark_content_3.png" alt="">
+                            <div class="text">Джордж Вашингтон 2 cents, 1883г</div>
+                        </li>
+                        <li>
+                            <img src="./images/postmark_content_4.png" alt="">
+                            <div class="text">Джордж Вашингтон 2 cents, 1883г</div>
+                        </li>
+                        <li>
+                            <img src="./images/postmark_content_5.png" alt="">
+                            <div class="text">Джордж Вашингтон 2 cents, 1883г</div>
+                        </li>
+                        <li>
+                            <img src="./images/postmark_content_1.png" alt="">
+                            <div class="text">Джордж Вашингтон 2 cents, 1883г</div>
+                        </li>
+                        <li>
+                            <img src="./images/postmark_content_2.png" alt="">
+                            <div class="text">Джордж Вашингтон 2 cents, 1883г</div>
+                        </li>
+                        <li>
+                            <img src="./images/postmark_content_3.png" alt="">
+                            <div class="text">Джордж Вашингтон 2 cents, 1883г</div>
+                        </li>
+                        <li>
+                            <img src="./images/postmark_content_4.png" alt="">
+                            <div class="text">Джордж Вашингтон 2 cents, 1883г</div>
+                        </li>
+                        <li>
+                            <img src="./images/postmark_content_5.png" alt="">
+                            <div class="text">Джордж Вашингтон 2 cents, 1883г</div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <!-- Postmarks End -->
+    </div>
+    <!-- footer start -->
+    <footer>
+        <div class="main_container">
+            <div class="footer_wrapper">
+                <a class="footer_logo" href="index.html">
+                    <img src="./images/footer_logo.svg" alt="">
+                </a>
+                <ul>
+                    <li><a href="#">коллекция</a></li>
+                    <li><a href="#">Подборки</a></li>
+                    <li><a href="#">Новости</a></li>
+                    <li><a href="#">Статьи</a></li>
+                    <li><a href="#">обратная связь</a></li>
+                </ul>
+                <ul>
+                    <li class="footer_menu">Найти марки:</li>
+                    <li><a href="#">по странам и регионам</a></li>
+                    <li><a href="#">по годам</a></li>
+                    <li><a href="#">по темам</a></li>
+                    <li><a href="#">по альбомам</a></li>
+                </ul>
+                <div class="footer_social">
+                    <p class="footer_text">Подпишитесь на новости коллекции и интересную информацию</p>
+                    <form>
+                        <div class="form_in">
+                            <input type="email" placeholder="Введите ваш Email">
+                            <button type="submit">Подписаться</button>
+                        </div>
+                    </form>
+                    <div class="footer_social_in">
+                        <a href="#"><img src="./images/youtube_icon.svg" alt=""></a>
+                        <a href="#"><img src="./images/vkontak_icon.svg" alt=""></a>
+                        <a href="#"><img src="./images/instagram_icon.svg" alt=""></a>
+                        <a href="#"><img src="./images/r_icon.svg" alt=""></a>
+                        <div class="footer_social_email">
+                            <p>По всем вопросам</p>
+                            <a href="mailto:StampsC_info@gmail.com">StampsC_info@gmail.com</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer_bottom">
+                <p>© Stamps-collection.ru, 2023. Все права защищены</p>
+            </div>
+            <div class="footer_wrapper_media">
+                <div class="footer_top_media">
+                    <a href="index.html">
+                        <img src="./images/footer_logo.svg" alt="">
+                    </a>
+                    <div class="footer_email">
+                        <p>Подпишитесь на новости коллекции и интересную информацию</p>
+                        <div class="email_wrapper">
+                            <input type="email" placeholder="Введите ваш Email">
+                            <button class="footer_media_btn" type="submit">Подписаться</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer_center_media">
+                    <ul>
+                        <li><a href="#">коллекция</a></li>
+                        <li><a href="#">Подборки</a></li>
+                        <li><a href="#">Новости</a></li>
+                        <li><a href="#">Статьи</a></li>
+                        <li><a href="#">обратная связь</a></li>
+                    </ul>
+                    <ul>
+                       <li class="footer_menu_media">Найти марки:</li> 
+                       <li><a href="#">по странам и регионам</a></li>
+                       <li><a href="#">по годам</a></li>
+                       <li><a href="#">по темам</a></li>
+                       <li><a href="#">по альбомам</a></li>
+                    </ul>
+                </div>
+                <div class="footer_bottom_media">
+                    <div class="social_media_footer">
+                        <a href="#"><img src="./images/youtube_icon.svg" alt=""></a>
+                        <a href="#"><img src="./images/vkontak_icon.svg" alt=""></a>
+                        <a href="#"><img src="./images/instagram_icon.svg" alt=""></a>
+                        <a href="#"><img src="./images/r_icon.svg" alt=""></a>
+                    </div>
+                    <div class="footer_social_email_media">
+                        <p class="footer_media_text">По всем вопросам</p>
+                        <a href="mailto:StampsC_info@gmail.com">StampsC_info@gmail.com</a>
+                    </div>
+                </div>
+                <p class="footer_media_bottom_in">© Stamps-collection.ru, 2023. Все права защищены</p>
+            </div>
+        </div>
+    </footer>
+    <!-- footer end -->
+
+    <script src="./js/swipper.js"></script>
+    <script>
+        // var swiper = new Swiper(".collection_slider", {
+        //     slidesPerView: 2,
+        //     spaceBetween: 15,
+        //     loop: true,
+        //     breakpoints: {
+        //         1000: {
+        //             slidesPerView: 3,
+        //             spaceBetween: 53,
+        //         }
+        //     },
+        //     navigation: {
+        //         nextEl: ".collection_slider_next_button",
+        //         prevEl: ".collection_slider_prev_button",
+        //     },
+        // });
+
+        // var swiper = new Swiper(".brands_slider .slider", {
+        //     slidesPerView: 2,
+        //     spaceBetween: 15,
+        //     loop: true,
+        //     breakpoints: {
+        //         1450: {
+        //             slidesPerView: 4,
+        //             spaceBetween: 50,
+        //         },
+        //         1200: {
+        //             slidesPerView: 3,
+        //             spaceBetween: 50,
+        //         },
+        //         850: {
+        //             slidesPerView: 2,
+        //             spaceBetween: 50,
+        //         },
+        //         750: {
+        //             slidesPerView: 3,
+        //             spaceBetween: 15,
+        //         },
+        //         600: {
+        //             slidesPerView: 3,
+        //             spaceBetween: 15,
+        //         },
+        //     },
+        //     navigation: {
+        //         nextEl: ".brand_next_button",
+        //         prevEl: ".brand_prev_button",
+        //     },
+        // });
+    </script>
+    <script src="./js/app.js"></script>
+</body>
+
+</html>
