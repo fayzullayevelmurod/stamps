@@ -196,28 +196,28 @@
             <a href="#">Регистрация/Вход</a>
         </div>
     </div>
-    <div class="sign_in">
+    <div class="sign_in position-relative">
         <div class="main_container row">
-            <div class="sign_in_wrapper">
+            <div class="sign_in_wrapper d-flex">
                 <div class="sign_in_left">
-                    <img src="./images/registration_left_img.png" alt="">
-                    <div class="sign_in_red_block"></div>
+                    <img class="position-absolute h-100" src="./images/registration_left_img.png" alt="">
+                    <div class="sign_in_red_block h-100 position-absolute"></div>
                 </div>
                 <div class="sign_in_main">
-                    <h2>Вход</h2>
+                    <h2 class="text-center">Вход</h2>
                     <form>
-                        <div class="form_input_in overflow-hidden">
-                            <input type="text" id="disabledTextInput" class="form-control" placeholder="Логин">
+                        <div class="form_input_in overflow-hidden d-flex align-items-center">
+                            <input type="text" id="disabledTextInput" class="form-control w-100 border-0" placeholder="Логин">
                             <img src="./images/star_icon.svg" alt="">
                         </div>
-                        <div class="form_input_in overflow-hidden">
-                            <input type="password" class="form-control" id="exampleInputPassword1"
+                        <div class="form_input_in overflow-hidden d-flex align-items-center">
+                            <input type="password" class="form-control w-100 border-0" id="exampleInputPassword1"
                                 placeholder="Пароль">
                             <img src="./images/star_icon.svg" alt="">
                         </div>
-                        <button class="form_btn" type="submit">Войти</button>
+                        <button class="form_btn d-block border-0" type="submit">Войти</button>
                         <div class="form_bottom_in">
-                            <span><img src="./images/star_icon.svg" alt="">Обязательные поля</span>
+                            <span class="d-block"><img src="./images/star_icon.svg" alt="">Обязательные поля</span>
                             <a class="form_bottom_link" href="#">Нет аккаунта? Зарегистрировать. <img
                                     src="./images/albums_comment_full.svg" alt=""></a>
                         </div>
