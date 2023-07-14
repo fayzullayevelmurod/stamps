@@ -2129,8 +2129,6 @@ header .bottom .last_head_dropdown ul {
   margin-bottom: 43px;
 }
 .theme #stamps .head .search_theme {
-  display: flex;
-  align-items: center;
   gap: 22px;
   margin-bottom: 17px;
 }
@@ -2152,8 +2150,6 @@ header .bottom .last_head_dropdown ul {
   padding: 0;
   margin: 0;
   border-radius: 50%;
-  background: transparent;
-  border: none;
 }
 .theme #stamps .content_wrapper {
   background: #F9F9F9;
@@ -2213,9 +2209,6 @@ header .bottom .last_head_dropdown ul {
   color: #B32B37;
 }
 .theme #cars .content {
-  display: flex;
-  align-items: flex-start;
-  justify-content: space-between;
   gap: 77px;
   border-radius: 4px;
   border: 1px solid rgba(8, 44, 62, 0.12);
