@@ -187,7 +187,8 @@
 
     </header>
     <!-- Header end -->
-    
+    <div class="main_container row">
+        <div class="nav_list col-12">
     <div class="main_container">
         <div class="nav_list">
             <a href="index.html">Главная</a>
@@ -196,8 +197,8 @@
         </div>
     </div>
     <div class="sign_in">
-        <div class="main_container">
-            <div class="sign_in_wrapper">
+        <div class="main_container row">
+            <div class="sign_in_wrapper col-12">
                 <div class="sign_in_left">
                     <img src="./images/registration_left_img.png" alt="">
                     <div class="sign_in_red_block"></div>
@@ -205,12 +206,12 @@
                 <div class="sign_in_main">
                     <h2>Вход</h2>
                     <form>
-                        <div class="form_input_in">
-                            <input type="text" placeholder="Логин">
+                        <div class="form_input_in overflow-hidden">
+                            <input type="text" id="disabledTextInput" class="form-control"  placeholder="Логин">
                             <img src="./images/star_icon.svg" alt="">
                         </div>
-                        <div class="form_input_in">
-                            <input type="password" placeholder="Пароль">
+                        <div class="form_input_in overflow-hidden">
+                            <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Пароль">
                             <img src="./images/star_icon.svg" alt="">
                         </div>
                         <button class="form_btn" type="submit">Войти</button>
