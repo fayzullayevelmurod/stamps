@@ -204,20 +204,20 @@
     <div class="years">
         <!-- Category list start -->
         <section id="category_list">
-            <div class="main_container head">
+            <div class="main_container head d-flex align-items-center">
                 <a href="#">Года</a>
                 <a href="#">Десятилетия</a>
                 <a href="#" class="active">Столетия</a>
-                <button>
+                <button class="border-0 btn-outline-none">
                     Выберете период (прим. 1987-1992гг)
                     <img src="./images/dropdown_icon_red.svg" alt="">
                 </button>
             </div>
             <div class="content">
-                <div class="main_container">
-                    <a href="#">XIX век (1800-1899гг)</a>
-                    <a href="#">XIX век (1800-1899гг)</a>
-                    <a href="#" class="active">XIX век (1800-1899гг)</a>
+                <div class="main_container d-flex align-items-start align-items-sm-center flex-wrap">
+                    <a class="text-decoration-none" href="#">XIX век (1800-1899гг)</a>
+                    <a class="text-decoration-none" href="#">XIX век (1800-1899гг)</a>
+                    <a href="#" class="text-decoration-none active">XIX век (1800-1899гг)</a>
                 </div>
             </div>
         </section>
@@ -226,36 +226,76 @@
         <!-- Postmarks Start -->
         <section id="postmarks">
             <div class="main_container head">
-                <h1>
-                    Марки, выпущенные в
-                    <span>XXI век (2000г-нв)</span>
-                </h1>
+                <h1>Коллекция марок</h1>
                 <div class="nav">
-                    <div class="nav_total" role="button">
-                        <img src="./images/nav_total.svg" alt="">
-                        Все марки
+                    <div class="nav_total dropdown">
+                        <button class="btn-outline-none bg-transparent border-0 dropdown-toggle" type="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            <img src="./images/nav_total.svg" alt="">
+                            Все марки
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
                     </div>
                     <div class="right">
-                        <ul class="right_list right_list_desktop">
-                            <li role="button">
-                                Год выпуска
-                                <img src="./images/triangle.svg" alt="">
+                        <ul class="right_list right_list_desktop d-flex align-items-center justify-content-between">
+                            <li class="dropdown" role="button">
+                                <button class="m-0 p-0 border-0 bg-transparent btn-outline-none dropdown-toggle"
+                                    type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Год выпуска
+                                </button>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">Action</a></li>
+                                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                </ul>
                             </li>
-                            <li role="button">
-                                Страна
-                                <img src="./images/triangle.svg" alt="">
+                            <li class="dropdown" role="button">
+                                <button class="m-0 p-0 border-0 bg-transparent btn-outline-none dropdown-toggle"
+                                    type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Страна
+                                </button>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">Action</a></li>
+                                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                </ul>
                             </li>
-                            <li role="button">
-                                Гашение
-                                <img src="./images/triangle.svg" alt="">
+                            <li class="dropdown" role="button">
+                                <button class="m-0 p-0 border-0 bg-transparent btn-outline-none dropdown-toggle"
+                                    type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Гашение
+                                </button>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">Action</a></li>
+                                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                </ul>
                             </li>
-                            <li role="button">
-                                Тема
-                                <img src="./images/triangle.svg" alt="">
+                            <li class="dropdown" role="button">
+                                <button class="m-0 p-0 border-0 bg-transparent btn-outline-none dropdown-toggle"
+                                    type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Тема
+                                </button>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">Action</a></li>
+                                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                </ul>
                             </li>
-                            <li role="button">
-                                Альбом
-                                <img src="./images/triangle.svg" alt="">
+                            <li class="dropdown" role="button">
+                                <button class="m-0 p-0 border-0 bg-transparent btn-outline-none dropdown-toggle"
+                                    type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Альбом
+                                </button>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">Action</a></li>
+                                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                </ul>
                             </li>
                         </ul>
 
@@ -269,32 +309,67 @@
                         </div>
                     </div>
                 </div>
-                <ul class="right_list right_list_mobile">
-                    <li role="button">
-                        Год выпуска
-                        <img src="./images/triangle.svg" alt="">
+                <ul class="right_list right_list_mobile d-flex align-items-center justify-content-start">
+                    <li class="dropdown" role="button">
+                        <button class="m-0 p-0 border-0 bg-transparent btn-outline-none dropdown-toggle" type="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Год выпуска
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
                     </li>
-                    <li role="button">
-                        Страна
-                        <img src="./images/triangle.svg" alt="">
+                    <li class="dropdown" role="button">
+                        <button class="m-0 p-0 border-0 bg-transparent btn-outline-none dropdown-toggle" type="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Страна
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
                     </li>
-                    <li role="button">
-                        Гашение
-                        <img src="./images/triangle.svg" alt="">
+                    <li class="dropdown" role="button">
+                        <button class="m-0 p-0 border-0 bg-transparent btn-outline-none dropdown-toggle" type="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Гашение
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
                     </li>
-                    <li role="button">
-                        Тема
-                        <img src="./images/triangle.svg" alt="">
+                    <li class="dropdown" role="button">
+                        <button class="m-0 p-0 border-0 bg-transparent btn-outline-none dropdown-toggle" type="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Тема
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
                     </li>
-                    <li role="button">
-                        Альбом
-                        <img src="./images/triangle.svg" alt="">
+                    <li class="dropdown" role="button">
+                        <button class="m-0 p-0 border-0 bg-transparent btn-outline-none dropdown-toggle" type="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Альбом
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
                     </li>
                 </ul>
             </div>
             <div class="content_wrapper">
                 <div class="main_container">
-                    <ul class="content">
+                    <ul class="content d-flex align-items-center justify-content-center justify-content-sm-between flex-wrap">
                         <li>
                             <img src="./images/postmark_content_1.png" alt="">
                             <div class="text">Джордж Вашингтон 2 cents, 1883г</div>
@@ -521,6 +596,68 @@
         </section>
         <!-- Postmarks End -->
 
+    </div>
+
+    <div class="albums">
+        <div class="main_container">
+            <div class="albums_comment_title">
+                <h5>Обсуждение альбома «Чёрный»</h5>
+                <h3>26 комментариев</h3>
+            </div>
+            <div class="albums_comments">
+                <div class="albums_comment_card">
+                    <div class="albums_comment_card_top">
+                        <img src="./images/albums_comment_person.svg" alt="">
+                        <h4>Tanyusha33<span>4 часа назад</span></h4>     
+                        <span>4 часа назад</span>
+                        <button class="albums_btn" type="button"><img src="./images/albums_comment_icon.svg" alt="">Ответить</button>   
+                    </div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.</p>
+                </div>
+                <div class="albums_comment_card">
+                    <div class="albums_comment_card_top">
+                        <img src="./images/albums_comment_person2.svg" alt="">
+                        <h4>Collectioner01<span>12 часов назад</span></h4>     
+                        <span>12 часов назад</span>
+                        <button class="albums_btn" type="button"><img src="./images/albums_comment_icon.svg" alt="">Ответить</button>   
+                    </div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate</p>
+                </div>
+                <div class="albums_comment_card_by">
+                    <div class="albums_comment_card_my">
+                        <div class="albums_comment_card_top">
+                            <img src="./images/albums_comment_person3.svg" alt="">
+                            <h4>Vlad_G<span>3 дня назад</span></h4>     
+                            <span>3 дня назад</span>
+                            <button class="albums_btn" type="button"><img src="./images/albums_comment_icon.svg" alt="">Ответить</button>   
+                        </div>
+                        <p><b>@Collectioner01</b> Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit.</p>
+                    </div>
+                    <div class="albums_comment_card_my">
+                        <div class="albums_comment_card_top">
+                            <img src="./images/albums_comment_person4.svg" alt="">
+                            <h4>Andrew_S<span>2 дня назад</span></h4> 
+                            <img src="./images/albums_comment_by_icon.svg" alt="">    
+                            <span>2 дня назад</span>
+                            <button class="albums_btn1" type="button"><img src="./images/albums_delete_icon.svg" alt="">Удалить</button>
+                            <button class="albums_btn2" type="button"><img src="./images/albums_comment_edit.svg" alt="">Изменить</button>   
+                        </div>
+                        <p><b>@Collectioner01</b> Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit.</p>
+                    </div>
+                </div>
+                <div class="albums_form">
+                    <a class="albums_full_btn" href="#">Все комментарии <img src="./images/albums_comment_full.svg" alt=""></a>
+                    <form class="albums_form_btn">
+                        <div class="albums_form_input">
+                            <img src="./images/albums_comment_person4.svg" alt="">
+                            <textarea placeholder="Написать комментарий"></textarea>
+                        </div>
+                        <button type="submit">Отправить</button>
+                    </form>
+                </div>
+            </div>
+    
+        </div>
     </div>
    
     <!-- footer start -->

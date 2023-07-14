@@ -2285,8 +2285,6 @@ header .bottom .last_head_dropdown ul {
 
 .years #category_list .head {
   padding-bottom: 31px;
-  display: flex;
-  align-items: center;
 }
 .years #category_list .head a {
   color: #818181;
@@ -2326,8 +2324,6 @@ header .bottom .last_head_dropdown ul {
   border-radius: 22px;
   background: #FFF;
   box-shadow: 0px 1px 7px 0px rgba(0, 0, 0, 0.09);
-  border: none;
-  outline: none;
   padding: 6px 18px;
   margin-left: 74px;
   color: #4B4848;
@@ -2348,10 +2344,7 @@ header .bottom .last_head_dropdown ul {
   box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.25);
 }
 .years #category_list .content .main_container {
-  display: flex;
-  align-items: center;
   gap: 70px;
-  flex-wrap: wrap;
 }
 .years #category_list .content .main_container a {
   color: #123044;
