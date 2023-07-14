@@ -166,7 +166,12 @@
                             font-size: 23px;
                             margin-bottom: 20px;
 
-                            img {
+                            img {<<<<<<< fix_countries_page
+                padding: 24px 23px 40px 23px;
+
+                .back_form_content {
+                    .back_form_title {
+=======
                                 width: 45px;
                                 height: 45px;
                             }
@@ -1215,11 +1220,14 @@
         }
     }
 }
-
-@media screen and (max-width: 845px) {
-    .statistics {
-        .statistic_wrapper {
-            .statistic_in {
+@media screen and (max-width: 845px){
+    .nav_list{
+        margin-top: 20px;
+        margin-bottom: 27px;
+    }
+    .statistics{
+        .statistic_wrapper{
+            .statistic_in{
                 flex-direction: column;
 
                 .statistic_left {
@@ -1300,8 +1308,8 @@
             background-repeat: no-repeat;
             background-size: cover;
         }
-
-        .back_wrapper {
+        .back_wrapper{
+            padding-bottom: 140px;
             flex-direction: column-reverse;
 
             .back_social_media {
@@ -1370,6 +1378,17 @@
             }
         }
     }
+    header{
+        .bottom {
+            .logo{
+                width: 55px !important;
+                height: 75px !important;
+                img{
+                    width: 100%;
+                }
+            }
+        }
+    }  
 }
 
 @media (max-width: 800px) {
@@ -2073,6 +2092,16 @@
             display: block;
         }
     }
+    
+    footer{
+        .footer_wrapper_media{
+            .footer_center_media{
+                ul{
+                    padding-left: 0;
+                }
+            }
+        }
+    }  
 }
 
 @media screen and (max-width: 650px) {
@@ -2109,6 +2138,7 @@
                         span {
                             font-size: 12px;
                             display: block !important;
+                            line-height: 23px;
                         }
                     }
 
@@ -2155,7 +2185,9 @@
 
                             span {
                                 font-size: 12px;
-                                display: block !important;
+
+                                line-height: 23px;
+                                display: block!important;
                             }
                         }
 
@@ -2293,10 +2325,9 @@
             .back_form {
                 margin: 0 auto;
                 width: 100%;
-                padding: 24px 23px 40px 23px;
-
-                .back_form_content {
-                    .back_form_title {
+                padding: 24px 0px 40px 0px;
+                .back_form_content{
+                    .back_form_title{
                         margin-bottom: 37px;
                         flex-direction: column;
                         align-items: start;

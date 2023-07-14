@@ -173,6 +173,11 @@ header {
                 position: absolute;
                 top: -26px;
                 left: 53px;
+                width: 70px;
+                height: 96px;
+                img{
+                    width: 100%;
+                }
             }
         }
 
@@ -439,6 +444,7 @@ header {
                 }
 
                 p {
+                    max-width: 850px;
                     color: #434040;
                     font-family: 'Montserrat', sans-serif;
                     font-size: 16px;
@@ -767,7 +773,6 @@ header {
 
         .back_social_media {
             width: 36%;
-
             .social_media_content {
                 background-color: #123044;
                 position: absolute;
@@ -3946,6 +3951,7 @@ footer {
             font-style: normal;
             font-weight: 500;
             line-height: 16.057px;
+            margin-bottom: 0;
         }
     }
 }

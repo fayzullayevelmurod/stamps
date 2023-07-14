@@ -147,6 +147,11 @@ header .bottom .main_container .logo {
   position: absolute;
   top: -26px;
   left: 53px;
+  width: 70px;
+  height: 96px;
+}
+header .bottom .main_container .logo img {
+  width: 100%;
 }
 header .bottom .bars {
   display: none;
@@ -369,6 +374,7 @@ header .bottom .last_head_dropdown ul {
   margin-bottom: 25px;
 }
 .golden .golden_main .golden_main_card .golden_main_card_text p {
+  max-width: 850px;
   color: #434040;
   font-family: "Montserrat", sans-serif;
   font-size: 16px;
@@ -3336,6 +3342,7 @@ footer .footer_wrapper_media .footer_media_bottom_in {
   font-style: normal;
   font-weight: 500;
   line-height: 16.057px;
+  margin-bottom: 0;
 }
 
 @media (max-width: 1530px) {
@@ -4099,6 +4106,10 @@ footer .footer_wrapper_media .footer_media_bottom_in {
   }
 }
 @media screen and (max-width: 845px) {
+  .nav_list {
+    margin-top: 20px;
+    margin-bottom: 27px;
+  }
   .statistics .statistic_wrapper .statistic_in {
     flex-direction: column;
   }
@@ -4153,6 +4164,7 @@ footer .footer_wrapper_media .footer_media_bottom_in {
     background-size: cover;
   }
   .back .back_wrapper {
+    padding-bottom: 140px;
     flex-direction: column-reverse;
   }
   .back .back_wrapper .back_social_media .social_media_content {
@@ -4202,6 +4214,13 @@ footer .footer_wrapper_media .footer_media_bottom_in {
   }
   .back .back_wrapper .back_form .back_form_content .back_form_main {
     flex-direction: column;
+  }
+  header .bottom .logo {
+    width: 55px !important;
+    height: 75px !important;
+  }
+  header .bottom .logo img {
+    width: 100%;
   }
 }
 @media (max-width: 800px) {
@@ -4703,6 +4722,9 @@ footer .footer_wrapper_media .footer_media_bottom_in {
   footer .footer_wrapper_media {
     display: block;
   }
+  footer .footer_wrapper_media .footer_center_media ul {
+    padding-left: 0;
+  }
 }
 @media screen and (max-width: 650px) {
   .albums .albums_comment_title h5 {
@@ -4731,6 +4753,7 @@ footer .footer_wrapper_media .footer_media_bottom_in {
   .albums .albums_comments .albums_comment_card .albums_comment_card_top h4 span {
     font-size: 12px;
     display: block !important;
+    line-height: 23px;
   }
   .albums .albums_comments .albums_comment_card .albums_comment_card_top span {
     display: none;
@@ -4768,6 +4791,7 @@ footer .footer_wrapper_media .footer_media_bottom_in {
   }
   .albums .albums_comments .albums_comment_card_by .albums_comment_card_my .albums_comment_card_top h4 span {
     font-size: 12px;
+    line-height: 23px;
     display: block !important;
   }
   .albums .albums_comments .albums_comment_card_by .albums_comment_card_my .albums_comment_card_top span {
@@ -4868,7 +4892,7 @@ footer .footer_wrapper_media .footer_media_bottom_in {
   .back .back_wrapper .back_form {
     margin: 0 auto;
     width: 100%;
-    padding: 24px 23px 40px 23px;
+    padding: 24px 0px 40px 0px;
   }
   .back .back_wrapper .back_form .back_form_content .back_form_title {
     margin-bottom: 37px;
