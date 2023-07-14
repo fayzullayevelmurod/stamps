@@ -75,24 +75,6 @@ document.onclick = (e) => {
     }
 }
 
-const close_menu = document.querySelector('.close_menu');
-const close_menu_2 = document.querySelector('.header_mobile .bg');
-const header_mobile = document.querySelector('.header_mobile');
-const bars = document.querySelector('.bars');
-
-
-bars.onclick = () => {
-    header_mobile.classList.add('header_mobile_active');
-}
-
-close_menu_2.onclick = () => {
-    header_mobile.classList.remove('header_mobile_active')
-}
-
-close_menu.onclick = () => {
-    header_mobile.classList.remove('header_mobile_active')
-}
-
 const anons_slider_items = document.querySelectorAll('.anons_slider .swiper-slide');
 const check_image = document.querySelector('.main_image .select_brand_img');
 const play_video_image = document.querySelector('.main_image .left');
