@@ -189,8 +189,8 @@
     <!-- Header end -->
 
 
-    <div class="main_container">
-        <div class="nav_list">
+    <div class="main_container row">
+        <div class="nav_list d-flex align-items-center col-12">
             <a href="index.html">Главная</a>
             <img src="./images/next_icon.svg" alt="">
             <a href="#">По альбомам</a>
@@ -201,10 +201,10 @@
     <div class="albums">
         <div class="albums_home">
             <div class="main_container">
-                <div class="albums_wrapper">
+                <div class="albums_wrapper d-flex position-relative">
                     <div class="albums_left">
                         <h4>Альбомы</h4>
-                        <div class="albums_left_in">
+                        <div class="albums_left_in d-flex">
                             <ul>
                                 <li><a href="#">Красный</a></li>
                                 <li><a href="#">Бархатный</a></li>
@@ -219,7 +219,7 @@
                         </div>
                     </div>
                     <div class="albums_right">
-                        <img src="./images/album_home_img.png" alt="">
+                        <img class="position-absolute" src="./images/album_home_img.png" alt="">
                     </div>
                 </div>
         </div>
@@ -227,11 +227,11 @@
         <!-- Album slider start -->
         <section id="album_slider">
             <div class="main_container">
-                <div class="head">
-                    <div class="head_left">
+                <div class="head d-flex justify-content-between">
+                    <div class="head_left d-flex align-items-center">
                         <h3>Сортировка альбома</h3>
                         <div class="album_dropdown">
-                            <button>
+                            <button class="border-0 d-flex align-items-center">
                                 <img src="./images/nav_total.svg" alt="">
                                 Как в альбоме
                             </button>
@@ -240,7 +240,7 @@
                     <div class="head_right">Альбом «Чёрный», марок: 52</div>
                 </div>
 
-                <div class="content">
+                <div class="content d-flex align-items-center justify-content-between">
                     <button class="btn album_prev_button" style="cursor: pointer;">
                         <img src="./images/prev_button.svg" alt="">
                     </button>
@@ -276,15 +276,15 @@
                             <img src="./images/album_slider_1.png" alt="">
                         </div>
                     </div>
-                    <button class="btn album_next_button" style="cursor: pointer;">
+                    <button class="btn album_next_button border-0" style="cursor: pointer;">
                         <img src="./images/next_button.svg" alt="">
                     </button>
                 </div>
 
             </div>
         </section>
-        <div class="page">
-            <div class="text">
+        <div class="page position-relative">
+            <div class="text text-center position">
                 Страница: <span class="current_page">1</span>/<span class="all_pages">12</span>
             </div>
         </div>
@@ -296,26 +296,26 @@
             </div>
             <div class="albums_comments">
                 <div class="albums_comment_card">
-                    <div class="albums_comment_card_top">
+                    <div class="albums_comment_card_top d-flex align-items-center">
                         <img src="./images/albums_comment_person.svg" alt="">
-                        <h4>Tanyusha33<span>4 часа назад</span></h4>     
+                        <h4 class="flex-column">Tanyusha33<span>4 часа назад</span></h4>     
                         <span>4 часа назад</span>
                         <button class="albums_btn" type="button"><img src="./images/albums_comment_icon.svg" alt="">Ответить</button>   
                     </div>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.</p>
                 </div>
                 <div class="albums_comment_card">
-                    <div class="albums_comment_card_top">
+                    <div class="albums_comment_card_top d-flex align-items-center">
                         <img src="./images/albums_comment_person2.svg" alt="">
-                        <h4>Collectioner01<span>12 часов назад</span></h4>     
+                        <h4 class="flex-column">Collectioner01<span>12 часов назад</span></h4>     
                         <span>12 часов назад</span>
                         <button class="albums_btn" type="button"><img src="./images/albums_comment_icon.svg" alt="">Ответить</button>   
                     </div>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate</p>
                 </div>
-                <div class="albums_comment_card_by">
+                <div class="albums_comment_card_by position-relative">
                     <div class="albums_comment_card_my">
-                        <div class="albums_comment_card_top">
+                        <div class="albums_comment_card_top d-flex align-items-center">
                             <img src="./images/albums_comment_person3.svg" alt="">
                             <h4>Vlad_G<span>3 дня назад</span></h4>     
                             <span>3 дня назад</span>
@@ -324,7 +324,7 @@
                         <p><b>@Collectioner01</b> Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit.</p>
                     </div>
                     <div class="albums_comment_card_my">
-                        <div class="albums_comment_card_top">
+                        <div class="albums_comment_card_top d-flex align-items-center">
                             <img src="./images/albums_comment_person4.svg" alt="">
                             <h4>Andrew_S<span>2 дня назад</span></h4> 
                             <img src="./images/albums_comment_by_icon.svg" alt="">    
