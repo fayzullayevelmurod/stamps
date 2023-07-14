@@ -21,7 +21,8 @@ button {
   outline: none;
 }
 
-input, textarea:focus {
+input,
+textarea:focus {
   outline: none;
 }
 
@@ -35,16 +36,6 @@ header .top {
   background: #EFEDED;
   padding-top: 15px;
   padding-bottom: 12px;
-}
-header .top .header_top .left .filter {
-  display: flex;
-}
-header .top .header_top ul {
-  transform: translateY(0);
-}
-header .top .header_top ul li a {
-  display: flex;
-  align-items: center;
 }
 header .search {
   position: relative;
@@ -88,15 +79,6 @@ header .search button {
   outline: none;
   border: none;
 }
-header .header_top {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-header .header_top .left {
-  display: flex;
-  align-items: center;
-}
 header .header_top .left a {
   color: #7C7878;
   font-family: "Montserrat", sans-serif;
@@ -123,12 +105,6 @@ header .header_top .left .filter {
 header .header_top .left .filter img {
   margin-left: 3px;
 }
-header .header_top ul {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  transform: translateY(8px);
-}
 header .header_top ul li a {
   font-family: "Montserrat", sans-serif;
   font-size: 14px;
@@ -136,6 +112,9 @@ header .header_top ul li a {
   font-weight: 500;
   line-height: normal;
   letter-spacing: 0.35px;
+}
+header .header_top ul li a img {
+  margin-right: 3px;
 }
 header .header_top ul li:nth-child(1) {
   margin-right: 40px;
@@ -159,9 +138,6 @@ header .bottom {
   padding-bottom: 20px;
 }
 header .bottom .main_container {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
   padding-left: 153px;
   position: relative;
 }
@@ -178,17 +154,8 @@ header .bottom .bars {
 header .bottom .search {
   display: none;
 }
-header .bottom .head_dropdown {
-  position: relative;
-}
-header .bottom .head_dropdown button {
+header .bottom .dropdown button {
   cursor: pointer;
-  background: transparent;
-  outline: none;
-  border: none;
-  display: flex;
-  align-items: center;
-  gap: 6px;
   color: #1A1717;
   font-family: "Montserrat", sans-serif;
   font-size: 18px;
@@ -197,42 +164,7 @@ header .bottom .head_dropdown button {
   line-height: normal;
   letter-spacing: 0.54px;
 }
-header .bottom .head_dropdown ul {
-  background: white;
-  position: absolute;
-  z-index: 2;
-  width: 100%;
-  min-width: 160px;
-  left: 50%;
-  transform: translateX(-50%) translateY(20px);
-  padding: 0;
-  box-shadow: 0px 1px 7px 0px rgba(0, 0, 0, 0.09);
-  display: none;
-}
-header .bottom .head_dropdown ul li {
-  position: relative;
-}
-header .bottom .head_dropdown ul li a {
-  width: 100%;
-  text-align: center;
-  padding: 5px 0;
-  color: #123044;
-  font-family: "Montserrat", sans-serif;
-  font-size: 14px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: normal;
-  letter-spacing: 0.35px;
-}
-header .bottom .head_dropdown ul li a:hover {
-  background: #EFEDED;
-}
-header .bottom .head_dropdown .active {
-  display: block;
-}
 header .bottom .head_link {
-  display: flex;
-  align-items: center;
   color: #1A1717;
   font-family: "Montserrat", sans-serif;
   font-size: 18px;
@@ -258,21 +190,18 @@ header .bottom .last_head_dropdown ul {
   left: auto;
   transform: translateY(24px) translateX(0);
 }
-header .header_mobile {
-  display: none;
-}
 
 .nav_list {
   display: flex;
   align-items: center;
   justify-content: left;
-  margin-bottom: 30px;
+  margin-bottom: 55px;
   margin-top: 43px;
 }
 .nav_list a {
   margin: 0 5px;
   color: #B6B3B3;
-  font-family: Montserrat, sans-serif;
+  font-family: Montserrat;
   font-size: 16px;
   font-style: normal;
   font-weight: 500;
@@ -669,7 +598,8 @@ header .header_mobile {
 .statistics .statistic_brands .statistic_brands_slider .statistic_brands_in .statistic_brands_slider {
   gap: 36px;
 }
-.statistics .statistic_brands .statistic_brands_slider .statistic_brands_in .statistic_brands_slider .brand_prev_btn, .statistics .statistic_brands .statistic_brands_slider .statistic_brands_in .statistic_brands_slider .brand_next_btn {
+.statistics .statistic_brands .statistic_brands_slider .statistic_brands_in .statistic_brands_slider .brand_prev_btn,
+.statistics .statistic_brands .statistic_brands_slider .statistic_brands_in .statistic_brands_slider .brand_next_btn {
   border: none;
   cursor: pointer;
   background-color: transparent;
@@ -897,7 +827,8 @@ header .header_mobile {
   font-size: 24px;
   font-style: normal;
   font-weight: 500;
-  line-height: 111.5%; /* 26.76px */
+  line-height: 111.5%;
+  /* 26.76px */
   letter-spacing: 0.72px;
   text-transform: uppercase;
   padding: 7px 32px;
@@ -1632,8 +1563,6 @@ header .header_mobile {
 
 #brands .title {
   margin-bottom: 31px;
-  display: flex;
-  align-items: center;
   gap: 64px;
 }
 #brands .title h1 {
@@ -1672,16 +1601,11 @@ header .header_mobile {
   padding: 25px 0 34px;
 }
 #brands .brands_slider {
-  display: flex;
-  align-items: center;
   gap: 25px;
 }
 #brands .brands_slider button {
   cursor: pointer;
   border-radius: 50%;
-  background: transparent;
-  border: none;
-  outline: none;
 }
 #brands .brands_slider .slider {
   max-width: 1350px;
@@ -1720,30 +1644,25 @@ header .header_mobile {
 #postmarks .head .right_list {
   padding: 0;
   margin: 0;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
   gap: 29px;
 }
-#postmarks .head .right_list li {
+#postmarks .head .right_list .dropdown {
   cursor: pointer;
   margin: 0;
   padding: 7px 20px;
   border-radius: 22px;
   background: #FFF;
   box-shadow: 0px 1px 7px 0px rgba(0, 0, 0, 0.09);
+}
+#postmarks .head .right_list .dropdown button {
   color: #4B4848;
   font-family: "Montserrat", sans-serif;
   font-size: 26px;
   font-style: normal;
   font-weight: 600;
 }
-#postmarks .head .right_list li img {
-  transform: translateY(2px);
-  margin-left: 6px;
-}
 #postmarks .head .right_list_mobile {
-  display: none;
+  display: none !important;
 }
 #postmarks .head .nav {
   border-radius: 15px;
@@ -1765,6 +1684,9 @@ header .header_mobile {
 #postmarks .head .nav .nav_total img {
   cursor: pointer;
   margin-right: 27px;
+}
+#postmarks .head .nav .nav_total .dropdown-toggle::after {
+  display: none;
 }
 #postmarks .head .nav .right {
   display: flex;
@@ -1836,10 +1758,6 @@ header .header_mobile {
   background: #B32B37;
 }
 #postmarks .content_wrapper .content {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  flex-wrap: wrap;
   gap: 40.53px;
   padding: 37px 0;
   margin: 0;
@@ -1927,8 +1845,6 @@ header .header_mobile {
 }
 .index #home .content .text .features {
   margin-bottom: 25px;
-  display: flex;
-  align-items: center;
   gap: 73px;
 }
 .index #home .content .text .features .items .item {
@@ -2001,10 +1917,6 @@ header .header_mobile {
   background: #FBFBFB;
   box-shadow: 0px 1px 7px 0px rgba(0, 0, 0, 0.09);
 }
-.index #collection .slider .main_container {
-  display: flex;
-  align-items: center;
-}
 .index #collection .slider a {
   margin-left: 153px;
   color: #102B3C;
@@ -2016,9 +1928,6 @@ header .header_mobile {
   text-decoration-line: underline;
 }
 .index #collection .slider_in {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
   gap: 21px;
 }
 .index #collection .slider_in button {
@@ -2068,11 +1977,6 @@ header .header_mobile {
 .index #collection .author {
   padding: 66px 0 56px 0;
 }
-.index #collection .author .main_container {
-  display: flex;
-  align-items: stretch;
-  justify-content: space-between;
-}
 .index #collection .author .left {
   border-radius: 4px 0 0 4px;
   border: 1px solid rgba(8, 44, 62, 0.12);
@@ -2104,9 +2008,6 @@ header .header_mobile {
   display: none;
 }
 .index #news .news_top {
-  display: flex;
-  align-items: stretch;
-  justify-content: space-between;
   padding-top: 56px;
   margin-bottom: 35px;
 }
@@ -2133,18 +2034,11 @@ header .header_mobile {
   margin-bottom: 43px;
 }
 .index #news .news_top .left .content .content_item {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
   gap: 91px;
   margin-bottom: 26px;
 }
 .index #news .news_top .left .content .content_item:last-child {
   margin-bottom: 0;
-}
-.index #news .news_top .left .content .content_item .text {
-  display: flex;
-  align-items: center;
 }
 .index #news .news_top .left .content .content_item .text h3 {
   color: #1A1A1A;
@@ -2185,8 +2079,6 @@ header .header_mobile {
   margin-bottom: 44px;
 }
 .index #news .news_top .right .item {
-  display: flex;
-  align-items: flex-start;
   gap: 31px;
   margin-bottom: 30px;
 }
@@ -2213,9 +2105,6 @@ header .header_mobile {
   letter-spacing: 0.525px;
 }
 .index #news .links {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
   margin-bottom: 49px;
 }
 .index #news .links a {
