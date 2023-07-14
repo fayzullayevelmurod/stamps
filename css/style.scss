@@ -3002,9 +3002,6 @@ header {
 .brand {
     #anons {
         .head {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
             margin-bottom: 47px;
 
             .head_left {
@@ -3069,14 +3066,9 @@ header {
         }
 
         .content {
-            display: flex;
-            align-items: flex-start;
-            justify-content: space-between;
             margin-bottom: 40px;
 
             .content_left {
-                display: flex;
-                align-items: flex-start;
                 gap: 35px;
                 width: 790px;
 
@@ -3091,9 +3083,6 @@ header {
 
                         button {
                             border-radius: 50%;
-                            background: transparent;
-                            border: none;
-                            outline: none;
                         }
                     }
                 }
@@ -3128,8 +3117,6 @@ header {
                     }
 
                     .foot {
-                        display: flex;
-                        align-items: flex-start;
                         gap: 43px;
 
                         .left {
@@ -3182,17 +3169,11 @@ header {
                     .item {
                         border-radius: 6px 6px 0px 0px;
                         background: rgba(245, 245, 245, 0.56);
-                        display: flex;
-                        align-items: center;
-                        justify-content: space-between;
                         padding: 19px 17px;
                         gap: 100px;
 
                         .item_in {
                             width: 50%;
-                            display: flex;
-                            align-items: center;
-                            justify-content: space-between;
 
                             .data {
                                 color: #696A6B;
@@ -3258,9 +3239,6 @@ header {
                     background: rgba(255, 255, 255, 0.56);
                     box-shadow: 0px 1px 7px 0px rgba(0, 0, 0, 0.09);
                     padding: 21px 47px 27px 25px;
-                    display: flex;
-                    align-items: center;
-                    justify-content: space-between;
                     margin-bottom: 41px;
 
                     .price {
@@ -3306,11 +3284,8 @@ header {
                 }
 
                 .comment_wrapper {
-                    display: flex;
                     background: #FCFCFC;
                     box-shadow: 0px 1px 7px 0px rgba(0, 0, 0, 0.09);
-                    align-items: center;
-                    justify-content: space-between;
                     padding: 11px 56px 12px;
                     margin-bottom: 57px;
 
@@ -3324,8 +3299,6 @@ header {
                     }
 
                     .comment_right {
-                        display: flex;
-                        align-items: center;
 
                         .grade {
                             color: #0A75B1;
@@ -3441,9 +3414,6 @@ header {
             }
 
             .calculate {
-                display: flex;
-                align-items: center;
-                justify-content: center;
                 gap: 29px;
 
                 button {
@@ -3506,20 +3476,13 @@ header {
             }
 
             .content {
-                display: flex;
-                align-items: flex-start;
                 gap: 26px;
 
                 .datas {
                     width: 985px;
-                    display: flex;
-                    flex-direction: column;
                     gap: 40px;
 
                     .item {
-                        display: flex;
-                        align-items: flex-end;
-                        justify-content: space-between;
                         position: relative;
 
                         .border_bottom {
@@ -3565,9 +3528,6 @@ header {
         }
 
         .characteristic_footer {
-            display: flex;
-            align-self: stretch;
-            justify-content: space-between;
             margin-bottom: 64px;
 
             .left {
@@ -3671,7 +3631,6 @@ header {
                 font-style: normal;
                 font-weight: 500;
                 line-height: 28.813px;
-                text-decoration-line: underline;
             }
         }
     }

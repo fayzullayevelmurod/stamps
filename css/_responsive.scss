@@ -114,7 +114,7 @@
         #anons {
             .content {
                 flex-direction: column;
-                align-items: center;
+                align-items: center !important;
                 gap: 40px;
 
                 .content_right {
@@ -194,6 +194,7 @@
             }
             .registration_main{
                 width: 60%;
+
                 form{
                     .form_input_wrapper{
                         justify-content: space-between;
@@ -241,10 +242,14 @@
                         right: 10%;
                     }
                 }
-            }
-            .back_form{
-                padding: 60px 60px 80px 80px;
-                .back_form_content{
+            
+                button {
+                    z-index: 5;
+                }
+    
+                img {
+                    z-index: 4;
+                }ontent{
                     .back_form_title{
                         flex-direction: column;
                         align-items: start;
@@ -2717,6 +2722,13 @@
         }
     }
 
+    .brand_nav_list {
+        overflow: hidden;
+        a {
+            white-space: nowrap;
+        }
+    }
+
     .brand {
         #anons {
             .head {
@@ -3003,6 +3015,18 @@
                         }
                     }
                 }
+            }
+        }
+
+        .img_modal {
+            
+            button {
+                z-index: 1;
+            }
+
+            img {
+                width: 90%;
+                height: auto;
             }
         }
 
