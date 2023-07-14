@@ -242,14 +242,10 @@
                         right: 10%;
                     }
                 }
-            
-                button {
-                    z-index: 5;
-                }
-    
-                img {
-                    z-index: 4;
-                }ontent{
+            }
+            .back_form{
+                padding: 60px 60px 80px 80px;
+                .back_form_content{
                     .back_form_title{
                         flex-direction: column;
                         align-items: start;

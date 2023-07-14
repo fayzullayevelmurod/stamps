@@ -768,23 +768,17 @@ header {
     }
 
     .back_wrapper {
-        display: flex;
-        justify-content: space-between;
-
         .back_social_media {
             width: 36%;
             .social_media_content {
                 background-color: #123044;
-                position: absolute;
                 height: 100%;
                 left: 0;
                 width: 36%;
 
                 .social_media_content_img {
-                    position: absolute;
                     right: -15%;
                     top: 74px;
-                    width: 100%;
                     height: 60%;
                     object-fit: cover;
                     border-radius: 10px;
@@ -816,8 +810,6 @@ header {
             padding: 120px 102px 220px 100px;
 
             .back_form_title {
-                display: flex;
-                align-items: center;
                 margin-bottom: 66px;
 
                 h2 {
@@ -844,15 +836,12 @@ header {
             }
 
             .back_form_main {
-                display: flex;
                 gap: 25px;
 
                 .back_form_main_left {
                     flex: 1;
 
                     .back_input {
-                        display: flex;
-                        align-items: center;
                         border-radius: 7.051px;
                         border: 0.588px solid #E1E1E1;
                         background: #FFF;
@@ -896,10 +885,6 @@ header {
 
                 .back_form_main_right {
                     flex: 1;
-                    display: flex;
-                    flex-direction: column;
-                    align-items: center;
-
                     textarea {
                         height: 173px;
                         display: inline-block;
@@ -918,8 +903,6 @@ header {
 
                     .back_form_btn {
                         margin-top: 37px;
-                        cursor: pointer;
-                        border: none;
                         color: #FFF;
                         font-family: 'Fira Sans', sans-serif;
                         font-size: 16px;

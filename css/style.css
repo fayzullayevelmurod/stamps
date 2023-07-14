@@ -646,25 +646,18 @@ header .bottom .last_head_dropdown ul {
   font-weight: 500;
   line-height: 111.5%;
 }
-.back .back_wrapper {
-  display: flex;
-  justify-content: space-between;
-}
 .back .back_wrapper .back_social_media {
   width: 36%;
 }
 .back .back_wrapper .back_social_media .social_media_content {
   background-color: #123044;
-  position: absolute;
   height: 100%;
   left: 0;
   width: 36%;
 }
 .back .back_wrapper .back_social_media .social_media_content .social_media_content_img {
-  position: absolute;
   right: -15%;
   top: 74px;
-  width: 100%;
   height: 60%;
   -o-object-fit: cover;
      object-fit: cover;
@@ -688,8 +681,6 @@ header .bottom .last_head_dropdown ul {
   padding: 120px 102px 220px 100px;
 }
 .back .back_wrapper .back_form .back_form_title {
-  display: flex;
-  align-items: center;
   margin-bottom: 66px;
 }
 .back .back_wrapper .back_form .back_form_title h2 {
@@ -713,15 +704,12 @@ header .bottom .last_head_dropdown ul {
   letter-spacing: 0.45px;
 }
 .back .back_wrapper .back_form .back_form_main {
-  display: flex;
   gap: 25px;
 }
 .back .back_wrapper .back_form .back_form_main .back_form_main_left {
   flex: 1;
 }
 .back .back_wrapper .back_form .back_form_main .back_form_main_left .back_input {
-  display: flex;
-  align-items: center;
   border-radius: 7.051px;
   border: 0.588px solid #E1E1E1;
   background: #FFF;
@@ -759,9 +747,6 @@ header .bottom .last_head_dropdown ul {
 }
 .back .back_wrapper .back_form .back_form_main .back_form_main_right {
   flex: 1;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
 }
 .back .back_wrapper .back_form .back_form_main .back_form_main_right textarea {
   height: 173px;
@@ -780,8 +765,6 @@ header .bottom .last_head_dropdown ul {
 }
 .back .back_wrapper .back_form .back_form_main .back_form_main_right .back_form_btn {
   margin-top: 37px;
-  cursor: pointer;
-  border: none;
   color: #FFF;
   font-family: "Fira Sans", sans-serif;
   font-size: 16px;
@@ -3499,17 +3482,14 @@ footer .footer_wrapper_media .footer_media_bottom_in {
   .back .back_wrapper .back_social_media .social_media_content ul {
     right: 10%;
   }
-  .back .back_wrapper .back_social_media button {
-    z-index: 5;
+  .back .back_wrapper .back_form {
+    padding: 60px 60px 80px 80px;
   }
-  .back .back_wrapper .back_social_media img {
-    z-index: 4;
-  }
-  .back .back_wrapper .back_social_media ontent .back_form_title {
+  .back .back_wrapper .back_form .back_form_content .back_form_title {
     flex-direction: column;
     align-items: start;
   }
-  .back .back_wrapper .back_social_media ontent .back_form_main {
+  .back .back_wrapper .back_form .back_form_content .back_form_main {
     flex-direction: column;
   }
   .albums #album_slider .head .head_left h3 {
