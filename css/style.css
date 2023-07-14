@@ -1679,7 +1679,7 @@ header .bottom .last_head_dropdown ul {
   align-items: center;
   justify-content: space-between;
 }
-#postmarks .head .nav .nav_total {
+#postmarks .head .nav .nav_total button {
   color: #B32B37;
   font-family: "Montserrat", sans-serif;
   font-size: 26px;
@@ -2429,17 +2429,10 @@ header .bottom .last_head_dropdown ul {
   background: #F9F9F9;
 }
 .countries #continent .top {
-  display: flex;
-  align-items: flex-start;
-  justify-content: space-between;
   gap: 40px;
 }
 .countries #continent .continent_list .head {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
   gap: 16px;
-  flex-wrap: wrap;
   margin-bottom: 48px;
   max-width: 643px;
 }
@@ -2450,10 +2443,7 @@ header .bottom .last_head_dropdown ul {
   font-style: normal;
   font-weight: 400;
   line-height: 111.5%;
-  border: none;
-  outline: none;
   border-radius: 18px;
-  background: transparent;
 }
 .countries #continent .continent_list .head .continent_selected {
   color: #B32B37;
@@ -2479,8 +2469,6 @@ header .bottom .last_head_dropdown ul {
   border-radius: 50%;
 }
 .countries #continent .continent_list .content {
-  display: flex;
-  align-items: flex-start;
   gap: 50px;
   width: 807px;
   margin-bottom: 45px;
@@ -2520,8 +2508,6 @@ header .bottom .last_head_dropdown ul {
   font-style: normal;
   font-weight: 500;
   line-height: 28.813px;
-  border: none;
-  outline: none;
   padding: 6px 13px 4px 17px;
 }
 .countries #continent .bottom .dropdown button img {
@@ -2536,8 +2522,6 @@ header .bottom .last_head_dropdown ul {
   font-style: normal;
   font-weight: 600;
   line-height: 111.5%;
-  outline: none;
-  border: none;
   padding: 18px 32px 13px 17px;
 }
 .countries #continent .bottom .selected_country button img {
@@ -3388,10 +3372,10 @@ footer .footer_wrapper_media .footer_media_bottom_in {
 }
 @media (max-width: 1500px) {
   #postmarks .head .right_list_desktop {
-    display: none;
+    display: none !important;
   }
   #postmarks .head .right_list_mobile {
-    display: flex;
+    display: flex !important;
     justify-content: flex-start;
     margin-top: 30px;
     flex-wrap: wrap;
@@ -3589,7 +3573,8 @@ footer .footer_wrapper_media .footer_media_bottom_in {
     height: 16px;
     transform: translate(8px, -2px);
   }
-  header .bottom .head_link, header .bottom a {
+  header .bottom .head_link,
+  header .bottom a {
     display: none;
   }
   header .header_mobile {
@@ -3794,7 +3779,7 @@ footer .footer_wrapper_media .footer_media_bottom_in {
     display: none;
   }
   .countries #continent .top .map_image {
-    display: none;
+    display: none !important;
   }
   .countries #continent .top .continent_list .content {
     flex-direction: row;
@@ -5031,28 +5016,28 @@ footer .footer_wrapper_media .footer_media_bottom_in {
     margin-bottom: 15px;
     margin-top: 12px;
   }
-  #postmarks .head .right_list li {
+  #postmarks .head .right_list li button {
     color: #4B4848;
     font-family: "Montserrat", sans-serif;
-    font-size: 13px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: 111.5%;
+    font-size: 13px !important;
+    font-style: normal !important;
+    font-weight: 600 !important;
+    line-height: 111.5% !important;
   }
   #postmarks .head .nav {
     padding: 6px 3px 5px 6px;
   }
-  #postmarks .head .nav .nav_total {
-    color: #B32B37;
-    font-family: "Montserrat", sans-serif;
-    font-size: 13px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: 111.5%;
-  }
   #postmarks .head .nav .nav_total img {
     width: 20px;
     margin-right: 10px;
+  }
+  #postmarks .head .nav .nav_total button {
+    color: #B32B37;
+    font-family: "Montserrat", sans-serif;
+    font-size: 13px !important;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 111.5%;
   }
   #postmarks .head .nav .right .search button {
     padding: 3px 10px 3px 0;
