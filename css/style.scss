@@ -1657,6 +1657,9 @@ header {
                         font-weight: 500;
                         line-height: normal;
                         letter-spacing: 0.35px;
+                        &:focus{
+                            box-shadow: none;
+                        }
                     }
                     img{
                         margin-left: auto;

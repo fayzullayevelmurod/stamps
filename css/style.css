@@ -1582,6 +1582,9 @@ header .header_mobile {
   line-height: normal;
   letter-spacing: 0.35px;
 }
+.sign_in .sign_in_wrapper .sign_in_main form .form_input_in input:focus {
+  box-shadow: none;
+}
 .sign_in .sign_in_wrapper .sign_in_main form .form_input_in img {
   margin-left: auto;
   padding-right: 10px;
