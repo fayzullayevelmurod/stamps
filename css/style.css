@@ -369,6 +369,7 @@ header .bottom .last_head_dropdown ul {
   margin-bottom: 25px;
 }
 .golden .golden_main .golden_main_card .golden_main_card_text p {
+  max-width: 850px;
   color: #434040;
   font-family: "Montserrat", sans-serif;
   font-size: 16px;
