@@ -214,8 +214,6 @@ header .bottom .last_head_dropdown ul {
 }
 
 .golden .nav_list {
-  display: flex;
-  align-items: center;
   justify-content: left;
   margin-bottom: 30px;
 }
@@ -229,15 +227,12 @@ header .bottom .last_head_dropdown ul {
   line-height: 111.5%;
 }
 .golden .golden_comment_wrapper {
-  display: flex;
-  justify-content: space-between;
   gap: 39px;
   margin-bottom: 95px;
 }
 .golden .golden_comment_wrapper .golden_comment {
   min-height: 228px;
   padding: 50px 10px;
-  display: flex;
   border-radius: 4px;
   background: #FFF6F2;
   box-shadow: 0px 1px 7px 0px rgba(0, 0, 0, 0.09);
@@ -265,14 +260,6 @@ header .bottom .last_head_dropdown ul {
   background: #123044;
   box-shadow: 0px 1px 7px 0px rgba(0, 0, 0, 0.09);
 }
-.golden .golden_comment_wrapper .golden_comment_right .comment_right_in {
-  display: flex;
-  align-items: center;
-}
-.golden .golden_comment_wrapper .golden_comment_right .comment_right_in .comment_left {
-  display: flex;
-  align-items: center;
-}
 .golden .golden_comment_wrapper .golden_comment_right .comment_right_in .comment_left h2 {
   margin-left: 9px;
   color: #FFF;
@@ -286,8 +273,6 @@ header .bottom .last_head_dropdown ul {
 }
 .golden .golden_comment_wrapper .golden_comment_right .comment_right_in .comment_right h4 {
   width: 150px;
-  display: flex;
-  align-items: center;
   margin-bottom: 20px;
   color: #FFF;
   font-family: Montserrat;
@@ -308,7 +293,6 @@ header .bottom .last_head_dropdown ul {
   transform: translateX(20px);
 }
 .golden .golden_comment_wrapper .golden_comment_right h3 {
-  text-align: center;
   color: #FFF;
   text-shadow: 0px 4px 6px 0px rgba(0, 0, 0, 0.25);
   font-family: "Fira Sans", sans-serif;
@@ -330,7 +314,6 @@ header .bottom .last_head_dropdown ul {
   margin-bottom: 53px;
 }
 .golden .golden_main .golden_main_card {
-  display: flex;
   padding: 30px;
   border-radius: 6px;
   background: #FCFCFC;
@@ -1374,7 +1357,6 @@ header .bottom .last_head_dropdown ul {
 }
 .registration .registration_wrapper .registration_main span {
   margin-bottom: 10px;
-  display: block;
   color: #767676;
   font-family: Montserrat, sans-serif;
   font-size: 14px;
