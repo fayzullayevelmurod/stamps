@@ -4768,6 +4768,7 @@ footer .footer_wrapper_media .footer_media_bottom_in {
   .albums .albums_comments .albums_comment_card .albums_comment_card_top h4 span {
     font-size: 12px;
     display: block !important;
+    line-height: 23px;
   }
   .albums .albums_comments .albums_comment_card .albums_comment_card_top span {
     display: none;
@@ -4805,6 +4806,7 @@ footer .footer_wrapper_media .footer_media_bottom_in {
   }
   .albums .albums_comments .albums_comment_card_by .albums_comment_card_my .albums_comment_card_top h4 span {
     font-size: 12px;
+    line-height: 23px;
     display: block !important;
   }
   .albums .albums_comments .albums_comment_card_by .albums_comment_card_my .albums_comment_card_top span {
