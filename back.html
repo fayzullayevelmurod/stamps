@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Stamps</title>
+    <!-- bootstrap css file -->
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
     <!-- normalize css file -->
     <link rel="stylesheet" href="./css/normalize.css">
     <!-- css file -->
@@ -40,7 +42,7 @@
                         </li>
                         <li>
                             <a href="#">
-                                <img src="./images/star.svg" alt="">
+                                <img src="./images/header_star.svg" alt="">
                                 <span>Избранное</span>
                             </a>
                         </li>
@@ -59,7 +61,9 @@
         <!-- Header bottom start -->
         <div class="bottom">
             <div class="main_container">
-                <img class="logo" src="./images/Logo.svg" alt="Logotip">
+                <a class="logo" href="index.html">
+                    <img src="./images/Logo.svg" alt="Logotip">
+                </a>
                 <div class="search">
                     <input type="text">
                     <button>
@@ -150,11 +154,11 @@
                         </li>
                     </ul>
                 </div>
-                <a href="#">
+                <a class="head_link head_link_active" href="#">
                     <img src="./images/crown.svg" alt="">
                     Золотой пантеон
                 </a>
-                <a href="#">
+                <a class="head_link" href="#">
                     <img src="./images/statistic_up.svg" alt="">
                     Статистика коллекции
                 </a>
@@ -226,12 +230,10 @@
     </header>
     <!-- Header end -->
     <div class="main_container">
-        <div class="main_container">
-            <div class="nav_list">
-                <a href="index.html">Главная</a>
-                <img src="./images/next_icon.svg" alt="">
-                <a href="#">Обратная связь</a>
-            </div>
+        <div class="nav_list">
+            <a href="index.html">Главная</a>
+            <img src="./images/next_icon.svg" alt="">
+            <a href="#">Обратная связь</a>
         </div>
     </div>
     <div class="back">
@@ -380,6 +382,8 @@
 
 
     <script src="./js/swipper.js"></script>
+    <!-- bootstrap js file -->
+    <script src="./js/bootstrap.min.js"></script>
     <script src="./js/app.js"></script>
 </body>
 </html>

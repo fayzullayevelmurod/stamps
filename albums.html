@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Stamps</title>
+    <!-- bootstrap css file -->
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
     <!-- normalize css file -->
     <link rel="stylesheet" href="./css/normalize.css">
     <!-- css file -->
@@ -40,7 +42,7 @@
                         </li>
                         <li>
                             <a href="#">
-                                <img src="./images/star.svg" alt="">
+                                <img src="./images/header_star.svg" alt="">
                                 <span>Избранное</span>
                             </a>
                         </li>
@@ -59,7 +61,9 @@
         <!-- Header bottom start -->
         <div class="bottom">
             <div class="main_container">
-                <img class="logo" src="./images/Logo.svg" alt="Logotip">
+                <a class="logo" href="index.html">
+                    <img src="./images/Logo.svg" alt="Logotip">
+                </a>
                 <div class="search">
                     <input type="text">
                     <button>
@@ -150,11 +154,11 @@
                         </li>
                     </ul>
                 </div>
-                <a href="#">
+                <a class="head_link head_link_active" href="#">
                     <img src="./images/crown.svg" alt="">
                     Золотой пантеон
                 </a>
-                <a href="#">
+                <a class="head_link" href="#">
                     <img src="./images/statistic_up.svg" alt="">
                     Статистика коллекции
                 </a>
@@ -225,6 +229,15 @@
         </div>
     </header>
     <!-- Header end -->
+    <div class="main_container">
+        <div class="nav_list">
+            <a href="index.html">Главная</a>
+            <img src="./images/next_icon.svg" alt="">
+            <a href="#">По альбомам</a>
+            <img src="./images/next_icon.svg" alt="">
+            <a href="#">Чёрный</a>
+        </div>
+    </div>
     <div class="albums">
         <div class="albums_home">
             <div class="main_container">
@@ -251,6 +264,71 @@
                 </div>
         </div>
         </div>
+        <!-- Album slider start -->
+        <section id="album_slider">
+            <div class="main_container">
+                <div class="head">
+                    <div class="head_left">
+                        <h3>Сортировка альбома</h3>
+                        <div class="album_dropdown">
+                            <button>
+                                <img src="./images/nav_total.svg" alt="">
+                                Как в альбоме
+                            </button>
+                        </div>
+                    </div>
+                    <div class="head_right">Альбом «Чёрный», марок: 52</div>
+                </div>
+
+                <div class="content">
+                    <button class="btn album_prev_button" style="cursor: pointer;">
+                        <img src="./images/prev_button.svg" alt="">
+                    </button>
+                    <div id="flip_slider">
+                        <div class="item odd">
+                            <img src="./images/album_slider_2.png" alt="">
+                        </div>
+                        <div class="item even">
+                            <img src="./images/album_slider_1.png" alt="">
+                        </div>
+                        <div class="item odd">
+                            <img src="./images/album_slider_2.png" alt="">
+                        </div>
+                        <div class="item even">
+                            <img src="./images/album_slider_1.png" alt="">
+                        </div>
+                        <div class="item odd">
+                            <img src="./images/album_slider_2.png" alt="">
+                        </div>
+                        <div class="item even">
+                            <img src="./images/album_slider_1.png" alt="">
+                        </div>
+                        <div class="item odd">
+                            <img src="./images/album_slider_2.png" alt="">
+                        </div>
+                        <div class="item even">
+                            <img src="./images/album_slider_1.png" alt="">
+                        </div>
+                        <div class="item odd">
+                            <img src="./images/album_slider_2.png" alt="">
+                        </div>
+                        <div class="item even">
+                            <img src="./images/album_slider_1.png" alt="">
+                        </div>
+                    </div>
+                    <button class="btn album_next_button" style="cursor: pointer;">
+                        <img src="./images/next_button.svg" alt="">
+                    </button>
+                </div>
+
+            </div>
+        </section>
+        <div class="page">
+            <div class="text">
+                Страница: <span class="current_page">1</span>/<span class="all_pages">12</span>
+            </div>
+        </div>
+        <!-- Album slider end -->
         <div class="main_container">
             <div class="albums_comment_title">
                 <h5>Обсуждение альбома «Чёрный»</h5>
@@ -404,6 +482,44 @@
 
 
     <script src="./js/swipper.js"></script>
+    <!-- bootstrap js file -->
+    <script src="./js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"
+    integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="./libs/turn.min.js"></script>
+    <script>
+        let oTurn = $("#flip_slider").turn({
+            gradients: true,
+            acceleration: true,
+            page: 2,
+        });
+
+        $('.album_prev_button').click(function () {
+            oTurn.turn("previous");
+        })
+
+        $(".album_next_button").click(function () {
+            oTurn.turn("next");
+        });
+
+        oTurn.bind("turning", function (event, page, view) {
+            if (page == 1) {
+                event.preventDefault(); //will not happen at page 1
+            } else {
+                console.log();("Turning the page to: " + page);
+            }
+
+            if (view[0] / 2 >= 1) {
+                $('.current_page').text(view[0]/2);
+            }
+            // console.log(page);
+        });
+
+        $('.all_pages').text($('#flip_slider .item').length - 1)
+
+    </script>
     <script src="./js/app.js"></script>
+
 </body>
 </html>

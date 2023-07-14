@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Stamps</title>
+    <!-- bootstrap css file -->
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
     <!-- normalize css file -->
     <link rel="stylesheet" href="./css/normalize.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
@@ -45,7 +47,7 @@
                         </li>
                         <li>
                             <a href="#">
-                                <img src="./images/star.svg" alt="">
+                                <img src="./images/header_star.svg" alt="">
                                 <span>Избранное</span>
                             </a>
                         </li>
@@ -64,7 +66,9 @@
         <!-- Header bottom start -->
         <div class="bottom">
             <div class="main_container">
-                <img class="logo" src="./images/Logo.svg" alt="Logotip">
+                <a class="logo" href="index.html">
+                    <img src="./images/Logo.svg" alt="Logotip">
+                </a>
                 <div class="search">
                     <input type="text">
                     <button>
@@ -155,11 +159,11 @@
                         </li>
                     </ul>
                 </div>
-                <a href="#">
+                <a class="head_link head_link_active" href="#">
                     <img src="./images/crown.svg" alt="">
                     Золотой пантеон
                 </a>
-                <a href="#">
+                <a class="head_link" href="#">
                     <img src="./images/statistic_up.svg" alt="">
                     Статистика коллекции
                 </a>
@@ -1236,6 +1240,8 @@
 
 
     <script src="./js/swipper.js"></script>
+    <!-- bootstrap js file -->
+    <script src="./js/bootstrap.min.js"></script>
     <script>
         // var swiper = new Swiper(".collection_slider", {
         //     slidesPerView: 2,

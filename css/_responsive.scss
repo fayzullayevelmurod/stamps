@@ -258,6 +258,25 @@
         }
     }
     .albums{
+        #album_slider {
+            .head {
+                .head_left {
+                    h3 {
+                        font-size: 20px;
+                    }
+                }
+
+                .head_right {
+                    font-size: 28px;
+                }
+            }
+
+            .content {
+                #flip_slider {
+                    height: 600px;
+                }
+            }
+        }
         .albums_home{
             .albums_wrapper{
                 .albums_left{
@@ -367,7 +386,7 @@
                 }
             }
 
-            a {
+            .head_link,a {
                 display: none;
             }
         }
@@ -469,6 +488,19 @@
                     &:first-child {
                         display: none;
                     }
+                }
+            }
+        }
+    }
+}
+@media (max-width: 1050px) {
+    .albums {
+        #album_slider {
+            .content {
+                gap: 50px;
+
+                #flip_slider {
+                    height: 500px;
                 }
             }
         }
@@ -792,6 +824,30 @@
                             }
                         }
                     }
+                }
+            }
+        }
+    }
+}
+@media (max-width: 950px) {
+    .albums {
+        #album_slider {
+            .head {
+                flex-direction: column-reverse;
+                align-items: center;
+                gap: 20px;
+
+                .head_left {
+                    width: 100%;
+                    justify-content: space-between;
+                }
+            }
+
+            .content {
+                gap: 20px;
+
+                #flip_slider {
+                    height: 400px;
                 }
             }
         }
@@ -1627,6 +1683,13 @@
         }
     }
     .albums{
+        #album_slider {
+            .content {
+                #flip_slider {
+                    height: 300px;
+                }
+            }
+        }
         .albums_comments{
             .albums_form_btn{
                 flex-direction: column;
@@ -3066,6 +3129,97 @@
             }
         }
     }
+    .albums{
+        #album_slider {
+            padding-top: 23px;
+            padding-bottom: 72px;
+    
+            .head {
+                gap: 26px;
+                margin-bottom: 28px;
+    
+                .head_left {
+                    gap: 0;
+    
+                    h3 {
+                        color: #1A1A1A;
+                        font-family: "Montserrat", sans-serif;
+                        font-size: 13px;
+                        font-style: normal;
+                        font-weight: 500;
+                        line-height: 20.106px;
+                    }
+    
+                    .album_dropdown {
+                        button {
+                            color: #B32B37;
+                            font-family: "Montserrat", sans-serif;
+                            font-size: 13px;
+                            font-style: normal;
+                            font-weight: 600;
+                            line-height: 111.5%;
+    
+                            img {
+                                width: 21px;
+                                height: 15px;
+                            }
+                        }
+                    }
+                }
+    
+                .head_right {
+                    color: #123044;
+                    text-align: right;
+                    font-family: "Fira Sans", sans-serif;
+                    font-size: 18px;
+                    font-style: normal;
+                    font-weight: 600;
+                    line-height: 111.5%;
+                }
+            }
+    
+            .content {
+                position: relative;
+    
+                button {
+                    position: absolute;
+                    z-index: 10;
+    
+                    img {
+                        width: 21px;
+                        height: 21px;
+                    }
+                }
+    
+                .album_prev_button {
+                    left: -20px;
+                    position: absolute;
+                    z-index: 20;
+                }
+    
+                .album_next_button {
+                    right: -20px;
+                }
+    
+                #flip_slider {
+                    width: 100%;
+    
+                }
+            }
+        }
+    
+        .page {
+            .text {
+                color: #123044;
+                font-family: "Montserrat", sans-serif;
+                font-size: 13px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: 7.874px;
+                transform: translateX(-50%) translateY(-30px);
+            }
+        }
+    }
 }
 
 @media (max-width: 400px) {
@@ -3077,6 +3231,23 @@
 
             .brand_next_button {
                 right: 10px;
+            }
+        }
+    }
+    .albums {
+        #album_slider {
+            .content {
+                #flip_slider {
+                    height: 230px;
+
+                    .even {
+                        border-right: 2px solid #9d9d9d;
+                    }
+    
+                    .odd {
+                        border-left: 2px solid #9d9d9d;
+                    }
+                }
             }
         }
     }
