@@ -1470,19 +1470,13 @@ header {
 .registration {
     margin-bottom: 100px;
     background: #F8F8F8;
-    position: relative;
     box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.25);
 
     .registration_wrapper {
-        display: flex;
-
         .registration_left {
-            display: flex;
             width: 50%;
-
             img {
                 height: 100%;
-                position: absolute;
                 object-fit: cover;
                 left: 0;
                 width: 50%;
@@ -1490,7 +1484,6 @@ header {
 
             .registration_red_block {
                 width: 37px;
-                position: absolute;
                 right: 50%;
                 height: 100%;
                 background-color: #B32B37;
@@ -1535,9 +1528,6 @@ header {
 
             .form_input_wrapper {
                 gap: 10px;
-                justify-content: space-between;
-                display: flex;
-
                 .form_left {
                     .form_input_in {
                         width: 284px;
@@ -1546,11 +1536,7 @@ header {
                         border: 0.5px solid #E1E1E1;
                         background: #FFF;
                         box-shadow: 0px 1px 7px 0px rgba(0, 0, 0, 0.09);
-                        display: flex;
-                        align-items: center;
-
                         input {
-                            width: 100%;
                             padding: 15px 5px 15px 20px;
                             border: none;
                             color: #1A1717;
@@ -1564,7 +1550,6 @@ header {
                                 box-shadow: none !important;
                             }
                         }
-
                         img {
                             margin-left: auto;
                             padding-right: 10px;
@@ -1580,13 +1565,8 @@ header {
                         border: 0.5px solid #E1E1E1;
                         background: #FFF;
                         box-shadow: 0px 1px 7px 0px rgba(0, 0, 0, 0.09);
-                        display: flex;
-                        align-items: center;
-
                         input {
-                            width: 100%;
                             padding: 15px 15px 15px 20px;
-                            border: none;
                             color: #1A1717;
                             font-family: Montserrat, sans-serif;
                             font-size: 14px;
@@ -1606,11 +1586,7 @@ header {
 
             .form_agreement {
                 margin-bottom: 33px;
-                display: flex;
-                align-items: center;
-
-                input {
-                    cursor: pointer;
+                input { 
                     accent-color: #B32B37;
                     width: 30px;
                     height: 30px;
@@ -1646,12 +1622,9 @@ header {
             }
 
             .form_btn {
-                cursor: pointer;
-                display: block;
                 margin: 0 auto 36px auto;
                 width: 257px;
                 height: 45px;
-                border: none;
                 color: #FFF;
                 font-family: 'Fira Sans', sans-serif;
                 font-size: 16px;

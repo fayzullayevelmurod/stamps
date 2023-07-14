@@ -188,69 +188,67 @@
     </header>
     <!-- Header end -->
     
-    <div class="main_container">
-        <div class="nav_list">
+    <div class="main_container row">
+        <div class="nav_list col-12">
             <a href="index.html">Главная</a>
             <img src="./images/next_icon.svg" alt="">
             <a href="#">Регистрация/Вход</a>
         </div>
     </div>
-    <div class="registration">
-        <div class="main_container">
-            <div class="registration_wrapper">
-                <div class="registration_left">
-                    <img src="./images/registration_left_img.png" alt="">
-                    <div class="registration_red_block"></div>
+    <div class="registration position-relative">
+        <div class="main_container row">
+            <div class="registration_wrapper d-flex col-12">
+                <div class="registration_left d-flex">
+                    <img class="position-absolute" src="./images/registration_left_img.png" alt="">
+                    <div class="registration_red_block position-absolute"></div>
                 </div>
                 <div class="registration_main">
                     <h2>Создайте аккаунт</h2>
                     <p>Ваши сеансы на сайте станут ещё удобнее. Создайте личный кабинет с избранной коллекцией, возможностью комментирования и другими функциями.</p>
                     <a class="form_full_btn" href="#">Уже есть аккаунт? Войти <img src="./images/albums_comment_full.svg" alt=""></a>
                     <form>
-                        <div class="form_input_wrapper">
+                        <div class="form_input_wrapper d-flex justify-content-between">
                             <div class="form_left">
-                                <div class="form_input_in overflow-hidden shadow-none">
-                                    <input type="text" id="disabledTextInput" class="form-control" placeholder="Ваше имя">
+                                <div class="form_input_in overflow-hidden shadow-none d-flex align-items-center">
+                                    <input type="text" id="disabledTextInput" class="form-control w-100" placeholder="Ваше имя">
                                     <img src="./images/star_icon.svg" alt="">
                                 </div>
-                                <div class="form_input_in overflow-hidden">
-                                    <input  type="text" id="disabledTextInput" class="form-control" placeholder="Логин (ваше имя на сайте)">
+                                <div class="form_input_in overflow-hidden d-flex align-items-center">
+                                    <input  type="text" id="disabledTextInput" class="form-control w-100" placeholder="Логин (ваше имя на сайте)">
                                     <img src="./images/star_icon.svg" alt="">
                                 </div>
-                                <div class="form_input_in overflow-hidden">
-                                    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Придумайте пароль">
+                                <div class="form_input_in overflow-hidden d-flex align-items-center">
+                                    <input type="password" class="form-control w-100" id="exampleInputPassword1" placeholder="Придумайте пароль">
                                     <img src="./images/star_icon.svg" alt="">
                                 </div>
-                                <div class="form_input_in overflow-hidden">
-                                    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Подтвердите пароль">
+                                <div class="form_input_in overflow-hidden d-flex align-items-center">
+                                    <input type="password" class="form-control w-100" id="exampleInputPassword1" placeholder="Подтвердите пароль">
                                     <img src="./images/star_icon.svg" alt="">
                                 </div>
                             </div>
                             <div class="form_right">
-                                <div class="form_input_in">
-                                    <input  type="text" id="disabledTextInput" class="form-control" placeholder="Дата рождения">
-                                    <!-- <img src="./images/star_icon.svg" alt=""> -->
+                                <div class="form_input_in overflow-hidden d-flex align-items-center">
+                                    <input  type="text" id="disabledTextInput" class="form-control w-100 border-0" placeholder="Дата рождения">
                                 </div>
-                                <div class="form_input_in overflow-hidden">
-                                    <input type="number" id="disabledTextInput" class="form-control" placeholder="Телефон">
+                                <div class="form_input_in overflow-hidden d-flex align-items-center">
+                                    <input type="number" id="disabledTextInput" class="form-control w-100 border-0" placeholder="Телефон">
                                     <img src="./images/star_icon.svg" alt="">
                                 </div>
-                                <div class="form_input_in overflow-hidden">
-                                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Email">
+                                <div class="form_input_in overflow-hidden d-flex align-items-center">
+                                    <input type="email" class="form-control w-100 border-0" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Email">
                                     <img src="./images/star_icon.svg" alt="">
                                 </div>
-                                <div class="form_input_in overflow-hidden">
-                                    <input type="text" id="disabledTextInput" class="form-control" placeholder="Страна проживания">
-                                    <!-- <img src="./images/star_icon.svg" alt=""> -->
+                                <div class="form_input_in overflow-hidden d-flex align-items-center">
+                                    <input type="text" id="disabledTextInput" class="form-control w-100 border-0" placeholder="Страна проживания">
                                 </div>
                             </div>
                         </div>
-                        <div class="form_agreement">
-                            <input type="checkbox"   id="exampleCheck1">
+                        <div class="form_agreement d-flex align-items-center">
+                            <input role="button" type="checkbox" id="exampleCheck1">
                             <p class="form_agreement_text">Я ознакомлен с Политикой конфиденциальности и обработки персональных данных</p>
                         </div>
                         <span><img src="./images/star_icon.svg" alt="">Обязательные поля</span>
-                        <button class="form_btn" type="submit">Зарегистироваться</button>
+                        <button class="form_btn d-block border-0" type="submit" role="button">Зарегистироваться</button>
                         <p class="form_bottom_text">Ваши данные не передаются третьим лицам, они нужны только для создания аккаунта.</p>
                     </form>
                 </div>
