@@ -1251,19 +1251,13 @@ header .bottom .last_head_dropdown ul {
 .registration {
   margin-bottom: 100px;
   background: #F8F8F8;
-  position: relative;
   box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.25);
 }
-.registration .registration_wrapper {
-  display: flex;
-}
 .registration .registration_wrapper .registration_left {
-  display: flex;
   width: 50%;
 }
 .registration .registration_wrapper .registration_left img {
   height: 100%;
-  position: absolute;
   -o-object-fit: cover;
      object-fit: cover;
   left: 0;
@@ -1271,7 +1265,6 @@ header .bottom .last_head_dropdown ul {
 }
 .registration .registration_wrapper .registration_left .registration_red_block {
   width: 37px;
-  position: absolute;
   right: 50%;
   height: 100%;
   background-color: #B32B37;
@@ -1311,8 +1304,6 @@ header .bottom .last_head_dropdown ul {
 }
 .registration .registration_wrapper .registration_main .form_input_wrapper {
   gap: 10px;
-  justify-content: space-between;
-  display: flex;
 }
 .registration .registration_wrapper .registration_main .form_input_wrapper .form_left .form_input_in {
   width: 284px;
@@ -1321,11 +1312,8 @@ header .bottom .last_head_dropdown ul {
   border: 0.5px solid #E1E1E1;
   background: #FFF;
   box-shadow: 0px 1px 7px 0px rgba(0, 0, 0, 0.09);
-  display: flex;
-  align-items: center;
 }
 .registration .registration_wrapper .registration_main .form_input_wrapper .form_left .form_input_in input {
-  width: 100%;
   padding: 15px 5px 15px 20px;
   border: none;
   color: #1A1717;
@@ -1350,13 +1338,9 @@ header .bottom .last_head_dropdown ul {
   border: 0.5px solid #E1E1E1;
   background: #FFF;
   box-shadow: 0px 1px 7px 0px rgba(0, 0, 0, 0.09);
-  display: flex;
-  align-items: center;
 }
 .registration .registration_wrapper .registration_main .form_input_wrapper .form_right .form_input_in input {
-  width: 100%;
   padding: 15px 15px 15px 20px;
-  border: none;
   color: #1A1717;
   font-family: Montserrat, sans-serif;
   font-size: 14px;
@@ -1371,11 +1355,8 @@ header .bottom .last_head_dropdown ul {
 }
 .registration .registration_wrapper .registration_main .form_agreement {
   margin-bottom: 33px;
-  display: flex;
-  align-items: center;
 }
 .registration .registration_wrapper .registration_main .form_agreement input {
-  cursor: pointer;
   accent-color: #B32B37;
   width: 30px;
   height: 30px;
@@ -1406,12 +1387,9 @@ header .bottom .last_head_dropdown ul {
   margin-right: 13px;
 }
 .registration .registration_wrapper .registration_main .form_btn {
-  cursor: pointer;
-  display: block;
   margin: 0 auto 36px auto;
   width: 257px;
   height: 45px;
-  border: none;
   color: #FFF;
   font-family: "Fira Sans", sans-serif;
   font-size: 16px;
