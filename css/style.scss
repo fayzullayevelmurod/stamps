@@ -914,13 +914,9 @@ header {
         background-color: #123044;
 
         .albums_wrapper {
-            display: flex;
-            position: relative;
-
             .albums_left {
                 padding: 70px 0 186px 0;
                 width: 50%;
-
                 h4 {
                     color: #FFF;
                     font-family: Montserrat, sans-serif;
@@ -932,9 +928,7 @@ header {
                 }
 
                 .albums_left_in {
-                    display: flex;
                     gap: 76px;
-
                     ul {
                         padding-left: 0;
 
@@ -979,7 +973,6 @@ header {
 
             .albums_right {
                 width: 50%;
-
                 img {
                     position: absolute;
                     object-fit: cover;
@@ -997,14 +990,9 @@ header {
         padding: 53px 0 195px;
 
         .head {
-            display: flex;
             align-items: flex-start;
-            justify-content: space-between;
             margin-bottom: 60px;
-
             .head_left {
-                display: flex;
-                align-items: center;
                 gap: 40px;
                 margin-top: 12px;
 
@@ -1022,7 +1010,6 @@ header {
                         border-radius: 10.25px;
                         background: #F9F9F9;
                         box-shadow: 0px 0.6833226680755615px 4.783258438110352px 0px rgba(0, 0, 0, 0.09);
-                        border: none;
                         outline: none;
                         padding: 16px 18px 15px 12px;
                         color: #B32B37;
@@ -1031,9 +1018,6 @@ header {
                         font-style: normal;
                         font-weight: 600;
                         line-height: 111.5%;
-                        display: flex;
-                        align-items: center;
-
                         img {
                             width: 40px;
                             height: 29px;
@@ -1055,9 +1039,6 @@ header {
         }
 
         .content {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
             gap: 100px;
 
             #flip_slider {
@@ -1092,7 +1073,6 @@ header {
             .btn {
                 border-radius: 50%;
                 outline: none;
-                border: none;
                 background: transparent;
             }
         }
@@ -1100,10 +1080,7 @@ header {
     }
 
     .page {
-        position: relative;
-
         .text {
-            text-align: center;
             color: #123044;
             font-family: "Montserrat", sans-serif;
             font-size: 31.078px;
@@ -1150,9 +1127,6 @@ header {
 
             .albums_comment_card_top {
                 margin-bottom: 43px;
-                display: flex;
-                align-items: center;
-
                 img {
                     width: 60px;
                     height: 60px;
@@ -1160,7 +1134,6 @@ header {
                 }
 
                 h4 {
-                    flex-direction: column;
                     color: #123044;
                     font-family: Rubik, sans-serif;
                     font-size: 28px;
@@ -1253,7 +1226,6 @@ header {
             padding-left: 25px;
             max-width: 1390px;
             margin-left: auto;
-            position: relative;
 
             .albums_comment_card_my {
                 margin-left: auto;
@@ -1266,9 +1238,6 @@ header {
 
                 .albums_comment_card_top {
                     margin-bottom: 43px;
-                    display: flex;
-                    align-items: center;
-
                     img {
                         width: 60px;
                         height: 60px;
