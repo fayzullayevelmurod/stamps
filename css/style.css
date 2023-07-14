@@ -1416,6 +1416,9 @@ header .header_mobile {
   line-height: normal;
   letter-spacing: 0.35px;
 }
+.registration .registration_wrapper .registration_main .form_input_wrapper .form_left .form_input_in input:focus {
+  box-shadow: none !important;
+}
 .registration .registration_wrapper .registration_main .form_input_wrapper .form_left .form_input_in img {
   margin-left: auto;
   padding-right: 10px;
