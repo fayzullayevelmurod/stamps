@@ -1129,6 +1129,10 @@
     }
 }
 @media screen and (max-width: 845px){
+    .nav_list{
+        margin-top: 20px;
+        margin-bottom: 27px;
+    }
     .statistics{
         .statistic_wrapper{
             .statistic_in{
@@ -1202,6 +1206,7 @@
             background-size: cover;
         }
         .back_wrapper{
+            padding-bottom: 140px;
             flex-direction: column-reverse;
             .back_social_media{
                 .social_media_content{
@@ -1261,6 +1266,17 @@
             }
         }
     }
+    header{
+        .bottom {
+            .logo{
+                width: 55px !important;
+                height: 75px !important;
+                img{
+                    width: 100%;
+                }
+            }
+        }
+    }  
 }
 @media (max-width: 800px) {
     #postmarks {
@@ -1881,6 +1897,15 @@
             display: block;
         }
     }
+    footer{
+        .footer_wrapper_media{
+            .footer_center_media{
+                ul{
+                    padding-left: 0;
+                }
+            }
+        }
+    }  
 }
 @media screen and (max-width: 650px){
     .albums{
@@ -2064,7 +2089,7 @@
             .back_form{
                 margin: 0 auto;
                 width: 100%;
-                padding: 24px 23px 40px 23px;
+                padding: 24px 0px 40px 0px;
                 .back_form_content{
                     .back_form_title{
                         margin-bottom: 37px;
