@@ -22,37 +22,37 @@
         <!-- Header top start -->
         <div class="top">
             <div class="main_container">
-                <div class="header_top">
-                    <div class="left">
-                        <a href="/index.html">Главная</a>
-                        <a href="/index.html">Статьи</a>
-                        <a href="/index.html">Помощь по проекту</a>
+                <div class="header_top d-flex align-items-center justify-content-between">
+                    <div class="left d-flex align-items-center">
+                        <a href="/index.html" class="text-decoration-none">Главная</a>
+                        <a href="/index.html" class="text-decoration-none">Статьи</a>
+                        <a href="/index.html" class="text-decoration-none">Помощь по проекту</a>
                         <div class="search">
                             <input type="text" placeholder="Поиск. Например: Джордж Вашингтон">
                             <button>
                                 <img src="./images/search.svg" alt="search">
                             </button>
                         </div>
-                        <button class="filter">
+                        <button class="filter d-none d-lg-flex">
                             <span>Фильтр</span>
                             <img src="./images/filter.svg" alt="">
                         </button>
                     </div>
-                    <ul>
+                    <ul class="m-0 d-flex align-items-center justify-content-between">
                         <li>
-                            <a href="#">
+                            <a href="#" class="d-flex align-items-center text-decoration-none">
                                 <img src="./images/message.svg" alt="">
                                 <span>Обратная связь</span>
                             </a>
                         </li>
                         <li>
-                            <a href="#">
+                            <a href="#" class="d-flex align-items-center text-decoration-none">
                                 <img src="./images/header_star.svg" alt="">
                                 <span>Избранное</span>
                             </a>
                         </li>
                         <li>
-                            <a href="#">
+                            <a href="#" class="d-flex align-items-center text-decoration-none">
                                 <img src="./images/user.svg" alt="">
                                 <span>Личный кабинет</span>
                             </a>
@@ -65,7 +65,7 @@
 
         <!-- Header bottom start -->
         <div class="bottom">
-            <div class="main_container">
+            <div class="main_container d-flex align-items-center justify-content-between">
                 <a class="logo" href="index.html">
                     <img src="./images/Logo.svg" alt="Logotip">
                 </a>
@@ -75,165 +75,124 @@
                         <img src="./images/search.svg" alt="search">
                     </button>
                 </div>
-                <div class="head_dropdown">
-                    <button>
+                <div class="dropdown d-none d-lg-block">
+                    <button class="dropdown-toggle bg-transparent border-0" type="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
                         <img src="./images/globus.svg" alt="globus">
                         Страны и регионы
-                        <img src="./images/dropdown_icon.svg" alt="">
                     </button>
-                    <ul>
-                        <li>
-                            <a href="#">List item 1</a>
-                        </li>
-                        <li>
-                            <a href="#">List item 2</a>
-                        </li>
-                        <li>
-                            <a href="#">List item 3</a>
-                        </li>
-                        <li>
-                            <a href="#">List item 4</a>
-                        </li>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Action</a></li>
+                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                        <li><a class="dropdown-item" href="#">Something else here</a></li>
                     </ul>
                 </div>
-                <div class="head_dropdown">
-                    <button>
+                <div class="dropdown d-none d-lg-block">
+                    <button class="dropdown-toggle bg-transparent border-0" type="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
                         <img src="./images/calendar.svg" alt="globus">
                         годы
-                        <img src="./images/dropdown_icon.svg" alt="">
                     </button>
-                    <ul>
-                        <li>
-                            <a href="#">List item 1</a>
-                        </li>
-                        <li>
-                            <a href="#">List item 2</a>
-                        </li>
-                        <li>
-                            <a href="#">List item 3</a>
-                        </li>
-                        <li>
-                            <a href="#">List item 4</a>
-                        </li>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Action</a></li>
+                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                        <li><a class="dropdown-item" href="#">Something else here</a></li>
                     </ul>
                 </div>
-                <div class="head_dropdown">
-                    <button>
+                <div class="dropdown d-none d-lg-block">
+                    <button class="dropdown-toggle bg-transparent border-0" type="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
                         <img src="./images/receta.svg" alt="globus">
                         темы
-                        <img src="./images/dropdown_icon.svg" alt="">
                     </button>
-                    <ul>
-                        <li>
-                            <a href="#">List item 1</a>
-                        </li>
-                        <li>
-                            <a href="#">List item 2</a>
-                        </li>
-                        <li>
-                            <a href="#">List item 3</a>
-                        </li>
-                        <li>
-                            <a href="#">List item 4</a>
-                        </li>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Action</a></li>
+                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                        <li><a class="dropdown-item" href="#">Something else here</a></li>
                     </ul>
                 </div>
-                <div class="head_dropdown">
-                    <button>
+                <div class="dropdown d-none d-xl-block">
+                    <button class="dropdown-toggle bg-transparent border-0" type="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
                         <img src="./images/book.svg" alt="globus">
                         альбомы
-                        <img src="./images/dropdown_icon.svg" alt="">
                     </button>
-                    <ul>
-                        <li>
-                            <a href="#">List item 1</a>
-                        </li>
-                        <li>
-                            <a href="#">List item 2</a>
-                        </li>
-                        <li>
-                            <a href="#">List item 3</a>
-                        </li>
-                        <li>
-                            <a href="#">List item 4</a>
-                        </li>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Action</a></li>
+                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                        <li><a class="dropdown-item" href="#">Something else here</a></li>
                     </ul>
                 </div>
-                <a class="head_link head_link_active" href="#">
+                <a class="head_link head_link_active d-none d-xl-flex align-items-center text-decoration-none" href="#">
                     <img src="./images/crown.svg" alt="">
                     Золотой пантеон
                 </a>
-                <a class="head_link" href="#">
+                <a class="head_link d-none d-xxl-flex align-items-center text-decoration-none" href="#">
                     <img src="./images/statistic_up.svg" alt="">
                     Статистика коллекции
                 </a>
-                <div class="head_dropdown last_head_dropdown">
-                    <button>
+                <div class="dropdown d-none d-xl-block">
+                    <button class="dropdown-toggle bg-transparent border-0" type="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
                         <img src="./images/bars.svg" alt="globus">
-                        <img src="./images/dropdown_icon_red.svg" alt="">
                     </button>
-                    <ul>
-                        <li>
-                            <a href="#">List item 1</a>
-                        </li>
-                        <li>
-                            <a href="#">List item 2</a>
-                        </li>
-                        <li>
-                            <a href="#">List item 3</a>
-                        </li>
-                        <li>
-                            <a href="#">List item 4</a>
-                        </li>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Action</a></li>
+                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                        <li><a class="dropdown-item" href="#">Something else here</a></li>
                     </ul>
                 </div>
-                <img src="./images/menu_bars.svg" role="button" class="bars" alt="">
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                    <img src="./images/menu_bars.svg" role="button" class="bars" alt="">
+                </button>
             </div>
         </div>
         <!-- Header bottom end -->
 
-        <div class="header_mobile">
-            <div class="bg"></div>
-            <div class="menu">
-                <button class="close_menu">
-                    &times;
-                </button>
-                <ul>
-                    <li>
-                        <a href="./index.html">Главная</a>
-                    </li>
-                    <li>
-                        <a href="#">Статьи</a>
-                    </li>
-                    <li>
-                        <a href="#">Помощь по проекту</a>
-                    </li>
-                    <li>
-                        <a href="#">Фильтр</a>
-                    </li>
-                    <li>
-                        <a href="#">Страны и регионы</a>
-                    </li>
-                    <li>
-                        <a href="#">годы</a>
-                    </li>
-                    <li>
-                        <a href="#">темы</a>
-                    </li>
-                    <li>
-                        <a href="#">альбомы</a>
-                    </li>
-                    <li>
-                        <a href="#">Золотой пантеон</a>
-                    </li>
-                    <li>
-                        <a href="#">Статистика коллекции</a>
-                    </li>
-                </ul>
+        <nav class="navbarp-0">
+            <div class="container-fluid">
+                <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar"
+                    aria-labelledby="offcanvasNavbarLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Offcanvas</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Link</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    Dropdown
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">Action</a></li>
+                                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                                    <li>
+                                        <hr class="dropdown-divider">
+                                    </li>
+                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <form class="d-flex mt-3" role="search">
+                            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                            <button class="btn btn-outline-success" type="submit">Search</button>
+                        </form>
+                    </div>
+                </div>
             </div>
-        </div>
+        </nav>
+
     </header>
     <!-- Header end -->
+    
 
     <div class="main_container">
         <div class="nav_list">

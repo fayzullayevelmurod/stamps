@@ -237,6 +237,24 @@ header {
     }
 }
 
+.nav_list {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    margin-bottom: 55px;
+    margin-top: 43px;
+
+    a {
+        margin: 0 5px;
+        color: #B6B3B3;
+        font-family: Montserrat;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 111.5%;
+    }
+}
+
 .golden {
     .nav_list {
         display: flex;
