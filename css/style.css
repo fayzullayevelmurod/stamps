@@ -191,6 +191,23 @@ header .bottom .last_head_dropdown ul {
   transform: translateY(24px) translateX(0);
 }
 
+.nav_list {
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  margin-bottom: 55px;
+  margin-top: 43px;
+}
+.nav_list a {
+  margin: 0 5px;
+  color: #B6B3B3;
+  font-family: Montserrat;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 111.5%;
+}
+
 .golden .nav_list {
   display: flex;
   align-items: center;
