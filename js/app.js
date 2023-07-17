@@ -107,17 +107,14 @@ if (calculate.length) {
         const minus = item.querySelector('.decrement');
         const plus = item.querySelector('.increment');
         const result = item.querySelector('.result');
-        const money = result.getAttribute('default-price');
-        console.log(money);
-
         minus.onclick = () => {
-            if (parseInt(result.innerHTML) >= Number(money)) {
-                result.innerHTML = parseInt(result.innerHTML) - parseInt(money) + '$';
+            if (parseInt(result.innerHTML) >= 1) {
+                result.innerHTML = parseInt(result.innerHTML) - 1 + '$';
             }
         }
 
         plus.onclick = () => {
-            result.innerHTML = parseInt(result.innerHTML) + parseInt(money) + '$';
+            result.innerHTML = parseInt(result.innerHTML) + 1 + '$';
         }
     })
 }
@@ -136,4 +133,20 @@ if (resize_btn) {
     modal.querySelector('.close').onclick = () => {
         modal.classList.remove('img_modal_active');
     }
+}
+
+const start_calculation = document.querySelectorAll('.brand .bnts_group button');
+
+if (start_calculation.length) {
+    start_calculation.forEach((item, index) => {
+        item.onclick = () => {
+            start_calculation.forEach((btn, i) => {
+                if (i <= index) {
+                    btn.classList.add('selected');
+                } else {
+                    btn.classList.remove('selected');
+                }
+            })
+        }
+    })
 }

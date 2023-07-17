@@ -175,8 +175,11 @@ header {
                 left: 53px;
                 width: 70px;
                 height: 96px;
-                img{
+
+                img {
                     width: 100%;
+                    position: relative;
+                    z-index: 3;
                 }
             }
         }
@@ -200,6 +203,19 @@ header {
                 font-weight: 600;
                 line-height: normal;
                 letter-spacing: 0.54px;
+
+                &::after {
+                    transform: translateY(3px);
+                }
+            }
+        }
+
+        .last_dropdown {
+            button {
+                &::after {
+                    transform: translate(-8px, 8px);
+                    color: #B32B37;
+                }
             }
         }
 
@@ -755,6 +771,7 @@ header {
     .back_wrapper {
         .back_social_media {
             width: 36%;
+
             .social_media_content {
                 background-color: #123044;
                 height: 100%;
@@ -838,7 +855,7 @@ header {
                             padding: 12px 0 12px 27px;
                             color: #1A1717;
                             font-family: Montserrat;
-                            font-size: 16.453px;
+                            font-size: 14px;
                             font-style: normal;
                             font-weight: 500;
                             line-height: normal;
@@ -870,6 +887,7 @@ header {
 
                 .back_form_main_right {
                     flex: 1;
+
                     textarea {
                         height: 173px;
                         display: inline-block;
@@ -917,6 +935,7 @@ header {
             .albums_left {
                 padding: 70px 0 186px 0;
                 width: 50%;
+
                 h4 {
                     color: #FFF;
                     font-family: Montserrat, sans-serif;
@@ -929,6 +948,7 @@ header {
 
                 .albums_left_in {
                     gap: 76px;
+
                     ul {
                         padding-left: 0;
 
@@ -973,6 +993,7 @@ header {
 
             .albums_right {
                 width: 50%;
+
                 img {
                     position: absolute;
                     object-fit: cover;
@@ -992,6 +1013,7 @@ header {
         .head {
             align-items: flex-start;
             margin-bottom: 60px;
+
             .head_left {
                 gap: 40px;
                 margin-top: 12px;
@@ -1018,6 +1040,7 @@ header {
                         font-style: normal;
                         font-weight: 600;
                         line-height: 111.5%;
+
                         img {
                             width: 40px;
                             height: 29px;
@@ -1127,6 +1150,9 @@ header {
 
             .albums_comment_card_top {
                 margin-bottom: 43px;
+                display: flex;
+                align-items: center;
+
                 img {
                     width: 60px;
                     height: 60px;
@@ -1238,6 +1264,9 @@ header {
 
                 .albums_comment_card_top {
                     margin-bottom: 43px;
+                    display: flex;
+                    align-items: center;
+
                     img {
                         width: 60px;
                         height: 60px;
@@ -1429,6 +1458,7 @@ header {
     .registration_wrapper {
         .registration_left {
             width: 50%;
+
             img {
                 height: 100%;
                 object-fit: cover;
@@ -1482,6 +1512,7 @@ header {
 
             .form_input_wrapper {
                 gap: 10px;
+
                 .form_left {
                     .form_input_in {
                         width: 284px;
@@ -1490,6 +1521,7 @@ header {
                         border: 0.5px solid #E1E1E1;
                         background: #FFF;
                         box-shadow: 0px 1px 7px 0px rgba(0, 0, 0, 0.09);
+
                         input {
                             padding: 15px 5px 15px 20px;
                             border: none;
@@ -1500,10 +1532,12 @@ header {
                             font-weight: 500;
                             line-height: normal;
                             letter-spacing: 0.35px;
-                            &:focus{
+
+                            &:focus {
                                 box-shadow: none !important;
                             }
                         }
+
                         img {
                             margin-left: auto;
                             padding-right: 10px;
@@ -1519,6 +1553,7 @@ header {
                         border: 0.5px solid #E1E1E1;
                         background: #FFF;
                         box-shadow: 0px 1px 7px 0px rgba(0, 0, 0, 0.09);
+
                         input {
                             padding: 15px 15px 15px 20px;
                             color: #1A1717;
@@ -1540,7 +1575,8 @@ header {
 
             .form_agreement {
                 margin-bottom: 33px;
-                input { 
+
+                input {
                     accent-color: #B32B37;
                     width: 30px;
                     height: 30px;
@@ -1608,9 +1644,11 @@ header {
 .sign_in {
     background: #F8F8F8;
     box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.25);
+
     .sign_in_wrapper {
         .sign_in_left {
             width: 50%;
+
             img {
                 object-fit: cover;
                 left: 0;
@@ -1660,7 +1698,8 @@ header {
                         font-weight: 500;
                         line-height: normal;
                         letter-spacing: 0.35px;
-                        &:focus{
+
+                        &:focus {
                             box-shadow: none;
                         }
                     }
@@ -1977,6 +2016,30 @@ header {
     }
 }
 
+@mixin link_index {
+    color: #102B3C;
+    font-family: "Montserrat", sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 28.813px;
+    text-decoration-line: underline;
+
+    img {
+        margin-left: 4px;
+    }
+
+    @media only screen and (max-width: 450px) {
+        color: #102B3C;
+        font-family: "Montserrat", sans-serif;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 28.813px;
+        text-decoration-line: underline;
+    }
+}
+
 .index {
     width: 100%;
     overflow-x: hidden;
@@ -2256,6 +2319,7 @@ header {
                 padding: 29px 64px 47px 31px;
 
                 .link {
+                    @include link_index();
                     display: none;
                 }
 
@@ -2369,6 +2433,8 @@ header {
                 font-weight: 500;
                 line-height: 28.813px;
                 text-decoration-line: underline;
+
+                @include link_index();
 
                 img {
                     margin-left: 4px;
@@ -3056,6 +3122,7 @@ header {
                                 font-style: normal;
                                 font-weight: 600;
                                 line-height: 36.285px;
+                                width: 40%;
                             }
 
                             .active {
@@ -3132,7 +3199,7 @@ header {
                         border: 1px solid #FFF;
                         background: #254459;
                         box-shadow: 0px 1px 7px 0px rgba(0, 0, 0, 0.09);
-                        padding: 17px 13px;
+                        padding: 17px 33px;
                         color: #FFF;
                         font-family: "Fira Sans", sans-serif;
                         font-size: 17.581px;
@@ -3141,6 +3208,7 @@ header {
                         line-height: 111.5%;
                         letter-spacing: 0.44px;
 
+                        
                         img {
                             margin-left: 20px;
                         }
@@ -3256,6 +3324,29 @@ header {
             text-align: center;
             max-width: 441px;
 
+            .bnts_group {
+                display: flex;
+                gap: 3px;
+                justify-content: center;
+                align-items: center;
+
+                button {
+                    background: transparent;
+                    border: 0;
+                    outline: none;
+
+                    svg {}
+                }
+
+                .selected {
+                    svg {
+                        path {
+                            fill: #EFC351;
+                        }
+                    }
+                }
+            }
+
             h2 {
                 color: #000;
                 font-family: "Montserrat", sans-serif;
@@ -3315,6 +3406,21 @@ header {
                     font-weight: 600;
                     line-height: 111.5%;
                     padding: 14px 21px 20px 19px;
+                }
+            }
+
+            .evalutions {
+                button {
+                    color: white;
+                    font-family: "Montserrat", sans-serif;
+                    font-size: 28px;
+                    font-style: normal;
+                    font-weight: 600;
+                    line-height: 111.5%;
+                    background: #B32B37;
+                    margin-top: 28px;
+                    padding: 5px 20px 6px;
+                    filter: drop-shadow(0px 0.8882681727409363px 6.217877388000488px rgba(0, 0, 0, 0.09));
                 }
             }
         }
@@ -3535,6 +3641,7 @@ footer {
         padding: 80px 0;
         display: flex;
         justify-content: space-between;
+        align-items: flex-start;
 
         .footer_logo {
             transform: translateY(-30px);
@@ -3586,7 +3693,7 @@ footer {
 
             form {
                 .form_in {
-                    margin-bottom: 60px;
+                    margin-bottom: 40px;
                     display: flex;
                     align-items: center;
                     border-radius: 44px;
@@ -3640,6 +3747,7 @@ footer {
                         font-style: normal;
                         font-weight: 500;
                         line-height: 28.813px;
+                        margin-bottom: 0;
                     }
 
                     a {

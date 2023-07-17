@@ -152,6 +152,8 @@ header .bottom .main_container .logo {
 }
 header .bottom .main_container .logo img {
   width: 100%;
+  position: relative;
+  z-index: 3;
 }
 header .bottom .bars {
   display: none;
@@ -168,6 +170,13 @@ header .bottom .dropdown button {
   font-weight: 600;
   line-height: normal;
   letter-spacing: 0.54px;
+}
+header .bottom .dropdown button::after {
+  transform: translateY(3px);
+}
+header .bottom .last_dropdown button::after {
+  transform: translate(-8px, 8px);
+  color: #B32B37;
 }
 header .bottom .head_link {
   color: #1A1717;
@@ -704,7 +713,7 @@ header .bottom .last_head_dropdown ul {
   padding: 12px 0 12px 27px;
   color: #1A1717;
   font-family: Montserrat;
-  font-size: 16.453px;
+  font-size: 14px;
   font-style: normal;
   font-weight: 500;
   line-height: normal;
@@ -947,6 +956,8 @@ header .bottom .last_head_dropdown ul {
 }
 .albums .albums_comments .albums_comment_card .albums_comment_card_top {
   margin-bottom: 43px;
+  display: flex;
+  align-items: center;
 }
 .albums .albums_comments .albums_comment_card .albums_comment_card_top img {
   width: 60px;
@@ -1046,6 +1057,8 @@ header .bottom .last_head_dropdown ul {
 }
 .albums .albums_comments .albums_comment_card_by .albums_comment_card_my .albums_comment_card_top {
   margin-bottom: 43px;
+  display: flex;
+  align-items: center;
 }
 .albums .albums_comments .albums_comment_card_by .albums_comment_card_my .albums_comment_card_top img {
   width: 60px;
@@ -1927,7 +1940,28 @@ header .bottom .last_head_dropdown ul {
   padding: 29px 64px 47px 31px;
 }
 .index #news .news_top .left .link {
+  color: #102B3C;
+  font-family: "Montserrat", sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 28.813px;
+  text-decoration-line: underline;
   display: none;
+}
+.index #news .news_top .left .link img {
+  margin-left: 4px;
+}
+@media only screen and (max-width: 450px) {
+  .index #news .news_top .left .link {
+    color: #102B3C;
+    font-family: "Montserrat", sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 28.813px;
+    text-decoration-line: underline;
+  }
 }
 .index #news .news_top .left h2 {
   color: #1A1717;
@@ -2022,6 +2056,27 @@ header .bottom .last_head_dropdown ul {
   font-weight: 500;
   line-height: 28.813px;
   text-decoration-line: underline;
+  color: #102B3C;
+  font-family: "Montserrat", sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 28.813px;
+  text-decoration-line: underline;
+}
+.index #news .links a img {
+  margin-left: 4px;
+}
+@media only screen and (max-width: 450px) {
+  .index #news .links a {
+    color: #102B3C;
+    font-family: "Montserrat", sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 28.813px;
+    text-decoration-line: underline;
+  }
 }
 .index #news .links a img {
   margin-left: 4px;
@@ -2580,6 +2635,7 @@ header .bottom .last_head_dropdown ul {
   font-style: normal;
   font-weight: 600;
   line-height: 36.285px;
+  width: 40%;
 }
 .brand #anons .content .content_right .description_head .item .item_in .active {
   text-decoration-line: underline;
@@ -2646,7 +2702,7 @@ header .bottom .last_head_dropdown ul {
   border: 1px solid #FFF;
   background: #254459;
   box-shadow: 0px 1px 7px 0px rgba(0, 0, 0, 0.09);
-  padding: 17px 13px;
+  padding: 17px 33px;
   color: #FFF;
   font-family: "Fira Sans", sans-serif;
   font-size: 17.581px;
@@ -2749,6 +2805,20 @@ header .bottom .last_head_dropdown ul {
   text-align: center;
   max-width: 441px;
 }
+.brand #characteristic .calculation .bnts_group {
+  display: flex;
+  gap: 3px;
+  justify-content: center;
+  align-items: center;
+}
+.brand #characteristic .calculation .bnts_group button {
+  background: transparent;
+  border: 0;
+  outline: none;
+}
+.brand #characteristic .calculation .bnts_group .selected svg path {
+  fill: #EFC351;
+}
 .brand #characteristic .calculation h2 {
   color: #000;
   font-family: "Montserrat", sans-serif;
@@ -2804,6 +2874,18 @@ header .bottom .last_head_dropdown ul {
   font-weight: 600;
   line-height: 111.5%;
   padding: 14px 21px 20px 19px;
+}
+.brand #characteristic .calculation .evalutions button {
+  color: white;
+  font-family: "Montserrat", sans-serif;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 111.5%;
+  background: #B32B37;
+  margin-top: 28px;
+  padding: 5px 20px 6px;
+  filter: drop-shadow(0px 0.8882681727px 6.217877388px rgba(0, 0, 0, 0.09));
 }
 .brand #characteristic .mobile_calculation {
   display: none;
@@ -2982,6 +3064,7 @@ footer .footer_wrapper {
   padding: 80px 0;
   display: flex;
   justify-content: space-between;
+  align-items: flex-start;
 }
 footer .footer_wrapper .footer_logo {
   transform: translateY(-30px);
@@ -3021,7 +3104,7 @@ footer .footer_wrapper .footer_social .footer_social_in a {
   margin-right: 23px;
 }
 footer .footer_wrapper .footer_social form .form_in {
-  margin-bottom: 60px;
+  margin-bottom: 40px;
   display: flex;
   align-items: center;
   border-radius: 44px;
@@ -3071,6 +3154,7 @@ footer .footer_wrapper .footer_social .footer_social_in .footer_social_email p {
   font-style: normal;
   font-weight: 500;
   line-height: 28.813px;
+  margin-bottom: 0;
 }
 footer .footer_wrapper .footer_social .footer_social_in .footer_social_email a {
   color: #123044;
@@ -4633,6 +4717,8 @@ footer .footer_wrapper_media .footer_media_bottom_in {
   }
   .albums .albums_comments .albums_comment_card .albums_comment_card_top h4 {
     font-size: 14px;
+    margin-bottom: 0;
+    padding-top: 10px;
   }
   .albums .albums_comments .albums_comment_card .albums_comment_card_top h4 span {
     font-size: 12px;
@@ -4662,9 +4748,6 @@ footer .footer_wrapper_media .footer_media_bottom_in {
   .albums .albums_comments .albums_comment_card_by .albums_comment_card_my {
     padding: 15px;
   }
-  .albums .albums_comments .albums_comment_card_by .albums_comment_card_my .albums_comment_card_top {
-    margin-bottom: 15px;
-  }
   .albums .albums_comments .albums_comment_card_by .albums_comment_card_my .albums_comment_card_top img {
     width: 36px;
     margin-right: 15px;
@@ -4672,6 +4755,8 @@ footer .footer_wrapper_media .footer_media_bottom_in {
   .albums .albums_comments .albums_comment_card_by .albums_comment_card_my .albums_comment_card_top h4 {
     margin-right: 10px;
     font-size: 14px;
+    margin-bottom: 0;
+    padding-top: 10px;
   }
   .albums .albums_comments .albums_comment_card_by .albums_comment_card_my .albums_comment_card_top h4 span {
     font-size: 12px;
@@ -5251,6 +5336,7 @@ footer .footer_wrapper_media .footer_media_bottom_in {
   }
   .brand_nav_list {
     overflow: hidden;
+    margin-bottom: 50px;
   }
   .brand_nav_list a {
     white-space: nowrap;
@@ -5586,6 +5672,10 @@ footer .footer_wrapper_media .footer_media_bottom_in {
     font-weight: 600;
     line-height: 24.458px;
     margin-bottom: 18px;
+  }
+  .brand #characteristic .mobile_calculation .calculation .bnts_group button svg {
+    width: 44px;
+    height: 44px;
   }
   .brand #characteristic .mobile_calculation .calculation img {
     width: 232px;

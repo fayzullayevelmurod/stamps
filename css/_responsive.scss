@@ -2123,6 +2123,8 @@
 
                     h4 {
                         font-size: 14px;
+                        margin-bottom: 0;
+                        padding-top: 10px;
 
                         span {
                             font-size: 12px;
@@ -2161,7 +2163,7 @@
                     padding: 15px;
 
                     .albums_comment_card_top {
-                        margin-bottom: 15px;
+                        // margin-bottom: 15px;
 
                         img {
                             width: 36px;
@@ -2171,6 +2173,8 @@
                         h4 {
                             margin-right: 10px;
                             font-size: 14px;
+                            margin-bottom: 0;
+                            padding-top: 10px;
 
                             span {
                                 font-size: 12px;
@@ -2963,6 +2967,7 @@
 
     .brand_nav_list {
         overflow: hidden;
+        margin-bottom: 50px;
 
         a {
             white-space: nowrap;
@@ -3398,6 +3403,15 @@
                         font-weight: 600;
                         line-height: 24.458px;
                         margin-bottom: 18px;
+                    }
+
+                    .bnts_group {
+                        button {
+                            svg {
+                                width: 44px;
+                                height: 44px;
+                            }
+                        }
                     }
 
                     img {
