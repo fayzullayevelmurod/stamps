@@ -32,8 +32,74 @@ textarea:focus {
   margin: 0 auto;
 }
 
+.zoom_img {
+  display: flex;
+  position: relative;
+  margin-top: 44px;
+}
+.zoom_img img {
+  cursor: pointer;
+}
+.zoom_img .minus_z {
+  position: absolute;
+  width: 2%;
+  left: 343px;
+  top: 22px;
+}
+.zoom_img button {
+  border: none;
+  outline: none;
+}
+.zoom_img .plus_z {
+  position: absolute;
+  width: 2%;
+  right: 345px;
+  top: 22px;
+}
+.zoom_img #hubble-container {
+  width: 50%;
+  font-size: 0;
+  border: 1px solid #111;
+  overflow: hidden;
+  margin: 0 auto;
+  margin-top: 2rem;
+}
+.zoom_img #hubblepic {
+  width: 100%;
+}
+.zoom_img #zoomer {
+  display: block;
+  width: 50%;
+  margin: 2rem auto;
+  position: relative;
+  z-index: 10;
+  cursor: pointer;
+}
+@media all and (max-width: 500px) {
+  .zoom_img #zoomer,
+  .zoom_img #hubble-container {
+    width: 85%;
+  }
+  .zoom_img .minus_z {
+    position: absolute;
+    width: 6%;
+    left: 0;
+    top: 28px;
+  }
+  .zoom_img .plus_z {
+    position: absolute;
+    width: 6%;
+    left: 317px;
+    top: 28px;
+  }
+}
+
+#zoom_album {
+  transition: 0.5s all ease;
+}
+
 header .top {
-  background: #EFEDED;
+  background: #efeded;
   padding-top: 15px;
   padding-bottom: 12px;
 }
@@ -42,8 +108,8 @@ header .search {
   width: 398px;
   height: 43px;
   border-radius: 6px;
-  border: 0.5px solid #E1E1E1;
-  background: #FFF;
+  border: 0.5px solid #e1e1e1;
+  background: #fff;
   margin-left: 31px;
   margin-right: 15px;
 }
@@ -52,7 +118,7 @@ header .search input {
   top: 0;
   left: 0;
   height: 100%;
-  width: 90%;
+  width: 85%;
   background: transparent;
   outline: none;
   border: none;
@@ -64,11 +130,15 @@ header .search input {
   line-height: normal;
   letter-spacing: 0.35px;
 }
+header .search img {
+  margin-left: 15px;
+  opacity: 0.4;
+}
 header .search input::-moz-placeholder {
-  color: #DADADA;
+  color: #dadada;
 }
 header .search input::placeholder {
-  color: #DADADA;
+  color: #dadada;
 }
 header .search button {
   position: absolute;
@@ -80,7 +150,7 @@ header .search button {
   border: none;
 }
 header .header_top .left a {
-  color: #7C7878;
+  color: #7c7878;
   font-family: "Montserrat", sans-serif;
   font-size: 14px;
   font-style: normal;
@@ -126,13 +196,13 @@ header .header_top ul li:nth-child(2) {
   margin-right: 40px;
 }
 header .header_top ul li:nth-child(2) a {
-  color: #B32B37;
+  color: #b32b37;
 }
 header .header_top ul li:nth-child(3) a {
-  color: #0A75B1;
+  color: #0a75b1;
 }
 header .bottom {
-  background: #F9F9F9;
+  background: #f9f9f9;
   box-shadow: 0px 1px 7px 0px rgba(0, 0, 0, 0.09);
   padding-top: 26px;
   padding-bottom: 20px;
@@ -163,7 +233,7 @@ header .bottom .search {
 }
 header .bottom .dropdown button {
   cursor: pointer;
-  color: #1A1717;
+  color: #1a1717;
   font-family: "Montserrat", sans-serif;
   font-size: 18px;
   font-style: normal;
@@ -176,10 +246,10 @@ header .bottom .dropdown button::after {
 }
 header .bottom .last_dropdown button::after {
   transform: translate(-8px, 8px);
-  color: #B32B37;
+  color: #b32b37;
 }
 header .bottom .head_link {
-  color: #1A1717;
+  color: #1a1717;
   font-family: "Montserrat", sans-serif;
   font-size: 18px;
   font-style: normal;
@@ -191,7 +261,7 @@ header .bottom .head_link img {
   margin-right: 6px;
 }
 header .bottom .head_link_active {
-  background: var(--g-2, linear-gradient(99deg, #B98726 0%, #CD9F45 17.19%, #E6BD6B 38.54%, #E6BD6B 59.38%, #CFA249 79.69%, #B98726 100%));
+  background: var(--g-2, linear-gradient(99deg, #b98726 0%, #cd9f45 17.19%, #e6bd6b 38.54%, #e6bd6b 59.38%, #cfa249 79.69%, #b98726 100%));
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -214,7 +284,7 @@ header .bottom .last_head_dropdown ul {
 }
 .nav_list a {
   margin: 0 5px;
-  color: #B6B3B3;
+  color: #b6b3b3;
   font-family: Montserrat;
   font-size: 16px;
   font-style: normal;
@@ -228,7 +298,7 @@ header .bottom .last_head_dropdown ul {
 }
 .golden .nav_list a {
   margin: 0 5px;
-  color: #B6B3B3;
+  color: #b6b3b3;
   font-family: Montserrat;
   font-size: 16px;
   font-style: normal;
@@ -243,7 +313,7 @@ header .bottom .last_head_dropdown ul {
   min-height: 228px;
   padding: 50px 10px;
   border-radius: 4px;
-  background: #FFF6F2;
+  background: #fff6f2;
   box-shadow: 0px 1px 7px 0px rgba(0, 0, 0, 0.09);
 }
 .golden .golden_comment_wrapper .golden_comment img {
@@ -254,7 +324,7 @@ header .bottom .last_head_dropdown ul {
 }
 .golden .golden_comment_wrapper .golden_comment p {
   max-width: 1005px;
-  color: #1A1717;
+  color: #1a1717;
   font-family: Montserrat, sans-serif;
   font-size: 21px;
   font-style: italic;
@@ -271,7 +341,7 @@ header .bottom .last_head_dropdown ul {
 }
 .golden .golden_comment_wrapper .golden_comment_right .comment_right_in .comment_left h2 {
   margin-left: 9px;
-  color: #FFF;
+  color: #fff;
   text-shadow: 0px 2.5897455215px 3.8846182823px 0px rgba(0, 0, 0, 0.25);
   font-family: "Fira Sans", sans-serif;
   font-size: 18.128px;
@@ -283,7 +353,7 @@ header .bottom .last_head_dropdown ul {
 .golden .golden_comment_wrapper .golden_comment_right .comment_right_in .comment_right h4 {
   width: 150px;
   margin-bottom: 20px;
-  color: #FFF;
+  color: #fff;
   font-family: Montserrat;
   font-size: 16px;
   font-style: normal;
@@ -302,7 +372,7 @@ header .bottom .last_head_dropdown ul {
   transform: translateX(20px);
 }
 .golden .golden_comment_wrapper .golden_comment_right h3 {
-  color: #FFF;
+  color: #fff;
   text-shadow: 0px 4px 6px 0px rgba(0, 0, 0, 0.25);
   font-family: "Fira Sans", sans-serif;
   font-size: 21px;
@@ -314,7 +384,7 @@ header .bottom .last_head_dropdown ul {
   margin-bottom: 192px;
 }
 .golden .golden_main h2 {
-  color: #1A1717;
+  color: #1a1717;
   font-family: Montserrat, sans-serif;
   font-size: 36px;
   font-style: normal;
@@ -325,7 +395,7 @@ header .bottom .last_head_dropdown ul {
 .golden .golden_main .golden_main_card {
   padding: 30px;
   border-radius: 6px;
-  background: #FCFCFC;
+  background: #fcfcfc;
   box-shadow: 0px 1px 7px 0px rgba(0, 0, 0, 0.09);
 }
 .golden .golden_main .golden_main_card img {
@@ -384,7 +454,7 @@ header .bottom .last_head_dropdown ul {
 }
 .statistics .nav_list a {
   margin: 0 5px;
-  color: #B6B3B3;
+  color: #b6b3b3;
   font-family: Montserrat;
   font-size: 16px;
   font-style: normal;
@@ -409,7 +479,7 @@ header .bottom .last_head_dropdown ul {
   background-size: 100% 100%;
 }
 .statistics .statistic_wrapper .statistic_in .statistic_left h4 {
-  color: #1C1D1E;
+  color: #1c1d1e;
   font-family: "Fira Sans", sans-serif;
   font-size: 30.276px;
   font-style: normal;
@@ -418,7 +488,7 @@ header .bottom .last_head_dropdown ul {
 }
 .statistics .statistic_wrapper .statistic_in .statistic_left h4 span {
   margin-left: 15px;
-  color: #B32B37;
+  color: #b32b37;
   font-family: Montserrat, sans-serif;
   font-size: 55.895px;
   font-style: normal;
@@ -440,7 +510,7 @@ header .bottom .last_head_dropdown ul {
 .statistics .statistic_wrapper .statistic_in .statistic_right .statistic_text_right .statistic_text_right_in h5 {
   margin-left: 23px;
   max-width: 253px;
-  color: #FFF;
+  color: #fff;
   text-shadow: 0px 4px 6px 0px rgba(0, 0, 0, 0.25);
   font-family: "Fira Sans", sans-serif;
   font-size: 28px;
@@ -450,7 +520,7 @@ header .bottom .last_head_dropdown ul {
 }
 .statistics .statistic_wrapper .statistic_in .statistic_right .statistic_text_right h6 {
   transform: translateY(141px);
-  color: #FFF;
+  color: #fff;
   text-shadow: 0px 4px 6px 0px rgba(0, 0, 0, 0.25);
   font-family: "Fira Sans", sans-serif;
   font-size: 28px;
@@ -460,7 +530,7 @@ header .bottom .last_head_dropdown ul {
 }
 .statistics .statistic_wrapper .statistic_in .statistic_right .statistic_img_right h3 {
   margin-right: 30px;
-  color: #FFF;
+  color: #fff;
   font-family: Montserrat, sans-serif;
   font-size: 28px;
   font-style: normal;
@@ -507,7 +577,7 @@ header .bottom .last_head_dropdown ul {
   flex-direction: column;
   border-radius: 4px;
   border: 1.1px solid rgba(0, 0, 0, 0.6);
-  background: #102B3C;
+  background: #102b3c;
   box-shadow: 0px 1px 7px 0px rgba(0, 0, 0, 0.09);
 }
 .statistics .statistic_cards .statistic_cards_in .statistic_card .statistic_card_img {
@@ -520,7 +590,7 @@ header .bottom .last_head_dropdown ul {
   width: 292px;
   height: 47px;
   display: block;
-  color: #FFF;
+  color: #fff;
   text-align: center;
   font-family: Montserrat, sans-serif;
   font-size: 18px;
@@ -563,14 +633,14 @@ header .bottom .last_head_dropdown ul {
   padding: 7px 7px 7px 30px;
   display: flex;
   align-items: center;
-  color: #4B4848;
+  color: #4b4848;
   font-family: "Montserrat", sans-serif;
   font-size: 26px;
   font-style: normal;
   font-weight: 600;
   line-height: 111.5%;
   border-radius: 22px;
-  background: #F9EEDF;
+  background: #f9eedf;
   box-shadow: 0px 1px 7px 0px rgba(0, 0, 0, 0.09);
 }
 .statistics .statistic_brands .statistic_brands_dropdowns .statistic_brands_dropdown img {
@@ -609,7 +679,7 @@ header .bottom .last_head_dropdown ul {
 }
 .statistics .statistic_brands .statistic_brands_slider .statistic_brands_in .statistic_brands_slider .statistic_slider .swiper-wrapper .swiper-slide h3 {
   max-width: 415px;
-  color: #1A1717;
+  color: #1a1717;
   text-align: center;
   font-family: Montserrat, sans-serif;
   font-size: 21px;
@@ -619,7 +689,7 @@ header .bottom .last_head_dropdown ul {
 }
 
 .back {
-  background: #EDDDC4;
+  background: #edddc4;
   box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.25);
   position: relative;
 }
@@ -631,7 +701,7 @@ header .bottom .last_head_dropdown ul {
 }
 .back .nav_list a {
   margin: 0 5px;
-  color: #B6B3B3;
+  color: #b6b3b3;
   font-family: Montserrat;
   font-size: 16px;
   font-style: normal;
@@ -687,7 +757,7 @@ header .bottom .last_head_dropdown ul {
 .back .back_wrapper .back_form .back_form_title p {
   flex: 1;
   max-width: 512px;
-  color: #4B4848;
+  color: #4b4848;
   font-family: Montserrat, sans-serif;
   font-size: 18px;
   font-style: normal;
@@ -703,15 +773,15 @@ header .bottom .last_head_dropdown ul {
 }
 .back .back_wrapper .back_form .back_form_main .back_form_main_left .back_input {
   border-radius: 7.051px;
-  border: 0.588px solid #E1E1E1;
-  background: #FFF;
+  border: 0.588px solid #e1e1e1;
+  background: #fff;
   box-shadow: 0px 1.1752265692px 8.2265863419px 0px rgba(0, 0, 0, 0.09);
   overflow: hidden;
   margin-bottom: 51px;
 }
 .back .back_wrapper .back_form .back_form_main .back_form_main_left .back_input input {
   padding: 12px 0 12px 27px;
-  color: #1A1717;
+  color: #1a1717;
   font-family: Montserrat;
   font-size: 14px;
   font-style: normal;
@@ -745,10 +815,10 @@ header .bottom .last_head_dropdown ul {
   display: inline-block;
   width: 100%;
   border-radius: 14.417px;
-  border: 1.802px solid var(--light-gray, #E9EBF0);
-  background: var(--white, #FFF);
+  border: 1.802px solid var(--light-gray, #e9ebf0);
+  background: var(--white, #fff);
   padding: 9px 24px;
-  color: #67727E;
+  color: #67727e;
   font-family: Montserrat, sans-serif;
   font-size: 18px;
   font-style: normal;
@@ -757,7 +827,7 @@ header .bottom .last_head_dropdown ul {
 }
 .back .back_wrapper .back_form .back_form_main .back_form_main_right .back_form_btn {
   margin-top: 37px;
-  color: #FFF;
+  color: #fff;
   font-family: "Fira Sans", sans-serif;
   font-size: 16px;
   width: 257px;
@@ -767,7 +837,7 @@ header .bottom .last_head_dropdown ul {
   line-height: 111.5%;
   letter-spacing: 0.96px;
   border-radius: 11px;
-  background: #B32B37;
+  background: #b32b37;
   box-shadow: 0px 1px 7px 0px rgba(0, 0, 0, 0.09);
 }
 
@@ -780,7 +850,7 @@ header .bottom .last_head_dropdown ul {
   width: 50%;
 }
 .albums .albums_home .albums_wrapper .albums_left h4 {
-  color: #FFF;
+  color: #fff;
   font-family: Montserrat, sans-serif;
   font-size: 36px;
   font-style: normal;
@@ -798,7 +868,7 @@ header .bottom .last_head_dropdown ul {
   margin-bottom: 29px;
 }
 .albums .albums_home .albums_wrapper .albums_left .albums_left_in ul li a {
-  color: #FFF;
+  color: #fff;
   font-family: "Fira Sans", sans-serif;
   font-size: 24px;
   font-style: normal;
@@ -813,7 +883,7 @@ header .bottom .last_head_dropdown ul {
 }
 .albums .albums_home .albums_wrapper .albums_left .albums_left_in ul li .albums_list_active {
   border-radius: 18px;
-  background: #102B3C;
+  background: #102b3c;
   box-shadow: 0px 4px 6px 0px rgba(0, 0, 0, 0.25);
 }
 .albums .albums_home .albums_wrapper .albums_left .albums_left_in ul li .albums_list_active::after {
@@ -839,7 +909,7 @@ header .bottom .last_head_dropdown ul {
   left: 50%;
 }
 .albums #album_slider {
-  background: linear-gradient(140deg, #EDDDC5 0%, #DABD94 100%);
+  background: linear-gradient(140deg, #edddc5 0%, #dabd94 100%);
   padding: 53px 0 195px;
 }
 .albums #album_slider .head {
@@ -851,7 +921,7 @@ header .bottom .last_head_dropdown ul {
   margin-top: 12px;
 }
 .albums #album_slider .head .head_left h3 {
-  color: #1A1A1A;
+  color: #1a1a1a;
   font-family: "Montserrat", sans-serif;
   font-size: 31.078px;
   font-style: normal;
@@ -860,11 +930,11 @@ header .bottom .last_head_dropdown ul {
 }
 .albums #album_slider .head .head_left .album_dropdown button {
   border-radius: 10.25px;
-  background: #F9F9F9;
+  background: #f9f9f9;
   box-shadow: 0px 0.6833226681px 4.7832584381px 0px rgba(0, 0, 0, 0.09);
   outline: none;
   padding: 16px 18px 15px 12px;
-  color: #B32B37;
+  color: #b32b37;
   font-family: "Montserrat", sans-serif;
   font-size: 17.766px;
   font-style: normal;
@@ -938,7 +1008,7 @@ header .bottom .last_head_dropdown ul {
   margin-bottom: 73px;
 }
 .albums .albums_comment_title h3 {
-  color: var(--main-text, #1A1A1A);
+  color: var(--main-text, #1a1a1a);
   font-family: Montserrat, sans-serif;
   font-size: 36px;
   font-style: normal;
@@ -951,7 +1021,7 @@ header .bottom .last_head_dropdown ul {
   max-width: 1270px;
   padding: 54px 45px 66px 66px;
   border-radius: 14.893px;
-  background: #F8F8F8;
+  background: #f8f8f8;
   box-shadow: 0px 1px 7px 0px rgba(0, 0, 0, 0.09);
 }
 .albums .albums_comments .albums_comment_card .albums_comment_card_top {
@@ -977,7 +1047,7 @@ header .bottom .last_head_dropdown ul {
   display: none;
 }
 .albums .albums_comments .albums_comment_card .albums_comment_card_top span {
-  color: #67727E;
+  color: #67727e;
   font-family: "Fira Sans", sans-serif;
   font-size: 21px;
   font-style: normal;
@@ -989,7 +1059,7 @@ header .bottom .last_head_dropdown ul {
   border: none;
   margin-left: auto;
   background-color: transparent;
-  color: #0A75B1;
+  color: #0a75b1;
   font-family: "Rubik", sans-serif;
   font-size: 21px;
   font-style: normal;
@@ -1006,7 +1076,7 @@ header .bottom .last_head_dropdown ul {
   margin-left: auto;
   background-color: transparent;
   margin-right: 25px;
-  color: #B0333E;
+  color: #b0333e;
   font-family: "Fira Sans", sans-serif;
   font-size: 21px;
   font-style: normal;
@@ -1034,7 +1104,7 @@ header .bottom .last_head_dropdown ul {
   margin-right: 13px;
 }
 .albums .albums_comments .albums_comment_card p {
-  color: #4B4848;
+  color: #4b4848;
   font-family: Montserrat, sans-serif;
   font-size: 21px;
   font-style: normal;
@@ -1052,7 +1122,7 @@ header .bottom .last_head_dropdown ul {
   max-width: 1270px;
   padding: 54px 45px 66px 66px;
   border-radius: 14.893px;
-  background: #F8F8F8;
+  background: #f8f8f8;
   box-shadow: 0px 1px 7px 0px rgba(0, 0, 0, 0.09);
 }
 .albums .albums_comments .albums_comment_card_by .albums_comment_card_my .albums_comment_card_top {
@@ -1078,7 +1148,7 @@ header .bottom .last_head_dropdown ul {
   display: none;
 }
 .albums .albums_comments .albums_comment_card_by .albums_comment_card_my .albums_comment_card_top span {
-  color: #67727E;
+  color: #67727e;
   font-family: "Fira Sans", sans-serif;
   font-size: 21px;
   font-style: normal;
@@ -1090,7 +1160,7 @@ header .bottom .last_head_dropdown ul {
   border: none;
   margin-left: auto;
   background-color: transparent;
-  color: #0A75B1;
+  color: #0a75b1;
   font-family: "Rubik", sans-serif;
   font-size: 21px;
   font-style: normal;
@@ -1107,7 +1177,7 @@ header .bottom .last_head_dropdown ul {
   margin-left: auto;
   background-color: transparent;
   margin-right: 25px;
-  color: #B0333E;
+  color: #b0333e;
   font-family: "Fira Sans", sans-serif;
   font-size: 21px;
   font-style: normal;
@@ -1135,7 +1205,7 @@ header .bottom .last_head_dropdown ul {
   margin-right: 13px;
 }
 .albums .albums_comments .albums_comment_card_by .albums_comment_card_my p {
-  color: #4B4848;
+  color: #4b4848;
   font-family: Montserrat, sans-serif;
   font-size: 21px;
   font-style: normal;
@@ -1152,7 +1222,7 @@ header .bottom .last_head_dropdown ul {
   content: "";
   width: 4px;
   height: 100%;
-  background-color: #E9EBF0;
+  background-color: #e9ebf0;
 }
 .albums .albums_comments .albums_form {
   margin-bottom: 75px;
@@ -1163,7 +1233,7 @@ header .bottom .last_head_dropdown ul {
   margin-bottom: 25px;
   display: flex;
   justify-content: end;
-  color: #102B3C;
+  color: #102b3c;
   font-family: Montserrat, sans-serif;
   font-size: 18px;
   font-style: normal;
@@ -1186,7 +1256,7 @@ header .bottom .last_head_dropdown ul {
   transform: translateY(-40px);
 }
 .albums .albums_comments .albums_form .albums_form_btn .albums_form_input textarea {
-  color: #67727E;
+  color: #67727e;
   font-family: Montserrat, sans-serif;
   font-size: 26px;
   font-style: normal;
@@ -1195,8 +1265,8 @@ header .bottom .last_head_dropdown ul {
   padding: 23px;
   height: 179px;
   border-radius: 14.893px;
-  border: 1.862px solid var(--light-gray, #E9EBF0);
-  background: var(--white, #FFF);
+  border: 1.862px solid var(--light-gray, #e9ebf0);
+  background: var(--white, #fff);
   width: 100%;
   margin-left: 31px;
   margin-right: 77px;
@@ -1206,7 +1276,7 @@ header .bottom .last_head_dropdown ul {
   margin-right: 50px;
   width: 181px;
   height: 53px;
-  color: #FFF;
+  color: #fff;
   font-family: "Fira Sans", sans-serif;
   font-size: 16px;
   font-style: normal;
@@ -1214,13 +1284,13 @@ header .bottom .last_head_dropdown ul {
   line-height: 111.5%;
   letter-spacing: 0.96px;
   border-radius: 11px;
-  background: #102B3C;
+  background: #102b3c;
   box-shadow: 0px 1px 7px 0px rgba(0, 0, 0, 0.09);
 }
 
 .registration {
   margin-bottom: 100px;
-  background: #F8F8F8;
+  background: #f8f8f8;
   box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.25);
 }
 .registration .registration_wrapper .registration_left {
@@ -1237,7 +1307,7 @@ header .bottom .last_head_dropdown ul {
   width: 37px;
   right: 50%;
   height: 100%;
-  background-color: #B32B37;
+  background-color: #b32b37;
 }
 .registration .registration_wrapper .registration_main {
   padding: 25px 40px;
@@ -1263,7 +1333,7 @@ header .bottom .last_head_dropdown ul {
   margin-bottom: 33px;
 }
 .registration .registration_wrapper .registration_main .form_full_btn {
-  color: #102B3C;
+  color: #102b3c;
   font-family: "Montserrat", sans-serif;
   font-size: 18px;
   font-style: normal;
@@ -1279,14 +1349,14 @@ header .bottom .last_head_dropdown ul {
   width: 284px;
   margin-bottom: 20px;
   border-radius: 6px;
-  border: 0.5px solid #E1E1E1;
-  background: #FFF;
+  border: 0.5px solid #e1e1e1;
+  background: #fff;
   box-shadow: 0px 1px 7px 0px rgba(0, 0, 0, 0.09);
 }
 .registration .registration_wrapper .registration_main .form_input_wrapper .form_left .form_input_in input {
   padding: 15px 5px 15px 20px;
   border: none;
-  color: #1A1717;
+  color: #1a1717;
   font-family: Montserrat, sans-serif;
   font-size: 14px;
   font-style: normal;
@@ -1305,13 +1375,13 @@ header .bottom .last_head_dropdown ul {
   width: 284px;
   margin-bottom: 20px;
   border-radius: 6px;
-  border: 0.5px solid #E1E1E1;
-  background: #FFF;
+  border: 0.5px solid #e1e1e1;
+  background: #fff;
   box-shadow: 0px 1px 7px 0px rgba(0, 0, 0, 0.09);
 }
 .registration .registration_wrapper .registration_main .form_input_wrapper .form_right .form_input_in input {
   padding: 15px 15px 15px 20px;
-  color: #1A1717;
+  color: #1a1717;
   font-family: Montserrat, sans-serif;
   font-size: 14px;
   font-style: normal;
@@ -1327,7 +1397,7 @@ header .bottom .last_head_dropdown ul {
   margin-bottom: 33px;
 }
 .registration .registration_wrapper .registration_main .form_agreement input {
-  accent-color: #B32B37;
+  accent-color: #b32b37;
   width: 30px;
   height: 30px;
   margin-right: 20px;
@@ -1359,7 +1429,7 @@ header .bottom .last_head_dropdown ul {
   margin: 0 auto 36px auto;
   width: 257px;
   height: 45px;
-  color: #FFF;
+  color: #fff;
   font-family: "Fira Sans", sans-serif;
   font-size: 16px;
   font-style: normal;
@@ -1367,7 +1437,7 @@ header .bottom .last_head_dropdown ul {
   line-height: 111.5%;
   letter-spacing: 0.96px;
   border-radius: 11px;
-  background: #B32B37;
+  background: #b32b37;
   box-shadow: 0px 1px 7px 0px rgba(0, 0, 0, 0.09);
 }
 .registration .registration_wrapper .registration_main .form_bottom_text {
@@ -1383,7 +1453,7 @@ header .bottom .last_head_dropdown ul {
 }
 
 .sign_in {
-  background: #F8F8F8;
+  background: #f8f8f8;
   box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.25);
 }
 .sign_in .sign_in_wrapper .sign_in_left {
@@ -1398,7 +1468,7 @@ header .bottom .last_head_dropdown ul {
 .sign_in .sign_in_wrapper .sign_in_left .sign_in_red_block {
   width: 37px;
   right: 50%;
-  background-color: #B32B37;
+  background-color: #b32b37;
 }
 .sign_in .sign_in_wrapper .sign_in_main {
   padding: 10px;
@@ -1422,13 +1492,13 @@ header .bottom .last_head_dropdown ul {
   width: 331px;
   margin-bottom: 44px;
   border-radius: 6px;
-  border: 0.5px solid #E1E1E1;
-  background: #FFF;
+  border: 0.5px solid #e1e1e1;
+  background: #fff;
   box-shadow: 0px 1px 7px 0px rgba(0, 0, 0, 0.09);
 }
 .sign_in .sign_in_wrapper .sign_in_main form .form_input_in input {
   padding: 15px 5px 15px 20px;
-  color: #1A1717;
+  color: #1a1717;
   font-family: Montserrat, sans-serif;
   font-size: 14px;
   font-style: normal;
@@ -1447,7 +1517,7 @@ header .bottom .last_head_dropdown ul {
   width: 257px;
   height: 44px;
   margin: 9px auto 53px auto;
-  color: #FFF;
+  color: #fff;
   font-family: "Fira Sans", sans-serif;
   font-size: 16px;
   font-style: normal;
@@ -1472,7 +1542,7 @@ header .bottom .last_head_dropdown ul {
   margin-right: 13px;
 }
 .sign_in .sign_in_wrapper .sign_in_main form .form_bottom_link {
-  color: #102B3C;
+  color: #102b3c;
   font-family: "Montserrat", sans-serif;
   font-size: 18px;
   font-style: normal;
@@ -1499,7 +1569,7 @@ header .bottom .last_head_dropdown ul {
   content: "";
   width: 9px;
   height: 9px;
-  background: #B32B37;
+  background: #b32b37;
   position: absolute;
   border-radius: 50%;
   top: 50%;
@@ -1538,7 +1608,7 @@ header .bottom .last_head_dropdown ul {
   margin-bottom: 21px;
 }
 #brands .brands_slider .slider .swiper-slide h3 {
-  color: #FFF;
+  color: #fff;
   text-align: center;
   font-family: "Montserrat", sans-serif;
   font-size: 21px;
@@ -1553,7 +1623,7 @@ header .bottom .last_head_dropdown ul {
   padding-bottom: 30px;
 }
 #postmarks .head h1 {
-  color: #1A1717;
+  color: #1a1717;
   font-family: "Fira Sans", sans-serif;
   font-size: 36px;
   font-style: italic;
@@ -1571,11 +1641,11 @@ header .bottom .last_head_dropdown ul {
   margin: 0;
   padding: 7px 20px;
   border-radius: 22px;
-  background: #FFF;
+  background: #fff;
   box-shadow: 0px 1px 7px 0px rgba(0, 0, 0, 0.09);
 }
 #postmarks .head .right_list .dropdown button {
-  color: #4B4848;
+  color: #4b4848;
   font-family: "Montserrat", sans-serif;
   font-size: 26px;
   font-style: normal;
@@ -1586,7 +1656,7 @@ header .bottom .last_head_dropdown ul {
 }
 #postmarks .head .nav {
   border-radius: 15px;
-  background: #F9F9F9;
+  background: #f9f9f9;
   box-shadow: 0px 1px 7px 0px rgba(0, 0, 0, 0.09);
   padding: 24px 27px 22px 18px;
   display: flex;
@@ -1594,7 +1664,7 @@ header .bottom .last_head_dropdown ul {
   justify-content: space-between;
 }
 #postmarks .head .nav .nav_total button {
-  color: #B32B37;
+  color: #b32b37;
   font-family: "Montserrat", sans-serif;
   font-size: 26px;
   font-style: normal;
@@ -1615,7 +1685,7 @@ header .bottom .last_head_dropdown ul {
 }
 #postmarks .head .nav .right .search {
   border-radius: 22px;
-  background: #FFF;
+  background: #fff;
   box-shadow: 0px 1px 7px 0px rgba(0, 0, 0, 0.09);
   position: relative;
 }
@@ -1626,7 +1696,7 @@ header .bottom .last_head_dropdown ul {
   height: 100%;
   top: 0;
   border-radius: 22px;
-  background: #FFF;
+  background: #fff;
   box-shadow: 0px 1px 7px 0px rgba(0, 0, 0, 0.09);
   transition: 0.5s ease all;
   overflow: hidden;
@@ -1634,7 +1704,7 @@ header .bottom .last_head_dropdown ul {
 #postmarks .head .nav .right .search .search_input input {
   height: 100%;
   width: 100%;
-  color: #1A1717;
+  color: #1a1717;
   font-family: "Montserrat", sans-serif;
   font-size: 20px;
   font-style: normal;
@@ -1660,8 +1730,8 @@ header .bottom .last_head_dropdown ul {
   position: relative;
 }
 #postmarks .content_wrapper {
-  border-top: 1px solid #DBD5D5;
-  border-bottom: 1px solid #DBD5D5;
+  border-top: 1px solid #dbd5d5;
+  border-bottom: 1px solid #dbd5d5;
 }
 #postmarks .content_wrapper .main_container {
   max-height: 1271px;
@@ -1671,11 +1741,11 @@ header .bottom .last_head_dropdown ul {
   width: 10px;
 }
 #postmarks .content_wrapper .main_container::-webkit-scrollbar-track {
-  background: #F3F3F3;
+  background: #f3f3f3;
 }
 #postmarks .content_wrapper .main_container::-webkit-scrollbar-thumb {
   border-radius: 2px;
-  background: #B32B37;
+  background: #b32b37;
 }
 #postmarks .content_wrapper .content {
   gap: 40.53px;
@@ -1685,7 +1755,7 @@ header .bottom .last_head_dropdown ul {
 #postmarks .content_wrapper .content li {
   border-radius: 3.569px;
   border: 0.982px solid rgba(0, 0, 0, 0.6);
-  background: #FFF;
+  background: #fff;
   text-align: center;
   padding: 26px 19px 10px;
 }
@@ -1743,7 +1813,7 @@ header .bottom .last_head_dropdown ul {
   left: 105px;
 }
 .index #home .content .text h1 {
-  color: #1A1717;
+  color: #1a1717;
   font-family: "Fira Sans", sans-serif;
   font-size: 58px;
   font-style: normal;
@@ -1793,9 +1863,9 @@ header .bottom .last_head_dropdown ul {
 }
 .index #home .content .text a {
   border-radius: 26px;
-  background: #B32B37;
+  background: #b32b37;
   box-shadow: 0px 1px 8px 0px rgba(45, 40, 40, 0.28);
-  color: #FFF;
+  color: #fff;
   font-family: "Fira Sans", sans-serif;
   font-size: 18px;
   font-style: normal;
@@ -1819,12 +1889,12 @@ header .bottom .last_head_dropdown ul {
   display: none;
 }
 .index #collection {
-  background: #FBFBFB;
+  background: #fbfbfb;
   padding-top: 40px;
 }
 .index #collection h1 {
   margin-bottom: 36px;
-  color: #1A1717;
+  color: #1a1717;
   font-family: "Montserrat", sans-serif;
   font-size: 36px;
   font-style: normal;
@@ -1834,12 +1904,12 @@ header .bottom .last_head_dropdown ul {
 .index #collection .slider {
   padding-top: 40px;
   padding-bottom: 47px;
-  background: #FBFBFB;
+  background: #fbfbfb;
   box-shadow: 0px 1px 7px 0px rgba(0, 0, 0, 0.09);
 }
 .index #collection .slider a {
   margin-left: 153px;
-  color: #102B3C;
+  color: #102b3c;
   font-family: "Montserrat", sans-serif;
   font-size: 18px;
   font-style: normal;
@@ -1865,7 +1935,7 @@ header .bottom .last_head_dropdown ul {
   padding: 28px 42px 54px;
   border-radius: 4px;
   border: 1.1px solid rgba(0, 0, 0, 0.6);
-  background: #FFF;
+  background: #fff;
   box-shadow: 0px 1px 7px 0px rgba(0, 0, 0, 0.09);
   text-align: center;
   cursor: pointer;
@@ -1874,7 +1944,7 @@ header .bottom .last_head_dropdown ul {
   margin-bottom: 36px;
 }
 .index #collection .slider_in .collection_slider .swiper-slide h4 {
-  color: #0F0F0F;
+  color: #0f0f0f;
   text-align: center;
   font-family: "Montserrat", sans-serif;
   font-size: 21px;
@@ -1904,7 +1974,7 @@ header .bottom .last_head_dropdown ul {
   padding: 35px 86px 35px 30px;
 }
 .index #collection .author .left h1 {
-  color: #0F0F0F;
+  color: #0f0f0f;
   font-family: "Montserrat", sans-serif;
   font-size: 28px;
   font-style: normal;
@@ -1934,13 +2004,13 @@ header .bottom .last_head_dropdown ul {
 .index #news .news_top .left {
   width: 66%;
   border-radius: 6px 0px 0px 6px;
-  border: 1px solid #F6E9E3;
-  background: #FFF6F2;
+  border: 1px solid #f6e9e3;
+  background: #fff6f2;
   box-shadow: 0px 1px 7px 0px rgba(0, 0, 0, 0.09);
   padding: 29px 64px 47px 31px;
 }
 .index #news .news_top .left .link {
-  color: #102B3C;
+  color: #102b3c;
   font-family: "Montserrat", sans-serif;
   font-size: 18px;
   font-style: normal;
@@ -1954,7 +2024,7 @@ header .bottom .last_head_dropdown ul {
 }
 @media only screen and (max-width: 450px) {
   .index #news .news_top .left .link {
-    color: #102B3C;
+    color: #102b3c;
     font-family: "Montserrat", sans-serif;
     font-size: 14px;
     font-style: normal;
@@ -1964,7 +2034,7 @@ header .bottom .last_head_dropdown ul {
   }
 }
 .index #news .news_top .left h2 {
-  color: #1A1717;
+  color: #1a1717;
   font-family: "Fira Sans", sans-serif;
   font-size: 26px;
   font-style: normal;
@@ -1982,7 +2052,7 @@ header .bottom .last_head_dropdown ul {
   margin-bottom: 0;
 }
 .index #news .news_top .left .content .content_item .text h3 {
-  color: #1A1A1A;
+  color: #1a1a1a;
   font-family: "Montserrat", sans-serif;
   font-size: 21px;
   font-style: normal;
@@ -1992,7 +2062,7 @@ header .bottom .last_head_dropdown ul {
   margin-bottom: 10px;
 }
 .index #news .news_top .left .content .content_item .text p {
-  color: #4F4F4F;
+  color: #4f4f4f;
   font-family: "Montserrat", sans-serif;
   font-size: 18px;
   font-style: normal;
@@ -2004,12 +2074,12 @@ header .bottom .last_head_dropdown ul {
 .index #news .news_top .right {
   width: 29%;
   border-radius: 5.04px;
-  background: #F9F9F9;
+  background: #f9f9f9;
   box-shadow: 0px 1px 7px 0px rgba(0, 0, 0, 0.09);
   padding: 41px 46px 36px 70px;
 }
 .index #news .news_top .right h2 {
-  color: #1A1717;
+  color: #1a1717;
   font-family: "Fira Sans", sans-serif;
   font-size: 26px;
   font-style: normal;
@@ -2027,7 +2097,7 @@ header .bottom .last_head_dropdown ul {
   margin-bottom: 0;
 }
 .index #news .news_top .right .item .time {
-  color: #1A1717;
+  color: #1a1717;
   font-family: "Fira Sans", sans-serif;
   font-size: 16px;
   font-style: normal;
@@ -2037,7 +2107,7 @@ header .bottom .last_head_dropdown ul {
   text-transform: uppercase;
 }
 .index #news .news_top .right .item .text {
-  color: #1A1717;
+  color: #1a1717;
   font-family: "Montserrat", sans-serif;
   font-size: 21px;
   font-style: normal;
@@ -2049,14 +2119,14 @@ header .bottom .last_head_dropdown ul {
   margin-bottom: 49px;
 }
 .index #news .links a {
-  color: #102B3C;
+  color: #102b3c;
   font-family: "Montserrat", sans-serif;
   font-size: 18px;
   font-style: normal;
   font-weight: 500;
   line-height: 28.813px;
   text-decoration-line: underline;
-  color: #102B3C;
+  color: #102b3c;
   font-family: "Montserrat", sans-serif;
   font-size: 18px;
   font-style: normal;
@@ -2069,7 +2139,7 @@ header .bottom .last_head_dropdown ul {
 }
 @media only screen and (max-width: 450px) {
   .index #news .links a {
-    color: #102B3C;
+    color: #102b3c;
     font-family: "Montserrat", sans-serif;
     font-size: 14px;
     font-style: normal;
@@ -2089,7 +2159,7 @@ header .bottom .last_head_dropdown ul {
   display: none;
 }
 .theme #brands .brands_wrapper {
-  background: #ECE1DB;
+  background: #ece1db;
   box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.25);
   padding-top: 0;
 }
@@ -2099,7 +2169,7 @@ header .bottom .last_head_dropdown ul {
 .theme #brands .brands_wrapper .slider .swiper-slide {
   border-radius: 4.15px;
   border: 1.142px solid rgba(0, 0, 0, 0.6);
-  background: #FFF;
+  background: #fff;
   box-shadow: 0px 1.0375401974px 7.2627811432px 0px rgba(0, 0, 0, 0.09);
   text-align: center;
   padding: 29px 20px 25px;
@@ -2108,14 +2178,14 @@ header .bottom .last_head_dropdown ul {
 .theme #brands .brands_wrapper .slider .swiper-slide .new {
   position: absolute;
   padding: 4px 13px;
-  color: #FFF;
+  color: #fff;
   font-family: "Montserrat", sans-serif;
   font-size: 13.488px;
   font-style: normal;
   font-weight: 700;
   line-height: normal;
   letter-spacing: 0.337px;
-  background: #B32B37;
+  background: #b32b37;
   top: -16px;
   right: 7px;
 }
@@ -2123,7 +2193,7 @@ header .bottom .last_head_dropdown ul {
   margin-bottom: 37px;
 }
 .theme #brands .brands_wrapper .slider .swiper-slide h3 {
-  color: #0F0F0F;
+  color: #0f0f0f;
   text-align: center;
   font-family: "Montserrat", sans-serif;
   font-size: 21.788px;
@@ -2165,7 +2235,7 @@ header .bottom .last_head_dropdown ul {
   padding: 14px 26px 15px;
   border: none;
   border-radius: 18px;
-  background: #F9F9F9;
+  background: #f9f9f9;
   box-shadow: 0px 1px 7px 0px rgba(0, 0, 0, 0.09);
   outline: none;
   color: #818181;
@@ -2181,7 +2251,7 @@ header .bottom .last_head_dropdown ul {
   border-radius: 50%;
 }
 .theme #stamps .content_wrapper {
-  background: #F9F9F9;
+  background: #f9f9f9;
   box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.25);
   height: 1046px;
   overflow-y: scroll;
@@ -2191,7 +2261,7 @@ header .bottom .last_head_dropdown ul {
 }
 .theme #stamps .content_wrapper::-webkit-scrollbar-thumb {
   border-radius: 2px;
-  background: #B32B37;
+  background: #b32b37;
 }
 .theme #stamps .content_wrapper .main_container {
   padding-top: 59px;
@@ -2214,7 +2284,7 @@ header .bottom .last_head_dropdown ul {
   margin-bottom: 10px;
 }
 .theme #stamps .content_wrapper .content ul li a {
-  color: #1A1717;
+  color: #1a1717;
   font-family: "Montserrat", sans-serif;
   font-size: 18px;
   font-style: normal;
@@ -2235,7 +2305,7 @@ header .bottom .last_head_dropdown ul {
   margin-bottom: 34px;
 }
 .theme #cars h1 span {
-  color: #B32B37;
+  color: #b32b37;
 }
 .theme #cars .content {
   gap: 77px;
@@ -2256,7 +2326,7 @@ header .bottom .last_head_dropdown ul {
   margin-bottom: 50px;
 }
 .theme #cars .content .text a {
-  color: #102B3C;
+  color: #102b3c;
   font-family: "Montserrat", sans-serif;
   font-size: 18px;
   font-style: normal;
@@ -2287,9 +2357,9 @@ header .bottom .last_head_dropdown ul {
   padding: 9px 12px 9px 28px;
   margin-right: 0;
   border-radius: 18px;
-  background: #FFF;
+  background: #fff;
   box-shadow: 0px 1px 7px 0px rgba(0, 0, 0, 0.09);
-  color: #B32B37;
+  color: #b32b37;
   font-family: "Fira Sans", sans-serif;
   font-size: 24px;
   font-style: normal;
@@ -2302,7 +2372,7 @@ header .bottom .last_head_dropdown ul {
   content: "";
   width: 9px;
   height: 9px;
-  background: #B32B37;
+  background: #b32b37;
   border-radius: 50%;
   top: 50%;
   left: 12px;
@@ -2310,11 +2380,11 @@ header .bottom .last_head_dropdown ul {
 }
 .years #category_list .head button {
   border-radius: 22px;
-  background: #FFF;
+  background: #fff;
   box-shadow: 0px 1px 7px 0px rgba(0, 0, 0, 0.09);
   padding: 6px 18px;
   margin-left: 74px;
-  color: #4B4848;
+  color: #4b4848;
   font-family: "Montserrat", sans-serif;
   font-size: 18px;
   font-style: normal;
@@ -2328,7 +2398,7 @@ header .bottom .last_head_dropdown ul {
 .years #category_list .content {
   padding-top: 51px;
   padding-bottom: 95px;
-  background: #F9F9F9;
+  background: #f9f9f9;
   box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.25);
 }
 .years #category_list .content .main_container {
@@ -2344,7 +2414,7 @@ header .bottom .last_head_dropdown ul {
   letter-spacing: 0.525px;
 }
 .years #category_list .content .main_container .active {
-  color: #B32B37;
+  color: #b32b37;
   font-family: "Montserrat", sans-serif;
   font-size: 21px;
   font-style: normal;
@@ -2361,14 +2431,14 @@ header .bottom .last_head_dropdown ul {
   line-height: 111.5%;
 }
 .years #postmarks .head h1 span {
-  color: #B32B37;
+  color: #b32b37;
 }
 .years #postmarks .content_wrapper .main_container {
   height: 1271px;
 }
 
 .countries #continent {
-  background: #F9F9F9;
+  background: #f9f9f9;
 }
 .countries #continent .top {
   gap: 40px;
@@ -2388,13 +2458,13 @@ header .bottom .last_head_dropdown ul {
   border-radius: 18px;
 }
 .countries #continent .continent_list .head .continent_selected {
-  color: #B32B37;
+  color: #b32b37;
   font-family: "Fira Sans", sans-serif;
   font-size: 24px;
   font-style: normal;
   font-weight: 700;
   line-height: 111.5%;
-  background: #FFF;
+  background: #fff;
   box-shadow: 0px 1px 7px 0px rgba(0, 0, 0, 0.09);
   padding: 9px 12px 9px 28px;
   position: relative;
@@ -2407,7 +2477,7 @@ header .bottom .last_head_dropdown ul {
   top: 50%;
   left: 12px;
   transform: translateY(-50%);
-  background: #B32B37;
+  background: #b32b37;
   border-radius: 50%;
 }
 .countries #continent .continent_list .content {
@@ -2430,7 +2500,7 @@ header .bottom .last_head_dropdown ul {
   margin-bottom: 5px;
 }
 .countries #continent .continent_list .content ul li .selected {
-  color: #B32B37;
+  color: #b32b37;
   font-weight: 700;
 }
 .countries #continent .map_image {
@@ -2442,9 +2512,9 @@ header .bottom .last_head_dropdown ul {
 }
 .countries #continent .bottom .dropdown button {
   border-radius: 22px;
-  background: #FFF;
+  background: #fff;
   box-shadow: 0px 1px 7px 0px rgba(0, 0, 0, 0.09);
-  color: #102B3C;
+  color: #102b3c;
   font-family: "Montserrat", sans-serif;
   font-size: 16px;
   font-style: normal;
@@ -2457,8 +2527,8 @@ header .bottom .last_head_dropdown ul {
 }
 .countries #continent .bottom .selected_country button {
   border-radius: 22px;
-  background: #FFF;
-  color: #B32B37;
+  background: #fff;
+  color: #b32b37;
   font-family: "Montserrat", sans-serif;
   font-size: 21px;
   font-style: normal;
@@ -2502,7 +2572,7 @@ header .bottom .last_head_dropdown ul {
   text-align: right;
 }
 .brand #anons .head .head_right p {
-  color: #B6B3B3;
+  color: #b6b3b3;
   font-family: "Montserrat", sans-serif;
   font-size: 16px;
   font-style: normal;
@@ -2620,7 +2690,7 @@ header .bottom .last_head_dropdown ul {
   width: 50%;
 }
 .brand #anons .content .content_right .description_head .item .item_in .data {
-  color: #696A6B;
+  color: #696a6b;
   font-family: "Montserrat", sans-serif;
   font-size: 21px;
   font-style: normal;
@@ -2628,7 +2698,7 @@ header .bottom .last_head_dropdown ul {
   line-height: 36.285px;
 }
 .brand #anons .content .content_right .description_head .item .item_in .value {
-  color: #1A1A1A;
+  color: #1a1a1a;
   text-align: center;
   font-family: "Montserrat", sans-serif;
   font-size: 21px;
@@ -2641,7 +2711,7 @@ header .bottom .last_head_dropdown ul {
   text-decoration-line: underline;
 }
 .brand #anons .content .content_right h1 {
-  color: #1A1A1A;
+  color: #1a1a1a;
   font-family: "Montserrat", sans-serif;
   font-size: 26px;
   font-style: normal;
@@ -2650,7 +2720,7 @@ header .bottom .last_head_dropdown ul {
   margin-bottom: 18px;
 }
 .brand #anons .content .content_right p {
-  color: #4B4848;
+  color: #4b4848;
   font-family: "Montserrat", sans-serif;
   font-size: 18px;
   font-style: normal;
@@ -2660,7 +2730,7 @@ header .bottom .last_head_dropdown ul {
   margin-bottom: 26px;
 }
 .brand #anons .content .content_right .link {
-  color: #102B3C;
+  color: #102b3c;
   font-family: "Montserrat", sans-serif;
   font-size: 16px;
   font-style: normal;
@@ -2671,7 +2741,7 @@ header .bottom .last_head_dropdown ul {
 }
 .brand #anons .content .content_right .buy {
   border-radius: 6px;
-  border: 1px solid #CBC9C9;
+  border: 1px solid #cbc9c9;
   background: rgba(255, 255, 255, 0.56);
   box-shadow: 0px 1px 7px 0px rgba(0, 0, 0, 0.09);
   padding: 21px 47px 27px 25px;
@@ -2689,7 +2759,7 @@ header .bottom .last_head_dropdown ul {
   white-space: nowrap;
 }
 .brand #anons .content .content_right .buy .price span {
-  color: #B6B3B3;
+  color: #b6b3b3;
   font-family: "Montserrat", sans-serif;
   font-size: 21px;
   font-style: normal;
@@ -2699,11 +2769,11 @@ header .bottom .last_head_dropdown ul {
 }
 .brand #anons .content .content_right .buy a {
   border-radius: 13px;
-  border: 1px solid #FFF;
+  border: 1px solid #fff;
   background: #254459;
   box-shadow: 0px 1px 7px 0px rgba(0, 0, 0, 0.09);
   padding: 17px 33px;
-  color: #FFF;
+  color: #fff;
   font-family: "Fira Sans", sans-serif;
   font-size: 17.581px;
   font-style: normal;
@@ -2715,13 +2785,13 @@ header .bottom .last_head_dropdown ul {
   margin-left: 20px;
 }
 .brand #anons .content .content_right .comment_wrapper {
-  background: #FCFCFC;
+  background: #fcfcfc;
   box-shadow: 0px 1px 7px 0px rgba(0, 0, 0, 0.09);
   padding: 11px 56px 12px;
   margin-bottom: 57px;
 }
 .brand #anons .content .content_right .comment_wrapper .comment {
-  color: #0A75B1;
+  color: #0a75b1;
   font-family: "Montserrat", sans-serif;
   font-size: 21px;
   font-style: normal;
@@ -2729,7 +2799,7 @@ header .bottom .last_head_dropdown ul {
   line-height: 111.5%;
 }
 .brand #anons .content .content_right .comment_wrapper .comment_right .grade {
-  color: #0A75B1;
+  color: #0a75b1;
   font-family: "Montserrat", sans-serif;
   font-size: 21px;
   font-style: normal;
@@ -2738,7 +2808,7 @@ header .bottom .last_head_dropdown ul {
   margin-right: 18px;
 }
 .brand #anons .content .content_right .comment_wrapper .comment_right .number {
-  color: #0F0F0F;
+  color: #0f0f0f;
   font-family: "Montserrat", sans-serif;
   font-size: 28px;
   font-style: normal;
@@ -2754,7 +2824,7 @@ header .bottom .last_head_dropdown ul {
   border: none;
   outline: none;
   background: transparent;
-  color: #B32B37;
+  color: #b32b37;
   font-family: "Montserrat", sans-serif;
   font-size: 18px;
   font-style: normal;
@@ -2797,7 +2867,7 @@ header .bottom .last_head_dropdown ul {
 .brand #characteristic .calculation {
   border-radius: 5.33px;
   border: 0.888px solid #979797;
-  background: #FFF;
+  background: #fff;
   box-shadow: 0px 0.8882681727px 6.217877388px 0px rgba(0, 0, 0, 0.09);
   margin: 0 auto;
   margin-top: 40px;
@@ -2817,7 +2887,7 @@ header .bottom .last_head_dropdown ul {
   outline: none;
 }
 .brand #characteristic .calculation .bnts_group .selected svg path {
-  fill: #EFC351;
+  fill: #efc351;
 }
 .brand #characteristic .calculation h2 {
   color: #000;
@@ -2829,7 +2899,7 @@ header .bottom .last_head_dropdown ul {
   margin-bottom: 24px;
 }
 .brand #characteristic .calculation h3 {
-  color: #0F0F0F;
+  color: #0f0f0f;
   font-family: "Montserrat", sans-serif;
   font-size: 18px;
   font-style: normal;
@@ -2844,14 +2914,14 @@ header .bottom .last_head_dropdown ul {
 .brand #characteristic .calculation .calculate button {
   width: 43px;
   height: 43px;
-  background: #B32B37;
+  background: #b32b37;
   border: none;
   outline: none;
   border-radius: 50%;
   position: relative;
 }
 .brand #characteristic .calculation .calculate button span {
-  color: #F9F9F9;
+  color: #f9f9f9;
   font-family: "Montserrat", sans-serif;
   font-size: 30.71px;
   font-style: normal;
@@ -2865,9 +2935,9 @@ header .bottom .last_head_dropdown ul {
 .brand #characteristic .calculation .calculate .result {
   border-radius: 7.312px;
   border: 1.462px solid rgba(200, 200, 200, 0.23);
-  background: #F8F8F8;
+  background: #f8f8f8;
   box-shadow: 0px 0.8882681727px 6.217877388px 0px rgba(0, 0, 0, 0.09);
-  color: #0F0F0F;
+  color: #0f0f0f;
   font-family: "Montserrat", sans-serif;
   font-size: 28px;
   font-style: normal;
@@ -2882,7 +2952,7 @@ header .bottom .last_head_dropdown ul {
   font-style: normal;
   font-weight: 600;
   line-height: 111.5%;
-  background: #B32B37;
+  background: #b32b37;
   margin-top: 28px;
   padding: 5px 20px 6px;
   filter: drop-shadow(0px 0.8882681727px 6.217877388px rgba(0, 0, 0, 0.09));
@@ -2891,13 +2961,13 @@ header .bottom .last_head_dropdown ul {
   display: none;
 }
 .brand #characteristic .characteristic_body {
-  border-top: 1px solid #DBD5D5;
-  border-bottom: 1px solid #DBD5D5;
+  border-top: 1px solid #dbd5d5;
+  border-bottom: 1px solid #dbd5d5;
   padding: 32px 0 93px;
   margin-bottom: 60px;
 }
 .brand #characteristic .characteristic_body h1 {
-  color: #1A1A1A;
+  color: #1a1a1a;
   font-family: Montserrat;
   font-size: 31px;
   font-style: normal;
@@ -2936,7 +3006,7 @@ header .bottom .last_head_dropdown ul {
 }
 .brand #characteristic .characteristic_body .content .datas .item .value {
   padding-left: 11px;
-  color: #1A1A1A;
+  color: #1a1a1a;
   font-family: "Montserrat", sans-serif;
   font-size: 21.312px;
   font-style: normal;
@@ -2946,7 +3016,7 @@ header .bottom .last_head_dropdown ul {
   background: white;
 }
 .brand #characteristic .characteristic_body .content .datas .item .active {
-  color: #B83026;
+  color: #b83026;
 }
 .brand #characteristic .characteristic_footer {
   margin-bottom: 64px;
@@ -2954,8 +3024,8 @@ header .bottom .last_head_dropdown ul {
 .brand #characteristic .characteristic_footer .left {
   width: calc(50% - 22.5px);
   border-radius: 6px 0px 0px 6px;
-  border: 1px solid #F6E9E3;
-  background: #FFF6F2;
+  border: 1px solid #f6e9e3;
+  background: #fff6f2;
   box-shadow: 0px 1px 7px 0px rgba(0, 0, 0, 0.09);
   padding: 26px 29px 51px 72px;
   position: relative;
@@ -2966,7 +3036,7 @@ header .bottom .last_head_dropdown ul {
   top: 18px;
 }
 .brand #characteristic .characteristic_footer .left h1 {
-  color: #0F0F0F;
+  color: #0f0f0f;
   font-family: "Montserrat", sans-serif;
   font-size: 21px;
   font-style: normal;
@@ -2981,7 +3051,7 @@ header .bottom .last_head_dropdown ul {
   gap: 10px;
 }
 .brand #characteristic .characteristic_footer .left .datas .data {
-  color: #1A1A1A;
+  color: #1a1a1a;
   font-family: "Montserrat", sans-serif;
   font-size: 18px;
   font-style: normal;
@@ -2990,7 +3060,7 @@ header .bottom .last_head_dropdown ul {
   letter-spacing: 0.45px;
 }
 .brand #characteristic .characteristic_footer .left .datas .value {
-  color: #1A1A1A;
+  color: #1a1a1a;
   font-family: "Montserrat", sans-serif;
   font-size: 18px;
   font-style: normal;
@@ -3001,8 +3071,8 @@ header .bottom .last_head_dropdown ul {
 .brand #characteristic .characteristic_footer .right {
   width: calc(50% - 22.5px);
   border-radius: 0px 6px 6px 0px;
-  border: 1px solid #F2E6E0;
-  background: #ECE1DB;
+  border: 1px solid #f2e6e0;
+  background: #ece1db;
   box-shadow: 0px 1px 7px 0px rgba(0, 0, 0, 0.09);
   position: relative;
   padding: 32px 38px 32px 28px;
@@ -3013,7 +3083,7 @@ header .bottom .last_head_dropdown ul {
   right: 15px;
 }
 .brand #characteristic .characteristic_footer .right h1 {
-  color: #0F0F0F;
+  color: #0f0f0f;
   font-family: "Montserrat", sans-serif;
   font-size: 21px;
   font-style: normal;
@@ -3022,7 +3092,7 @@ header .bottom .last_head_dropdown ul {
   margin-bottom: 32px;
 }
 .brand #characteristic .characteristic_footer .right p {
-  color: #0F0F0F;
+  color: #0f0f0f;
   font-family: "Montserrat", sans-serif;
   font-size: 18px;
   font-style: normal;
@@ -3035,7 +3105,7 @@ header .bottom .last_head_dropdown ul {
   margin-bottom: 59px;
 }
 .brand #characteristic .link a {
-  color: #102B3C;
+  color: #102b3c;
   font-family: "Montserrat", sans-serif;
   font-size: 18px;
   font-style: normal;
@@ -3049,15 +3119,15 @@ header .bottom .last_head_dropdown ul {
   display: none;
 }
 .brand #brands .brands_wrapper {
-  background: #F8F8F8;
+  background: #f8f8f8;
   box-shadow: 0px 1px 7px 0px rgba(0, 0, 0, 0.09);
 }
 .brand #brands .brands_wrapper .brands_slider .slider .swiper-slide h3 {
-  color: #1A1717 !important;
+  color: #1a1717 !important;
 }
 
 footer {
-  background: linear-gradient(180deg, #E2D5CF 0%, #DABD96 100%);
+  background: linear-gradient(180deg, #e2d5cf 0%, #dabd96 100%);
 }
 footer .footer_wrapper {
   flex-wrap: wrap;
@@ -3073,7 +3143,7 @@ footer .footer_wrapper ul li {
   margin-bottom: 30px;
 }
 footer .footer_wrapper ul li a {
-  color: #1A1717;
+  color: #1a1717;
   font-family: Montserrat, sans-serif;
   font-size: 21px;
   font-style: normal;
@@ -3108,7 +3178,7 @@ footer .footer_wrapper .footer_social form .form_in {
   display: flex;
   align-items: center;
   border-radius: 44px;
-  background: #FFF;
+  background: #fff;
   overflow: hidden;
   box-shadow: 0px 1px 7px 0px rgba(0, 0, 0, 0.09);
 }
@@ -3116,7 +3186,7 @@ footer .footer_wrapper .footer_social form .form_in input {
   width: 70%;
   border: none;
   padding: 24px;
-  color: #B6B3B3;
+  color: #b6b3b3;
   font-family: Montserrat, sans-serif;
   font-size: 21px;
   font-style: normal;
@@ -3126,7 +3196,7 @@ footer .footer_wrapper .footer_social form .form_in input {
 footer .footer_wrapper .footer_social form .form_in button {
   width: 30%;
   height: 100%;
-  color: #FFF;
+  color: #fff;
   font-family: "Fira Sans", sans-serif;
   font-size: 18px;
   font-style: normal;
@@ -3134,7 +3204,7 @@ footer .footer_wrapper .footer_social form .form_in button {
   line-height: 111.5%;
   letter-spacing: 1.08px;
   border-radius: 0px 99px 99px 0px;
-  background: #B32B37;
+  background: #b32b37;
   box-shadow: 0px 1px 7px 0px rgba(0, 0, 0, 0.09);
   padding: 27px;
   border: none;
@@ -3170,7 +3240,7 @@ footer .footer_bottom {
   padding-bottom: 80px;
 }
 footer .footer_bottom p {
-  color: #6A6B6B;
+  color: #6a6b6b;
   font-family: Montserrat, sans-serif;
   font-size: 18px;
   font-style: normal;
@@ -3205,7 +3275,7 @@ footer .footer_wrapper_media .footer_top_media .footer_email p {
 footer .footer_wrapper_media .footer_top_media .footer_email .email_wrapper {
   width: 100%;
   border-radius: 21.914px;
-  background: #FFF;
+  background: #fff;
   display: flex;
   overflow: hidden;
   box-shadow: 0px 0.498056829px 3.4863977432px 0px rgba(0, 0, 0, 0.09);
@@ -3214,7 +3284,7 @@ footer .footer_wrapper_media .footer_top_media .footer_email .email_wrapper inpu
   border: none;
   width: 60%;
   padding: 12px 9px;
-  color: #B6B3B3;
+  color: #b6b3b3;
   font-family: Montserrat, sans-serif;
   font-size: 12px;
   font-style: normal;
@@ -3225,7 +3295,7 @@ footer .footer_wrapper_media .footer_top_media .footer_email .email_wrapper butt
   cursor: pointer;
   width: 40%;
   border: none;
-  color: #FFF;
+  color: #fff;
   font-family: "Fira Sans", sans-serif;
   font-size: 12px;
   font-style: normal;
@@ -3233,7 +3303,7 @@ footer .footer_wrapper_media .footer_top_media .footer_email .email_wrapper butt
   line-height: 111.5%;
   letter-spacing: 0.72px;
   border-radius: 0px 49.308px 49.308px 0px;
-  background: #B32B37;
+  background: #b32b37;
   box-shadow: 0px 0.498056829px 3.4863977432px 0px rgba(0, 0, 0, 0.09);
 }
 footer .footer_wrapper_media .footer_center_media {
@@ -3246,7 +3316,7 @@ footer .footer_wrapper_media .footer_center_media ul li {
   margin-bottom: 15px;
 }
 footer .footer_wrapper_media .footer_center_media ul li a {
-  color: #1A1717;
+  color: #1a1717;
   font-family: Montserrat, sans-serif;
   font-size: 11px;
   font-style: normal;
@@ -3307,7 +3377,7 @@ footer .footer_wrapper_media .footer_bottom_media .footer_social_email_media a {
 footer .footer_wrapper_media .footer_media_bottom_in {
   padding-bottom: 32px;
   text-align: center;
-  color: #6A6B6B;
+  color: #6a6b6b;
   font-family: Montserrat, sans-serif;
   font-size: 11px;
   font-style: normal;
@@ -4923,6 +4993,7 @@ footer .footer_wrapper_media .footer_media_bottom_in {
     left: 20px;
   }
   header .bottom .main_container .search {
+    margin-left: 12px;
     width: 182px;
   }
   #brands .main_container {

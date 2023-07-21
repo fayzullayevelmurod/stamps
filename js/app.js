@@ -1,3 +1,79 @@
+
+// function enlargeImg(img) {
+//     img.style.transform = "scale(1.5)";
+//     img.style.transition =
+//     "transform 0.25s ease";
+//  }
+
+var zoomer = document.getElementById('zoomer');
+var zoom_album = document.getElementById('zoom_album');
+
+function deepdive(){ 
+	zoomlevel = zoomer.valueAsNumber;
+    zoom_album.style.webkitTransform = "scale("+zoomlevel+")";
+	zoom_album.style.transform = "scale("+zoomlevel+")";
+}
+
+var plus_z = document.querySelector('.plus_z');
+var minus_z = document.querySelector('.minus_z');
+
+
+plus_z.addEventListener('click',function(e){
+    e.preventDefault();
+    let current = zoomer.valueAsNumber;
+    current += 0.1
+    zoomer.value = current
+    deepdive()
+})
+
+minus_z.addEventListener('click',function(e){
+    e.preventDefault();
+    let current = zoomer.valueAsNumber;
+    current -= 0.1
+    zoomer.value = current
+    deepdive()
+})
+
+
+
+//  let enlarged=0;
+// function toggleEnlargeImg(img) {
+//      if (enlarged===0){
+//        img.style.transform = "scale(1.5)";
+//        img.style.transition =
+//        "transform 0.25s ease";
+//        enlarged = 1;
+//      }
+//      else{
+//        img.style.transform = "scale(1)";
+//        img.style.transition =
+//        "transform 0.25s ease";
+//        enlarged = 0;
+//      }
+//      return enlarged;
+//   }
+
+
+  var lineHeight = ($('.drag-line').height())-15;
+
+  $('.draggable-button').draggable({ 
+              axis: 'y',
+              containment: 'parent' 
+  });    
+  
+  $('.draggable-button').on('drag', function(){ 
+     var position = $('.draggable-button').position();
+    var marginTop = position.top;
+    $('.line').css({ 
+      'clip': 'rect('+ marginTop +'px,8px, 183px,0px)' 
+    }); 
+    
+  });
+  
+  
+
+
+
 const head_dropdown = document.querySelectorAll('.head_dropdown');
 
 head_dropdown.forEach(item => {
